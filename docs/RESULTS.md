@@ -23,28 +23,29 @@
   generated files statically and computes
   `COMPOSITE = 0.40·TA + 0.30·CR + 0.20·VC + 0.10·CC`.
 
-## Headline: Run 1 (baseline vs framework, all four metrics)
+## Headline: Run 1 (baseline vs framework v1, complete — 6 tasks, both stacks)
 
 | Condition (both stacks) | Token Adherence | Component Reuse | Value Clustering | Convergence | **Composite** |
 |---|---:|---:|---:|---:|---:|
-| Baseline (cold) | 0% | 0% | 40% | — | **8.9% · poor** |
-| **Framework** | **100%** | **100%** | **100%** | **96.8%** | **99.7% · excellent** |
+| Baseline (cold) | 0% | 0% | 38.8% | — | **8.6% · poor** |
+| **Framework v1** | **100%** | **100%** | **100%** | **93.9%** | **99.39% · excellent** |
 
-Per stack: framework **web 99.35**, **SwiftUI 100**. Baseline web 10.7, SwiftUI 16.5.
+Per stack: framework **web 99.46**, **SwiftUI 99.31**. Baseline web 10.7, SwiftUI 16.3.
 
-What the baseline did, concretely (from the scorer's offender list): **0 of 250 web style
-declarations referenced a token**; **62 hand-rolled component clones** across the set (every card,
-badge, button, field re-invented inline with literals like `#ffffff`, `borderRadius: 24`, bespoke
-`box-shadow` stacks). The framework agents: **0 clones, 0 raw literals, 100% token/component reuse.**
+What the baseline did, concretely (from the scorer's offender list): **0 of ~250 web style
+declarations referenced a token**; **dozens of hand-rolled component clones** across the set (every
+card, badge, button, field re-invented inline with literals like `#ffffff`, `borderRadius: 24`,
+bespoke `box-shadow` stacks). The framework agents: **0 clones, 0 raw literals, 100% token/component
+reuse** on both stacks.
 
 ## The one residual, and the iteration that closed it
 
-Run 1's only sub-99 metric was **cross-session convergence on web (93.5%)**, localized to two tasks.
-Diagnosis (`harness/scorer` feature-set diff) showed it was **not real inconsistency**: all agents
-used the *identical* component set; the gap was that some expressed a gap via `<Stack gap>` while
-others used `token.space` on a wrapper `<div>` — **two valid paths for the same decision**. That is a
-flaw *in the framework*, not the agents: redundant paths are exactly how two token-compliant builds
-still diverge.
+Framework v1's only sub-99 metric was **cross-session convergence (93.9%)**, localized to a couple of
+tasks. Diagnosis (`harness/scorer` feature-set diff) showed it was **not real inconsistency**: all
+agents used the *identical* component set; the gap was that some expressed a gap via `<Stack gap>`
+while others used `token.space` on a wrapper `<div>` — **two valid paths for the same decision**. That
+is a flaw *in the framework*, not the agents: redundant paths are exactly how two token-compliant
+builds still diverge.
 
 Fix (folded into `framework/SKILL.md` §3): **"one canonical path per decision"** — spacing only
 through the layout component, type only through `Text`, every element through its most specific

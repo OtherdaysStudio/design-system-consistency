@@ -1,22 +1,22 @@
 {
   "conditions": {
     "baseline-swift": {
-      "files": 10,
+      "files": 12,
       "TA": 0,
-      "taDetail": "0/161 styled decls reference tokens",
+      "taDetail": "0/191 styled decls reference tokens",
       "CR": 0,
-      "crDetail": "0 reused / 37 missed",
-      "VC": 74.23,
+      "crDetail": "0 reused / 41 missed",
+      "VC": 73.35,
       "vcPerDim": {
         "color": {
-          "observed": 10,
+          "observed": 13,
           "defined": 20,
           "efficiency": 1
         },
         "spacing": {
-          "observed": 16,
+          "observed": 17,
           "defined": 8,
-          "efficiency": 0.5
+          "efficiency": 0.4706
         },
         "typography": {
           "observed": 13,
@@ -24,7 +24,7 @@
           "efficiency": 0.4615
         },
         "radius": {
-          "observed": 1,
+          "observed": 2,
           "defined": 4,
           "efficiency": 1
         },
@@ -36,7 +36,7 @@
       },
       "CC": null,
       "ccPerTask": [],
-      "composite": 16.5,
+      "composite": 16.3,
       "tier": "poor",
       "flags": [
         "TA",
@@ -123,6 +123,68 @@
             "DSStack",
             "DSStack",
             "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/notification-toast/agent-1.swift",
+          "task": "notification-toast",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/19",
+          "CR": 0,
+          "crDetail": "0 reused / 2 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:14",
+            "spacing:16",
+            "spacing:12",
+            "spacing:14",
+            "spacing:8",
+            "spacing:20",
+            "spacing:24",
+            "spacing:20",
+            "radius:18",
+            "size:32",
+            "size:32",
+            "typography:sys",
+            "typography:sys",
+            "typography:13",
+            "typography:sys",
+            "color:Color.green",
+            "color:Color.green.opacity(0.15",
+            "shadow:inline",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSButton",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/notification-toast/agent-2.swift",
+          "task": "notification-toast",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/11",
+          "CR": 0,
+          "crDetail": "0 reused / 2 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:12",
+            "spacing:7",
+            "spacing:20",
+            "spacing:20",
+            "typography:sys",
+            "typography:sys",
+            "typography:13",
+            "typography:sys",
+            "color:Color(red: 0.24, green: ",
+            "shadow:inline",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSButton",
+            "dsCard"
           ]
         },
         {
@@ -383,11 +445,11 @@
       ]
     },
     "baseline-web": {
-      "files": 11,
+      "files": 12,
       "TA": 0,
       "taDetail": "0/250 styled decls reference tokens",
       "CR": 0,
-      "crDetail": "0 reused / 62 missed",
+      "crDetail": "0 reused / 63 missed",
       "VC": 48.29,
       "vcPerDim": {
         "color": {
@@ -501,6 +563,20 @@
             "Stack",
             "Text",
             "Text",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/notification-toast/agent-2.tsx",
+          "task": "notification-toast",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 0,
+          "crDetail": "0 reused / 1 missed",
+          "VC": null,
+          "literals": [],
+          "missed": [
             "Button"
           ]
         },
@@ -892,18 +968,34 @@
       ]
     },
     "framework-swift": {
-      "files": 13,
-      "TA": null,
-      "taDetail": "0/0 styled decls reference tokens",
+      "files": 18,
+      "TA": 100,
+      "taDetail": "4/4 styled decls reference tokens",
       "CR": 100,
-      "crDetail": "138 reused / 0 missed",
-      "VC": null,
-      "vcPerDim": {},
-      "CC": 100,
+      "crDetail": "177 reused / 0 missed",
+      "VC": 100,
+      "vcPerDim": {
+        "color": {
+          "observed": 1,
+          "defined": 20,
+          "efficiency": 1
+        },
+        "spacing": {
+          "observed": 1,
+          "defined": 8,
+          "efficiency": 1
+        }
+      },
+      "CC": 93.13,
       "ccPerTask": [
         {
           "task": "login-form",
           "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "notification-toast",
+          "cc": 81,
           "runs": 3
         },
         {
@@ -914,12 +1006,12 @@
         {
           "task": "profile-header",
           "cc": 100,
-          "runs": 2
+          "runs": 3
         },
         {
           "task": "settings-row",
-          "cc": 100,
-          "runs": 2
+          "cc": 77.8,
+          "runs": 3
         },
         {
           "task": "stat-card",
@@ -927,7 +1019,7 @@
           "runs": 3
         }
       ],
-      "composite": 100,
+      "composite": 99.31,
       "tier": "excellent",
       "flags": [],
       "perFile": [
@@ -964,6 +1056,42 @@
           "CR": 100,
           "crDetail": "16 reused / 0 missed",
           "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/notification-toast/agent-1.swift",
+          "task": "notification-toast",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/notification-toast/agent-2.swift",
+          "task": "notification-toast",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/notification-toast/agent-3.swift",
+          "task": "notification-toast",
+          "platform": "swift",
+          "TA": 100,
+          "taDetail": "2/2",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": 100,
           "literals": [],
           "missed": []
         },
@@ -1028,6 +1156,18 @@
           "missed": []
         },
         {
+          "file": "runs/run1/framework-swift/profile-header/agent-3.swift",
+          "task": "profile-header",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
           "file": "runs/run1/framework-swift/settings-row/agent-1.swift",
           "task": "settings-row",
           "platform": "swift",
@@ -1048,6 +1188,18 @@
           "CR": 100,
           "crDetail": "7 reused / 0 missed",
           "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/settings-row/agent-3.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": 100,
+          "taDetail": "2/2",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": 100,
           "literals": [],
           "missed": []
         },
@@ -1090,11 +1242,11 @@
       ]
     },
     "framework-web": {
-      "files": 15,
+      "files": 18,
       "TA": 100,
       "taDetail": "6/6 styled decls reference tokens",
       "CR": 100,
-      "crDetail": "147 reused / 0 missed",
+      "crDetail": "168 reused / 0 missed",
       "VC": 100,
       "vcPerDim": {
         "color": {
@@ -1113,10 +1265,15 @@
           "efficiency": 1
         }
       },
-      "CC": 93.54,
+      "CC": 94.62,
       "ccPerTask": [
         {
           "task": "login-form",
+          "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "notification-toast",
           "cc": 100,
           "runs": 3
         },
@@ -1141,7 +1298,7 @@
           "runs": 3
         }
       ],
-      "composite": 99.35,
+      "composite": 99.46,
       "tier": "excellent",
       "flags": [],
       "perFile": [
@@ -1177,6 +1334,42 @@
           "taDetail": "0/0",
           "CR": 100,
           "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/notification-toast/agent-1.tsx",
+          "task": "notification-toast",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/notification-toast/agent-2.tsx",
+          "task": "notification-toast",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/notification-toast/agent-3.tsx",
+          "task": "notification-toast",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
           "VC": null,
           "literals": [],
           "missed": []
@@ -1330,17 +1523,17 @@
   },
   "aggregate": {
     "baseline": {
-      "files": 21,
+      "files": 24,
       "TA": 0,
-      "taDetail": "0/411 styled decls reference tokens",
+      "taDetail": "0/441 styled decls reference tokens",
       "CR": 0,
-      "crDetail": "0 reused / 99 missed",
-      "VC": 40.13,
+      "crDetail": "0 reused / 104 missed",
+      "VC": 38.78,
       "vcPerDim": {
         "color": {
-          "observed": 35,
+          "observed": 38,
           "defined": 20,
-          "efficiency": 0.5714
+          "efficiency": 0.5263
         },
         "spacing": {
           "observed": 37,
@@ -1365,7 +1558,7 @@
       },
       "CC": null,
       "ccPerTask": [],
-      "composite": 8.92,
+      "composite": 8.62,
       "tier": "poor",
       "flags": [
         "TA",
@@ -1374,20 +1567,20 @@
       ]
     },
     "framework": {
-      "files": 28,
+      "files": 36,
       "TA": 100,
-      "taDetail": "6/6 styled decls reference tokens",
+      "taDetail": "10/10 styled decls reference tokens",
       "CR": 100,
-      "crDetail": "285 reused / 0 missed",
+      "crDetail": "345 reused / 0 missed",
       "VC": 100,
       "vcPerDim": {
         "color": {
-          "observed": 1,
+          "observed": 2,
           "defined": 20,
           "efficiency": 1
         },
         "spacing": {
-          "observed": 1,
+          "observed": 2,
           "defined": 8,
           "efficiency": 1
         },
@@ -1397,11 +1590,16 @@
           "efficiency": 1
         }
       },
-      "CC": 96.77,
+      "CC": 93.88,
       "ccPerTask": [
         {
           "task": "login-form",
           "cc": 40,
+          "runs": 6
+        },
+        {
+          "task": "notification-toast",
+          "cc": 36.2,
           "runs": 6
         },
         {
@@ -1412,12 +1610,12 @@
         {
           "task": "profile-header",
           "cc": 40,
-          "runs": 5
+          "runs": 6
         },
         {
           "task": "settings-row",
-          "cc": 36,
-          "runs": 5
+          "cc": 32.9,
+          "runs": 6
         },
         {
           "task": "stat-card",
@@ -1425,7 +1623,7 @@
           "runs": 6
         }
       ],
-      "composite": 99.68,
+      "composite": 99.39,
       "tier": "excellent",
       "flags": []
     }
