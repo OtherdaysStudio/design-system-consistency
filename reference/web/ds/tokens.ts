@@ -84,6 +84,14 @@ export const token = {
     "thin": "var(--border-width-thin)",
     "thick": "var(--border-width-thick)"
   },
+  "duration": {
+    "fast": "var(--duration-fast)",
+    "base": "var(--duration-base)",
+    "slow": "var(--duration-slow)"
+  },
+  "easing": {
+    "standard": "var(--easing-standard)"
+  },
   "color": {
     "bg": {
       "canvas": "var(--color-bg-canvas)",
@@ -101,6 +109,7 @@ export const token = {
       "primary": "var(--color-action-primary)",
       "primaryHover": "var(--color-action-primary-hover)",
       "secondary": "var(--color-action-secondary)",
+      "secondaryHover": "var(--color-action-secondary-hover)",
       "danger": "var(--color-action-danger)",
       "dangerHover": "var(--color-action-danger-hover)"
     },
@@ -149,7 +158,8 @@ export const token = {
   "shadow": {
     "sm": "var(--shadow-sm)",
     "md": "var(--shadow-md)",
-    "lg": "var(--shadow-lg)"
+    "lg": "var(--shadow-lg)",
+    "focus": "var(--shadow-focus)"
   }
 } as const;
 

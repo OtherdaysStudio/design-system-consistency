@@ -52,6 +52,7 @@ public extension Color {
     static let dsActionPrimary = Color(red: 0.184, green: 0.427, blue: 0.965)  // color.action.primary
     static let dsActionPrimaryHover = Color(red: 0.122, green: 0.341, blue: 0.839)  // color.action.primaryHover
     static let dsActionSecondary = Color(red: 0.925, green: 0.933, blue: 0.949)  // color.action.secondary
+    static let dsActionSecondaryHover = Color(red: 0.867, green: 0.882, blue: 0.910)  // color.action.secondaryHover
     static let dsActionDanger = Color(red: 0.898, green: 0.282, blue: 0.302)  // color.action.danger
     static let dsActionDangerHover = Color(red: 0.788, green: 0.231, blue: 0.251)  // color.action.dangerHover
     static let dsBorderDefault = Color(red: 0.867, green: 0.882, blue: 0.910)  // color.border.default

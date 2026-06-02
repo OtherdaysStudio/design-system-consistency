@@ -84,6 +84,12 @@
       "borderWidth": {
         "borderWidth.thin":  { "$value": "1px", "$type": "dimension", "$description": "Default border" },
         "borderWidth.thick": { "$value": "2px", "$type": "dimension", "$description": "Focus ring, emphasis" }
+      },
+      "motion": {
+        "duration.fast": { "$value": "120ms", "$type": "duration", "$description": "Hover/press feedback" },
+        "duration.base": { "$value": "200ms", "$type": "duration", "$description": "Default transition" },
+        "duration.slow": { "$value": "320ms", "$type": "duration", "$description": "Sheet/overlay reveal" },
+        "easing.standard": { "$value": "cubic-bezier(0.2, 0, 0, 1)", "$type": "cubicBezier", "$description": "Standard ease" }
       }
     },
 
@@ -99,6 +105,7 @@
       "color.action.primary":   { "$value": "{blue.500}",    "$type": "color", "$description": "Primary CTA fill; AA on onAction" },
       "color.action.primaryHover": { "$value": "{blue.600}", "$type": "color", "$description": "Primary CTA hover/pressed" },
       "color.action.secondary": { "$value": "{neutral.100}", "$type": "color", "$description": "Secondary button fill" },
+      "color.action.secondaryHover": { "$value": "{neutral.200}", "$type": "color", "$description": "Secondary/ghost hover" },
       "color.action.danger":    { "$value": "{red.500}",     "$type": "color", "$description": "Destructive CTA fill" },
       "color.action.dangerHover": { "$value": "{red.600}",   "$type": "color", "$description": "Destructive hover/pressed" },
       "color.border.default":   { "$value": "{neutral.200}", "$type": "color", "$description": "Hairline borders" },
@@ -133,7 +140,9 @@
       "shadow.md": { "$type": "shadow", "$description": "Card elevation",
         "$value": { "offsetX": "0px", "offsetY": "6px",  "blur": "16px", "spread": "-4px", "color": "{alpha.shadow}" } },
       "shadow.lg": { "$type": "shadow", "$description": "Modal/sheet elevation",
-        "$value": { "offsetX": "0px", "offsetY": "16px", "blur": "40px", "spread": "-8px", "color": "{alpha.shadow}" } }
+        "$value": { "offsetX": "0px", "offsetY": "16px", "blur": "40px", "spread": "-8px", "color": "{alpha.shadow}" } },
+      "shadow.focus": { "$type": "shadow", "$description": "Keyboard focus ring",
+        "$value": { "offsetX": "0px", "offsetY": "0px", "blur": "0px", "spread": "2px", "color": "{color.border.focus}" } }
     },
 
     "component": {
@@ -358,5 +367,16 @@
     "note": "Populated by `node harness/manifest-tools.js index`; kept out of source to avoid merge churn."
   },
 
-  "decisionLog": []
+  "decisionLog": [
+    {
+      "id": "dl-0001",
+      "componentId": "crd-swift-0001",
+      "type": "platform-codegen-gap",
+      "value": "raw shadow offset/blur/color numerics inside reference/swiftui/DS/Components/DSShadow.swift",
+      "justification": "Swift codegen emits scalar tokens (DS.Spacing/Radius/...) and semantic Color extensions but not composite shadow primitives, so the .dsShadow(_:) modifier encodes shadow.{sm,md,lg} values directly. These literals are encapsulated in ONE token-layer file and are the single source for swift shadows — downstream code references .dsShadow(.md), never the raw values.",
+      "status": "active",
+      "reviewBy": "2026-12-01",
+      "remediation": "extend codegen.js to emit a DS.Shadow representation; then DSShadow.swift references it."
+    }
+  ]
 }
