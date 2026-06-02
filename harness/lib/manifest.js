@@ -227,18 +227,33 @@ export function computeId(intentKeywords, signature, platform) {
   return { logicalId: logical, id: full };
 }
 
-// lexical reuse-similarity (token-set Jaccard with light synonym expansion)
+// lexical reuse-similarity: token-set F1 with stopword removal, light stemming,
+// and synonym expansion. F1 (balanced precision/recall) separates "this intent is
+// already served" from "genuinely novel" far more cleanly than raw Jaccard, which
+// unfairly penalizes components that carry many keywords.
 const SYN = { btn: 'button', cta: 'button', click: 'button', tap: 'button', field: 'input', textbox: 'input', pill: 'badge', chip: 'badge', tag: 'badge', panel: 'card', tile: 'card', box: 'card', copy: 'text', paragraph: 'text', vstack: 'stack', hstack: 'stack', flex: 'stack' };
+const STOP = new Set(['a', 'an', 'the', 'need', 'want', 'for', 'to', 'of', 'with', 'and', 'this', 'that', 'my', 'our', 'some', 'build', 'create', 'make', 'please', 'add', 'show', 'display', 'component', 'view', 'screen', 'ui']);
+function stem(w) { let s = w.toLowerCase().trim(); if (s.length > 3 && s.endsWith('s')) s = s.slice(0, -1); return s; }
 function expand(words) {
   const s = new Set();
-  for (const w of words) { const lw = w.toLowerCase(); s.add(lw); if (SYN[lw]) s.add(SYN[lw]); }
+  for (const w of words) {
+    const lw = String(w).toLowerCase().trim();
+    if (!lw || STOP.has(lw)) continue;
+    const st = stem(lw);
+    s.add(st);
+    if (SYN[lw]) s.add(stem(SYN[lw]));
+    if (SYN[st]) s.add(stem(SYN[st]));
+  }
   return s;
 }
 export function lexicalSimilarity(intentA, intentB) {
   const a = expand(intentA), b = expand(intentB);
+  if (a.size === 0 || b.size === 0) return 0;
   const inter = [...a].filter((x) => b.has(x)).length;
-  const uni = new Set([...a, ...b]).size;
-  return uni === 0 ? 0 : inter / uni;
+  if (inter === 0) return 0;
+  const precision = inter / a.size; // how much of the query the component covers
+  const recall = inter / b.size;    // how on-topic the component is for the query
+  return (2 * precision * recall) / (precision + recall); // F1
 }
 
 export const PROJECT_ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..', '..');
