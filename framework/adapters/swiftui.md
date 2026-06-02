@@ -61,6 +61,14 @@ Grep / AST signals that mark re-invention:
   (an optical nudge, a measured-perf tweak) is logged with a justification + review date, not
   silently allowed and not silently "fixed" by a later audit.
 
+## Composition primitives (parity with web — see SKILL §7)
+Consistency ≠ usability here too. Ensure the SwiftUI DS can *express* good layout, not just tokens:
+right-aligned actions via `Spacer()` inside `DSStack` (don't fake it with padding); an impact
+`Font.dsHero` step above display for hero numbers; a `DSBadge` dot/icon mode so a status indicator
+needn't repeat the title word; a compact `.dsCard(.compact)` inset for list rows; and views that
+render with sensible defaults. (The web set carries these today; add the analogues here when this
+adapter is next exercised — a missing primitive is the bug, not the screen.)
+
 ## When deciding which mechanism
 
 Cross-cutting *look* → `ViewModifier`. A *control* with defined variants → a Style protocol. A value

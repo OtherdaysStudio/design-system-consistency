@@ -169,18 +169,49 @@ COMPOSITE = 0.40·TA + 0.30·CR + 0.20·(VC·100) + 0.10·(CC·100)        (0–
 - **CC — Cross-session Convergence:** run the same task N≥3 times; agreement of the token/component
   choices across independent runs. This is the property the whole framework exists to produce.
 
-Report all four separately and flag any sub-score < 60 even when the composite passes. A high
-composite is necessary but **not sufficient** for visual correctness — pair with screenshot /
-visual-regression for pixel fidelity and validate against human design review.
+Report all four separately and flag any sub-score < 60 even when the composite passes.
 
-## 7. Output contract
+## 7. Consistency is necessary, not sufficient — design the composition, then verify it
+
+A perfect composite means agents *reused the system's decisions*. It does **not** mean the screen
+is usable: independent agents routinely converge on the *same* badly-composed layout (real case —
+all five put a settings toggle mid-row instead of right-aligned, scoring ~100 while missing the
+brief). Three disciplines close that gap.
+
+**(a) When consistent UI still looks wrong, suspect a MISSING PRIMITIVE — not a one-off.** The most
+reliable diagnosis from real review: agents drift into bad composition because the design system
+*can't express* the good one, so they reach for the only thing it can. **Fix the primitive, not the
+screen.** Cases that all root-caused to a DS gap:
+- a control wouldn't right-align → the layout component had **no `justify`/space-between** → add it.
+- a price/number lacked impact → no type step **above `display`** → add a `hero` size.
+- a status indicator duplicated the title word → `Badge` had **no icon/`dot` mode** → add it.
+- list rows were too tall → the surface had **one fixed inset** → add a compact `padding`.
+- a component crashed in isolation → it **lacked self-contained defaults** → add them.
+
+A design system isn't just tokens + components; it must also carry the **layout, hierarchy,
+density, and (for mobile) touch-target + responsive-type primitives** needed to compose *well*. A
+missing primitive *is* the bug — extend the system and register the addition.
+
+**(b) Composition rules the metric can't see** (enforce them anyway): right-aligned/split actions
+use an explicit space-between (never assume it); a value and its delta/badge sit *inline*, not
+stacked, unless intended; supporting text is always *smaller/lighter* than the title it supports
+(never inverted); an action reads as a button (fill/secondary), not bare text; one clear primary
+action per view.
+
+**(c) Verify visually — never ship on the score alone.** Closing step for any UI task: **render it,
+check WCAG contrast of the actual token pairings, and put real (or VLM) eyes on it against the
+brief.** The composite is the *reuse/drift* gate; contrast + visual review is the *correctness*
+gate — a high composite is necessary but not sufficient. Ship both. (`harness/fidelity/contrast.js`
++ the render/review tooling.)
+
+## 8. Output contract
 
 For any task, produce: the view/refactor code; any new design-system additions **clearly marked as
 additions** (as registered Styles/Modifiers/registry-items, never inline specials); the **updated
 manifest** (+ decision-log entries where relevant); and, in Mode A, lead with the drift report so
 the user sees the before-state. State plainly what you reused vs created and why.
 
-## 8. Standing instruction: improve this framework as you use it
+## 9. Standing instruction: improve this framework as you use it
 
 This is a living artifact. Each real codebase will teach you something it got wrong or left vague —
 a token scale that doesn't fit, a drift pattern the signals miss, a native API that enforces better

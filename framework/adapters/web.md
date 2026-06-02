@@ -33,6 +33,19 @@ import { Card, Stack, Text, Button, Badge, token } from '@/ds';
 - **Type only via `<Text variant>`** — the single sanctioned way to set font-size/weight/line-height.
   Inline `fontSize` is a drift signal and a clone of `Text`.
 
+## Composition primitives (so the system can express *good* layout, not just consistent layout)
+Token + component reuse alone yields consistent-but-sometimes-unusable screens (see SKILL §7). The
+components carry the primitives needed to compose well — reach for them instead of hand-fixing:
+- **`<Stack justify="between">`** (also `start|center|end`) and `align="baseline"` — for split rows
+  (label ↔ control, content ↔ action). The reason agents left toggles mid-row was the *absence* of
+  this prop; never simulate right-alignment with margins.
+- **`<Text variant="hero">`** — an impact step above `display` for prices / headline numbers.
+- **`<Badge dot>`** — a status indicator with no text, so you don't repeat the title word
+  ("Saved" badge next to a "Saved" title).
+- **`<Card padding="sm">`** — compact inset for dense list rows (default `md` is for content cards).
+- Components ship **self-contained defaults** (e.g. `ProfileHeader` renders without props) — a
+  component that throws in isolation isn't done.
+
 ## Drift signals the scorer (and you) look for
 
 | Signal | Why it's drift | Fix |
