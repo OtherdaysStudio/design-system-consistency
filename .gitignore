@@ -2,3 +2,4 @@ node_modules/
 runs/**/raw/
 *.log
 .DS_Store
+reference/_resolved.json

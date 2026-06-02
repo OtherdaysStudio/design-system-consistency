@@ -1,0 +1,362 @@
+{
+  "$schema": "https://design-tokens.org/dtcg-superset/v1",
+  "manifestVersion": "1.0",
+  "metadata": {
+    "name": "Aperture DS",
+    "version": "1.0.0",
+    "lastUpdated": "2026-06-02",
+    "lastUpdatedBy": "framework-bootstrap",
+    "sourceOfTruth": "reference/design-system.json",
+    "namingConvention": {
+      "tokenId": "dot.path.flat — kebab segments, camelCase preserved within a segment",
+      "componentName": "PascalCase; category template {category}/{variant}/{modifiers}",
+      "idRule": "sha1(normalizedIntentKeywords + signatureFingerprint + platform)[:12]; logicalId omits platform"
+    }
+  },
+
+  "tokens": {
+    "primitives": {
+      "color": {
+        "neutral.0":   { "$value": "#ffffff", "$type": "color", "$description": "Pure white; canvas/surface base in light mode" },
+        "neutral.50":  { "$value": "#f6f7f9", "$type": "color", "$description": "App canvas background" },
+        "neutral.100": { "$value": "#eceef2", "$type": "color", "$description": "Muted/secondary surface" },
+        "neutral.200": { "$value": "#dde1e8", "$type": "color", "$description": "Default hairline borders" },
+        "neutral.300": { "$value": "#c1c8d4", "$type": "color", "$description": "Strong borders, dividers" },
+        "neutral.400": { "$value": "#97a1b2", "$type": "color", "$description": "Muted text, placeholders" },
+        "neutral.500": { "$value": "#6b7585", "$type": "color", "$description": "Secondary text" },
+        "neutral.700": { "$value": "#3c4350", "$type": "color", "$description": "High-contrast secondary" },
+        "neutral.900": { "$value": "#171b23", "$type": "color", "$description": "Primary text, inverse surface" },
+        "blue.100":    { "$value": "#e7efff", "$type": "color", "$description": "Info tint background" },
+        "blue.500":    { "$value": "#2f6df6", "$type": "color", "$description": "Brand primary action" },
+        "blue.600":    { "$value": "#1f57d6", "$type": "color", "$description": "Primary action hover/pressed" },
+        "red.100":     { "$value": "#fdeaea", "$type": "color", "$description": "Danger tint background" },
+        "red.500":     { "$value": "#e5484d", "$type": "color", "$description": "Danger/destructive action" },
+        "red.600":     { "$value": "#c93b40", "$type": "color", "$description": "Danger hover/pressed" },
+        "green.100":   { "$value": "#e6f6ee", "$type": "color", "$description": "Success tint background" },
+        "green.500":   { "$value": "#2fa46b", "$type": "color", "$description": "Success status" },
+        "amber.100":   { "$value": "#fdf1dc", "$type": "color", "$description": "Warning tint background" },
+        "amber.500":   { "$value": "#e8920c", "$type": "color", "$description": "Warning status" },
+        "alpha.shadow":{ "$value": "rgba(20,24,33,0.16)", "$type": "color", "$description": "Elevation shadow color" }
+      },
+      "space": {
+        "space.none": { "$value": "0px",  "$type": "dimension", "$description": "Zero spacing" },
+        "space.xs":   { "$value": "4px",  "$type": "dimension", "$description": "Tightest gap (icon-to-text)" },
+        "space.sm":   { "$value": "8px",  "$type": "dimension", "$description": "Compact gap" },
+        "space.md":   { "$value": "16px", "$type": "dimension", "$description": "Default inset/gap" },
+        "space.lg":   { "$value": "24px", "$type": "dimension", "$description": "Section inset" },
+        "space.xl":   { "$value": "32px", "$type": "dimension", "$description": "Large section gap" },
+        "space.xxl":  { "$value": "48px", "$type": "dimension", "$description": "Page-level gap" },
+        "space.xxxl": { "$value": "64px", "$type": "dimension", "$description": "Hero spacing" }
+      },
+      "radius": {
+        "radius.sm":   { "$value": "6px",   "$type": "dimension", "$description": "Inputs, small chips" },
+        "radius.md":   { "$value": "10px",  "$type": "dimension", "$description": "Buttons, default controls" },
+        "radius.lg":   { "$value": "16px",  "$type": "dimension", "$description": "Cards, sheets" },
+        "radius.pill": { "$value": "999px", "$type": "dimension", "$description": "Pills, badges, avatars" }
+      },
+      "size": {
+        "size.control.sm": { "$value": "32px", "$type": "dimension", "$description": "Small control height" },
+        "size.control.md": { "$value": "40px", "$type": "dimension", "$description": "Default control height" },
+        "size.control.lg": { "$value": "48px", "$type": "dimension", "$description": "Large control height" },
+        "size.icon.sm":    { "$value": "16px", "$type": "dimension", "$description": "Small icon" },
+        "size.icon.md":    { "$value": "20px", "$type": "dimension", "$description": "Default icon" },
+        "size.icon.lg":    { "$value": "24px", "$type": "dimension", "$description": "Large icon" }
+      },
+      "fontSize": {
+        "fontSize.xs":  { "$value": "12px", "$type": "dimension", "$description": "Caption" },
+        "fontSize.sm":  { "$value": "14px", "$type": "dimension", "$description": "Label, dense body" },
+        "fontSize.md":  { "$value": "16px", "$type": "dimension", "$description": "Body" },
+        "fontSize.lg":  { "$value": "20px", "$type": "dimension", "$description": "Title" },
+        "fontSize.xl":  { "$value": "28px", "$type": "dimension", "$description": "Heading" },
+        "fontSize.xxl": { "$value": "36px", "$type": "dimension", "$description": "Display" }
+      },
+      "fontWeight": {
+        "fontWeight.regular":  { "$value": "400", "$type": "fontWeight", "$description": "Body weight" },
+        "fontWeight.medium":   { "$value": "500", "$type": "fontWeight", "$description": "Labels" },
+        "fontWeight.semibold": { "$value": "600", "$type": "fontWeight", "$description": "Titles, headings" },
+        "fontWeight.bold":     { "$value": "700", "$type": "fontWeight", "$description": "Display" }
+      },
+      "lineHeight": {
+        "lineHeight.tight":  { "$value": "1.2",  "$type": "number", "$description": "Headings" },
+        "lineHeight.snug":   { "$value": "1.35", "$type": "number", "$description": "Titles" },
+        "lineHeight.normal": { "$value": "1.5",  "$type": "number", "$description": "Body copy" }
+      },
+      "borderWidth": {
+        "borderWidth.thin":  { "$value": "1px", "$type": "dimension", "$description": "Default border" },
+        "borderWidth.thick": { "$value": "2px", "$type": "dimension", "$description": "Focus ring, emphasis" }
+      }
+    },
+
+    "semantic": {
+      "color.bg.canvas":        { "$value": "{neutral.50}",  "$type": "color", "$description": "App background behind surfaces" },
+      "color.bg.surface":       { "$value": "{neutral.0}",   "$type": "color", "$description": "Card/sheet/control surface" },
+      "color.bg.muted":         { "$value": "{neutral.100}", "$type": "color", "$description": "Secondary surface, hovered rows" },
+      "color.bg.inverse":       { "$value": "{neutral.900}", "$type": "color", "$description": "Inverted surface (tooltips)" },
+      "color.text.primary":     { "$value": "{neutral.900}", "$type": "color", "$description": "Primary reading text" },
+      "color.text.secondary":   { "$value": "{neutral.500}", "$type": "color", "$description": "Supporting text" },
+      "color.text.muted":       { "$value": "{neutral.400}", "$type": "color", "$description": "Placeholder, disabled text" },
+      "color.text.onAction":    { "$value": "{neutral.0}",   "$type": "color", "$description": "Text on primary/danger fills" },
+      "color.action.primary":   { "$value": "{blue.500}",    "$type": "color", "$description": "Primary CTA fill; AA on onAction" },
+      "color.action.primaryHover": { "$value": "{blue.600}", "$type": "color", "$description": "Primary CTA hover/pressed" },
+      "color.action.secondary": { "$value": "{neutral.100}", "$type": "color", "$description": "Secondary button fill" },
+      "color.action.danger":    { "$value": "{red.500}",     "$type": "color", "$description": "Destructive CTA fill" },
+      "color.action.dangerHover": { "$value": "{red.600}",   "$type": "color", "$description": "Destructive hover/pressed" },
+      "color.border.default":   { "$value": "{neutral.200}", "$type": "color", "$description": "Hairline borders" },
+      "color.border.strong":    { "$value": "{neutral.300}", "$type": "color", "$description": "Emphasized dividers" },
+      "color.border.focus":     { "$value": "{blue.500}",    "$type": "color", "$description": "Focus ring" },
+      "color.status.success":   { "$value": "{green.500}",   "$type": "color", "$description": "Success foreground" },
+      "color.status.successBg": { "$value": "{green.100}",   "$type": "color", "$description": "Success background tint" },
+      "color.status.warning":   { "$value": "{amber.500}",   "$type": "color", "$description": "Warning foreground" },
+      "color.status.warningBg": { "$value": "{amber.100}",   "$type": "color", "$description": "Warning background tint" },
+      "color.status.danger":    { "$value": "{red.500}",     "$type": "color", "$description": "Danger foreground" },
+      "color.status.dangerBg":  { "$value": "{red.100}",     "$type": "color", "$description": "Danger background tint" },
+      "color.status.info":      { "$value": "{blue.500}",    "$type": "color", "$description": "Info foreground" },
+      "color.status.infoBg":    { "$value": "{blue.100}",    "$type": "color", "$description": "Info background tint" }
+    },
+
+    "composite": {
+      "type.display": { "$type": "typography", "$description": "Hero/marketing display",
+        "$value": { "fontSize": "{fontSize.xxl}", "fontWeight": "{fontWeight.bold}",     "lineHeight": "{lineHeight.tight}" } },
+      "type.heading": { "$type": "typography", "$description": "Page/section heading",
+        "$value": { "fontSize": "{fontSize.xl}",  "fontWeight": "{fontWeight.semibold}", "lineHeight": "{lineHeight.tight}" } },
+      "type.title":   { "$type": "typography", "$description": "Card/group title",
+        "$value": { "fontSize": "{fontSize.lg}",  "fontWeight": "{fontWeight.semibold}", "lineHeight": "{lineHeight.snug}" } },
+      "type.body":    { "$type": "typography", "$description": "Default body copy",
+        "$value": { "fontSize": "{fontSize.md}",  "fontWeight": "{fontWeight.regular}",  "lineHeight": "{lineHeight.normal}" } },
+      "type.label":   { "$type": "typography", "$description": "Form labels, button text",
+        "$value": { "fontSize": "{fontSize.sm}",  "fontWeight": "{fontWeight.medium}",   "lineHeight": "{lineHeight.normal}" } },
+      "type.caption": { "$type": "typography", "$description": "Metadata, helper text",
+        "$value": { "fontSize": "{fontSize.xs}",  "fontWeight": "{fontWeight.regular}",  "lineHeight": "{lineHeight.normal}" } },
+
+      "shadow.sm": { "$type": "shadow", "$description": "Subtle lift (chips, popovers)",
+        "$value": { "offsetX": "0px", "offsetY": "1px",  "blur": "2px",  "spread": "0px",  "color": "{alpha.shadow}" } },
+      "shadow.md": { "$type": "shadow", "$description": "Card elevation",
+        "$value": { "offsetX": "0px", "offsetY": "6px",  "blur": "16px", "spread": "-4px", "color": "{alpha.shadow}" } },
+      "shadow.lg": { "$type": "shadow", "$description": "Modal/sheet elevation",
+        "$value": { "offsetX": "0px", "offsetY": "16px", "blur": "40px", "spread": "-8px", "color": "{alpha.shadow}" } }
+    },
+
+    "component": {
+      "button.radius":     { "$value": "{radius.md}",            "$type": "dimension", "$description": "Button corner radius" },
+      "button.paddingX":   { "$value": "{space.md}",             "$type": "dimension", "$description": "Button horizontal inset" },
+      "button.gap":        { "$value": "{space.sm}",             "$type": "dimension", "$description": "Icon-to-label gap" },
+      "button.bg.primary": { "$value": "{color.action.primary}", "$type": "color",     "$description": "Primary button fill" },
+      "button.fg.primary": { "$value": "{color.text.onAction}",  "$type": "color",     "$description": "Primary button text" },
+      "card.radius":       { "$value": "{radius.lg}",            "$type": "dimension", "$description": "Card corner radius" },
+      "card.padding":      { "$value": "{space.lg}",             "$type": "dimension", "$description": "Card inset" },
+      "card.bg":           { "$value": "{color.bg.surface}",     "$type": "color",     "$description": "Card surface" },
+      "card.border":       { "$value": "{color.border.default}", "$type": "color",     "$description": "Card hairline" },
+      "input.height":      { "$value": "{size.control.md}",      "$type": "dimension", "$description": "Text field height" },
+      "input.radius":      { "$value": "{radius.md}",            "$type": "dimension", "$description": "Text field radius" },
+      "input.paddingX":    { "$value": "{space.md}",             "$type": "dimension", "$description": "Text field inset" },
+      "badge.radius":      { "$value": "{radius.pill}",          "$type": "dimension", "$description": "Badge radius" },
+      "badge.paddingX":    { "$value": "{space.sm}",             "$type": "dimension", "$description": "Badge inset" }
+    }
+  },
+
+  "components": [
+    {
+      "id": "btn-web-0001", "logicalId": "button", "platform": "web",
+      "canonicalName": "Button",
+      "intentKeywords": ["button", "action", "submit", "cta", "click", "primary", "confirm", "save"],
+      "category": "button",
+      "purposeStatement": "Triggers an action. NOT for navigation — use Link for that.",
+      "whenToUse": [{ "scenario": "Any clickable that performs an action", "preferred": "Button", "whyNotAlternative": "Raw <button> bypasses tokens and loses variant/size guarantees." }],
+      "variants": [
+        { "name": "variant", "type": "enum", "values": ["primary", "secondary", "danger", "ghost"] },
+        { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+      ],
+      "antiPatterns": [
+        { "pattern": "<button> with inline padding/background", "reason": "re-invents the component, drifts from tokens", "correctAlternative": "<Button variant size>", "severity": "must-not" },
+        { "pattern": "two primary buttons side by side", "reason": "ambiguous primary action", "correctAlternative": "one primary + one secondary", "severity": "should-not" }
+      ],
+      "tokenMap": { "all": ["button.radius", "button.paddingX", "button.gap", "size.control.md", "type.label"], "primary": ["button.bg.primary", "button.fg.primary"], "danger": ["color.action.danger", "color.text.onAction"], "secondary": ["color.action.secondary", "color.text.primary"] },
+      "web": { "importName": "Button", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Button.tsx", "type": "component" }] }
+    },
+    {
+      "id": "btn-swift-0001", "logicalId": "button", "platform": "swift",
+      "canonicalName": "DSButton",
+      "intentKeywords": ["button", "action", "submit", "cta", "tap", "primary", "confirm", "save"],
+      "category": "button",
+      "purposeStatement": "Triggers an action. NOT for navigation — use NavigationLink for that.",
+      "variants": [
+        { "name": "variant", "type": "enum", "values": ["primary", "secondary", "danger", "ghost"] },
+        { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+      ],
+      "antiPatterns": [
+        { "pattern": "Button{}.padding(16).background(Color.blue)", "reason": "re-invents the style, drifts from tokens", "correctAlternative": "DSButton(\"…\"){ }.dsButtonStyle(.primary)", "severity": "must-not" }
+      ],
+      "tokenMap": { "all": ["button.radius", "button.paddingX", "size.control.md", "type.label"] },
+      "swift": { "construct": "DSButton(_:action:)", "style": "DSButtonStyle", "source": "reference/swiftui/DS/Components/DSButton.swift" }
+    },
+    {
+      "id": "crd-web-0001", "logicalId": "card", "platform": "web",
+      "canonicalName": "Card",
+      "intentKeywords": ["card", "panel", "surface", "container", "tile", "box", "section"],
+      "category": "card",
+      "purposeStatement": "A bounded surface that groups related content with consistent inset, radius, and elevation.",
+      "variants": [{ "name": "variant", "type": "enum", "values": ["default", "elevated"] }],
+      "antiPatterns": [{ "pattern": "<div> with inline padding/border-radius/box-shadow", "reason": "re-invents the card surface", "correctAlternative": "<Card>", "severity": "must-not" }],
+      "tokenMap": { "all": ["card.radius", "card.padding", "card.bg", "card.border"], "elevated": ["shadow.md"] },
+      "web": { "importName": "Card", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Card.tsx", "type": "component" }] }
+    },
+    {
+      "id": "crd-swift-0001", "logicalId": "card", "platform": "swift",
+      "canonicalName": "dsCard",
+      "intentKeywords": ["card", "panel", "surface", "container", "tile", "box", "section"],
+      "category": "card",
+      "purposeStatement": "A bounded surface modifier applying token inset, radius, and elevation.",
+      "variants": [{ "name": "variant", "type": "enum", "values": ["default", "elevated"] }],
+      "antiPatterns": [{ "pattern": ".padding(16).background(Color.white).cornerRadius(16)", "reason": "re-invents the card surface", "correctAlternative": ".dsCard()", "severity": "must-not" }],
+      "tokenMap": { "all": ["card.radius", "card.padding", "card.bg"] },
+      "swift": { "construct": ".dsCard(_:)", "source": "reference/swiftui/DS/Components/DSCard.swift" }
+    },
+    {
+      "id": "bdg-web-0001", "logicalId": "badge", "platform": "web",
+      "canonicalName": "Badge",
+      "intentKeywords": ["badge", "tag", "chip", "status", "pill", "label", "count"],
+      "category": "badge",
+      "purposeStatement": "A small inline status/label pill.",
+      "variants": [{ "name": "tone", "type": "enum", "values": ["neutral", "success", "warning", "danger", "info"] }],
+      "antiPatterns": [{ "pattern": "<span> with inline background + border-radius:999px", "reason": "re-invents the badge", "correctAlternative": "<Badge tone>", "severity": "must-not" }],
+      "tokenMap": { "all": ["badge.radius", "badge.paddingX", "type.caption"], "success": ["color.status.success", "color.status.successBg"] },
+      "web": { "importName": "Badge", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Badge.tsx", "type": "component" }] }
+    },
+    {
+      "id": "bdg-swift-0001", "logicalId": "badge", "platform": "swift",
+      "canonicalName": "DSBadge",
+      "intentKeywords": ["badge", "tag", "chip", "status", "pill", "label", "count"],
+      "category": "badge",
+      "purposeStatement": "A small inline status/label pill.",
+      "variants": [{ "name": "tone", "type": "enum", "values": ["neutral", "success", "warning", "danger", "info"] }],
+      "antiPatterns": [],
+      "tokenMap": { "all": ["badge.radius", "badge.paddingX", "type.caption"] },
+      "swift": { "construct": "DSBadge(_:tone:)", "source": "reference/swiftui/DS/Components/DSBadge.swift" }
+    },
+    {
+      "id": "inp-web-0001", "logicalId": "input", "platform": "web",
+      "canonicalName": "TextField",
+      "intentKeywords": ["input", "field", "text", "form", "entry", "email", "password", "search"],
+      "category": "input",
+      "purposeStatement": "A single-line text input with consistent height, radius, border, and focus ring.",
+      "variants": [{ "name": "state", "type": "enum", "values": ["default", "error", "disabled"] }],
+      "antiPatterns": [{ "pattern": "<input> with inline height/border/padding", "reason": "re-invents the field, loses focus ring", "correctAlternative": "<TextField>", "severity": "must-not" }],
+      "tokenMap": { "all": ["input.height", "input.radius", "input.paddingX", "color.border.default", "color.border.focus", "type.body"] },
+      "web": { "importName": "TextField", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/TextField.tsx", "type": "component" }] }
+    },
+    {
+      "id": "inp-swift-0001", "logicalId": "input", "platform": "swift",
+      "canonicalName": "DSTextField",
+      "intentKeywords": ["input", "field", "text", "form", "entry", "email", "password", "search"],
+      "category": "input",
+      "purposeStatement": "A single-line text input with consistent height, radius, border, and focus ring.",
+      "variants": [{ "name": "state", "type": "enum", "values": ["default", "error", "disabled"] }],
+      "antiPatterns": [],
+      "tokenMap": { "all": ["input.height", "input.radius", "input.paddingX", "color.border.default", "type.body"] },
+      "swift": { "construct": "DSTextField(_:text:)", "source": "reference/swiftui/DS/Components/DSTextField.swift" }
+    },
+    {
+      "id": "txt-web-0001", "logicalId": "text", "platform": "web",
+      "canonicalName": "Text",
+      "intentKeywords": ["text", "typography", "label", "heading", "title", "body", "copy", "caption", "paragraph"],
+      "category": "text",
+      "purposeStatement": "Renders text at a registered typography preset. The only sanctioned way to set type.",
+      "variants": [{ "name": "variant", "type": "enum", "values": ["display", "heading", "title", "body", "label", "caption"] }, { "name": "color", "type": "enum", "values": ["primary", "secondary", "muted", "onAction"] }],
+      "antiPatterns": [{ "pattern": "inline font-size / font-weight / line-height", "reason": "bypasses typography presets, fragments the type scale", "correctAlternative": "<Text variant>", "severity": "must-not" }],
+      "tokenMap": { "display": ["type.display"], "heading": ["type.heading"], "title": ["type.title"], "body": ["type.body"], "label": ["type.label"], "caption": ["type.caption"] },
+      "web": { "importName": "Text", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Text.tsx", "type": "component" }] }
+    },
+    {
+      "id": "txt-swift-0001", "logicalId": "text", "platform": "swift",
+      "canonicalName": "DSText",
+      "intentKeywords": ["text", "typography", "label", "heading", "title", "body", "copy", "caption", "paragraph"],
+      "category": "text",
+      "purposeStatement": "Renders text at a registered typography preset via .dsType(_).",
+      "variants": [{ "name": "variant", "type": "enum", "values": ["display", "heading", "title", "body", "label", "caption"] }],
+      "antiPatterns": [{ "pattern": ".font(.system(size: 14))", "reason": "bypasses typography presets", "correctAlternative": "DSText(\"…\", .body) or .dsType(.body)", "severity": "must-not" }],
+      "tokenMap": { "body": ["type.body"] },
+      "swift": { "construct": "DSText(_:_:)", "modifier": ".dsType(_:)", "source": "reference/swiftui/DS/Components/DSText.swift" }
+    },
+    {
+      "id": "stk-web-0001", "logicalId": "stack", "platform": "web",
+      "canonicalName": "Stack",
+      "intentKeywords": ["stack", "layout", "row", "column", "flex", "spacing", "gap", "group", "vstack", "hstack"],
+      "category": "layout",
+      "purposeStatement": "Flex layout primitive whose gap MUST be a spacing token — the main defense against ad-hoc margins.",
+      "variants": [{ "name": "direction", "type": "enum", "values": ["row", "column"] }, { "name": "gap", "type": "tokenEnum", "values": ["none", "xs", "sm", "md", "lg", "xl"] }, { "name": "align", "type": "enum", "values": ["start", "center", "end", "stretch"] }],
+      "antiPatterns": [{ "pattern": "<div style={{display:'flex', gap:'12px'}}>", "reason": "raw gap literal drifts the spacing scale", "correctAlternative": "<Stack gap=\"md\">", "severity": "must-not" }],
+      "tokenMap": { "all": ["space.xs", "space.sm", "space.md", "space.lg", "space.xl"] },
+      "web": { "importName": "Stack", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Stack.tsx", "type": "component" }] }
+    },
+    {
+      "id": "stk-swift-0001", "logicalId": "stack", "platform": "swift",
+      "canonicalName": "DSStack",
+      "intentKeywords": ["stack", "layout", "row", "column", "spacing", "gap", "group", "vstack", "hstack"],
+      "category": "layout",
+      "purposeStatement": "VStack/HStack wrapper whose spacing MUST be a DS.Spacing token.",
+      "variants": [{ "name": "axis", "type": "enum", "values": ["horizontal", "vertical"] }, { "name": "gap", "type": "tokenEnum", "values": ["none", "xs", "sm", "md", "lg", "xl"] }],
+      "antiPatterns": [{ "pattern": "VStack(spacing: 12)", "reason": "raw spacing literal", "correctAlternative": "DSStack(.vertical, gap: .md) or VStack(spacing: DS.Spacing.md)", "severity": "should-not" }],
+      "tokenMap": { "all": ["space.xs", "space.sm", "space.md", "space.lg", "space.xl"] },
+      "swift": { "construct": "DSStack(_:gap:)", "source": "reference/swiftui/DS/Components/DSStack.swift" }
+    },
+    {
+      "id": "swt-web-0001", "logicalId": "switch", "platform": "web",
+      "canonicalName": "Switch",
+      "intentKeywords": ["switch", "toggle", "on", "off", "boolean", "enable", "setting"],
+      "category": "control",
+      "purposeStatement": "Binary on/off control with token-driven track/thumb colors.",
+      "variants": [{ "name": "size", "type": "enum", "values": ["sm", "md"] }],
+      "antiPatterns": [{ "pattern": "hand-built checkbox styled as a toggle", "reason": "re-invents the control + loses a11y", "correctAlternative": "<Switch>", "severity": "must-not" }],
+      "tokenMap": { "all": ["color.action.primary", "color.bg.muted", "radius.pill"] },
+      "web": { "importName": "Switch", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Switch.tsx", "type": "component" }] }
+    },
+    {
+      "id": "avt-web-0001", "logicalId": "avatar", "platform": "web",
+      "canonicalName": "Avatar",
+      "intentKeywords": ["avatar", "profile", "user", "image", "photo", "initials", "picture"],
+      "category": "media",
+      "purposeStatement": "Circular user image/initials at registered sizes.",
+      "variants": [{ "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }],
+      "antiPatterns": [{ "pattern": "<img> with inline border-radius:50% and ad-hoc width", "reason": "re-invents avatar sizing", "correctAlternative": "<Avatar size>", "severity": "should-not" }],
+      "tokenMap": { "all": ["radius.pill", "size.control.sm", "size.control.md", "size.control.lg"] },
+      "web": { "importName": "Avatar", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Avatar.tsx", "type": "component" }] }
+    }
+  ],
+
+  "platforms": {
+    "web": {
+      "target": "css-vars + ts-token-helper (+ tailwind v4 @theme, unscored)",
+      "transforms": [
+        { "match": "*", "rule": "cssVar = '--' + id, with each dot→'-' and camelCase→kebab. e.g. color.action.primary → --color-action-primary; fontSize.md → --font-size-md; space.md → --space-md" },
+        { "match": "color|dimension|fontWeight|number", "rule": "scalar tokens become a CSS custom property and a `token.<path>` accessor that returns 'var(--…)'" },
+        { "match": "typography", "rule": "composite → applied via <Text variant>; not a single var" },
+        { "match": "shadow", "rule": "composite → single --shadow-<name> css var with the assembled box-shadow string" }
+      ],
+      "tokenReferenceForms": ["var(--<cssVar>)", "token.<dotPath>", "<Text variant=…> (typography)"]
+    },
+    "swift": {
+      "target": "DS enum namespace + Asset Catalog colors + ShapeStyle/Font extensions",
+      "transforms": [
+        { "match": "space.*",      "rule": "DS.Spacing.<seg2>  (e.g. space.md → DS.Spacing.md)" },
+        { "match": "radius.*",     "rule": "DS.Radius.<seg2>" },
+        { "match": "size.control.*", "rule": "DS.Size.control<Cap seg3>  (size.control.md → DS.Size.controlMd)" },
+        { "match": "size.icon.*",  "rule": "DS.Size.icon<Cap seg3>" },
+        { "match": "fontSize.*",   "rule": "DS.FontSize.<seg2>" },
+        { "match": "borderWidth.*", "rule": "DS.BorderWidth.<seg2>" },
+        { "match": "color.*",      "rule": "Color.ds<CamelCase of remaining segments>  (color.action.primary → Color.dsActionPrimary)" },
+        { "match": "type.*",       "rule": "applied via .dsType(.<seg2>) modifier or Font.ds<Cap seg2>" },
+        { "match": "shadow.*",     "rule": "applied via .dsShadow(.<seg2>) modifier" }
+      ],
+      "tokenReferenceForms": ["DS.<Group>.<member>", "Color.ds<Name>", ".dsType(.<preset>)", ".dsShadow(.<name>)"]
+    }
+  },
+
+  "indices": {
+    "byCategory": {},
+    "byIntent": {},
+    "byLogicalId": {},
+    "note": "Populated by `node harness/manifest-tools.js index`; kept out of source to avoid merge churn."
+  },
+
+  "decisionLog": []
+}

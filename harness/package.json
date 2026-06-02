@@ -1,0 +1,17 @@
+{
+  "name": "design-consistency-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic scorer + runner for measuring AI design-system consistency",
+  "scripts": {
+    "score": "node scorer/score.js",
+    "test": "node scorer/score.test.js"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.29.7",
+    "@babel/traverse": "^7.29.7",
+    "postcss": "^8.5.15",
+    "postcss-scss": "^4.0.9"
+  }
+}
