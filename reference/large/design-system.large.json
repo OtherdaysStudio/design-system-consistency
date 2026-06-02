@@ -1,0 +1,3936 @@
+{
+  "$schema": "https://design-tokens.org/dtcg-superset/v1",
+  "manifestVersion": "1.0",
+  "metadata": {
+    "name": "Aperture DS (Large)",
+    "version": "1.0.0",
+    "lastUpdated": "2026-06-02",
+    "lastUpdatedBy": "framework-bootstrap",
+    "sourceOfTruth": "reference/design-system.json",
+    "namingConvention": {
+      "tokenId": "dot.path.flat — kebab segments, camelCase preserved within a segment",
+      "componentName": "PascalCase; category template {category}/{variant}/{modifiers}",
+      "idRule": "sha1(normalizedIntentKeywords + signatureFingerprint + platform)[:12]; logicalId omits platform"
+    },
+    "componentCount": 111
+  },
+  "tokens": {
+    "primitives": {
+      "color": {
+        "neutral.0": {
+          "$value": "#ffffff",
+          "$type": "color",
+          "$description": "Pure white; canvas/surface base in light mode"
+        },
+        "neutral.50": {
+          "$value": "#f6f7f9",
+          "$type": "color",
+          "$description": "App canvas background"
+        },
+        "neutral.100": {
+          "$value": "#eceef2",
+          "$type": "color",
+          "$description": "Muted/secondary surface"
+        },
+        "neutral.200": {
+          "$value": "#dde1e8",
+          "$type": "color",
+          "$description": "Default hairline borders"
+        },
+        "neutral.300": {
+          "$value": "#c1c8d4",
+          "$type": "color",
+          "$description": "Strong borders, dividers"
+        },
+        "neutral.400": {
+          "$value": "#97a1b2",
+          "$type": "color",
+          "$description": "Muted text, placeholders"
+        },
+        "neutral.500": {
+          "$value": "#6b7585",
+          "$type": "color",
+          "$description": "Secondary text"
+        },
+        "neutral.700": {
+          "$value": "#3c4350",
+          "$type": "color",
+          "$description": "High-contrast secondary"
+        },
+        "neutral.900": {
+          "$value": "#171b23",
+          "$type": "color",
+          "$description": "Primary text, inverse surface"
+        },
+        "blue.100": {
+          "$value": "#e7efff",
+          "$type": "color",
+          "$description": "Info tint background"
+        },
+        "blue.500": {
+          "$value": "#2f6df6",
+          "$type": "color",
+          "$description": "Brand primary action"
+        },
+        "blue.600": {
+          "$value": "#1f57d6",
+          "$type": "color",
+          "$description": "Primary action hover/pressed"
+        },
+        "red.100": {
+          "$value": "#fdeaea",
+          "$type": "color",
+          "$description": "Danger tint background"
+        },
+        "red.500": {
+          "$value": "#e5484d",
+          "$type": "color",
+          "$description": "Danger/destructive action"
+        },
+        "red.600": {
+          "$value": "#c93b40",
+          "$type": "color",
+          "$description": "Danger hover/pressed"
+        },
+        "green.100": {
+          "$value": "#e6f6ee",
+          "$type": "color",
+          "$description": "Success tint background"
+        },
+        "green.500": {
+          "$value": "#2fa46b",
+          "$type": "color",
+          "$description": "Success status"
+        },
+        "amber.100": {
+          "$value": "#fdf1dc",
+          "$type": "color",
+          "$description": "Warning tint background"
+        },
+        "amber.500": {
+          "$value": "#e8920c",
+          "$type": "color",
+          "$description": "Warning status"
+        },
+        "alpha.shadow": {
+          "$value": "rgba(20,24,33,0.16)",
+          "$type": "color",
+          "$description": "Elevation shadow color"
+        }
+      },
+      "space": {
+        "space.none": {
+          "$value": "0px",
+          "$type": "dimension",
+          "$description": "Zero spacing"
+        },
+        "space.xs": {
+          "$value": "4px",
+          "$type": "dimension",
+          "$description": "Tightest gap (icon-to-text)"
+        },
+        "space.sm": {
+          "$value": "8px",
+          "$type": "dimension",
+          "$description": "Compact gap"
+        },
+        "space.md": {
+          "$value": "16px",
+          "$type": "dimension",
+          "$description": "Default inset/gap"
+        },
+        "space.lg": {
+          "$value": "24px",
+          "$type": "dimension",
+          "$description": "Section inset"
+        },
+        "space.xl": {
+          "$value": "32px",
+          "$type": "dimension",
+          "$description": "Large section gap"
+        },
+        "space.xxl": {
+          "$value": "48px",
+          "$type": "dimension",
+          "$description": "Page-level gap"
+        },
+        "space.xxxl": {
+          "$value": "64px",
+          "$type": "dimension",
+          "$description": "Hero spacing"
+        }
+      },
+      "radius": {
+        "radius.sm": {
+          "$value": "6px",
+          "$type": "dimension",
+          "$description": "Inputs, small chips"
+        },
+        "radius.md": {
+          "$value": "10px",
+          "$type": "dimension",
+          "$description": "Buttons, default controls"
+        },
+        "radius.lg": {
+          "$value": "16px",
+          "$type": "dimension",
+          "$description": "Cards, sheets"
+        },
+        "radius.pill": {
+          "$value": "999px",
+          "$type": "dimension",
+          "$description": "Pills, badges, avatars"
+        }
+      },
+      "size": {
+        "size.control.sm": {
+          "$value": "32px",
+          "$type": "dimension",
+          "$description": "Small control height"
+        },
+        "size.control.md": {
+          "$value": "40px",
+          "$type": "dimension",
+          "$description": "Default control height"
+        },
+        "size.control.lg": {
+          "$value": "48px",
+          "$type": "dimension",
+          "$description": "Large control height"
+        },
+        "size.icon.sm": {
+          "$value": "16px",
+          "$type": "dimension",
+          "$description": "Small icon"
+        },
+        "size.icon.md": {
+          "$value": "20px",
+          "$type": "dimension",
+          "$description": "Default icon"
+        },
+        "size.icon.lg": {
+          "$value": "24px",
+          "$type": "dimension",
+          "$description": "Large icon"
+        }
+      },
+      "fontSize": {
+        "fontSize.xs": {
+          "$value": "12px",
+          "$type": "dimension",
+          "$description": "Caption"
+        },
+        "fontSize.sm": {
+          "$value": "14px",
+          "$type": "dimension",
+          "$description": "Label, dense body"
+        },
+        "fontSize.md": {
+          "$value": "16px",
+          "$type": "dimension",
+          "$description": "Body"
+        },
+        "fontSize.lg": {
+          "$value": "20px",
+          "$type": "dimension",
+          "$description": "Title"
+        },
+        "fontSize.xl": {
+          "$value": "28px",
+          "$type": "dimension",
+          "$description": "Heading"
+        },
+        "fontSize.xxl": {
+          "$value": "36px",
+          "$type": "dimension",
+          "$description": "Display"
+        }
+      },
+      "fontWeight": {
+        "fontWeight.regular": {
+          "$value": "400",
+          "$type": "fontWeight",
+          "$description": "Body weight"
+        },
+        "fontWeight.medium": {
+          "$value": "500",
+          "$type": "fontWeight",
+          "$description": "Labels"
+        },
+        "fontWeight.semibold": {
+          "$value": "600",
+          "$type": "fontWeight",
+          "$description": "Titles, headings"
+        },
+        "fontWeight.bold": {
+          "$value": "700",
+          "$type": "fontWeight",
+          "$description": "Display"
+        }
+      },
+      "lineHeight": {
+        "lineHeight.tight": {
+          "$value": "1.2",
+          "$type": "number",
+          "$description": "Headings"
+        },
+        "lineHeight.snug": {
+          "$value": "1.35",
+          "$type": "number",
+          "$description": "Titles"
+        },
+        "lineHeight.normal": {
+          "$value": "1.5",
+          "$type": "number",
+          "$description": "Body copy"
+        }
+      },
+      "borderWidth": {
+        "borderWidth.thin": {
+          "$value": "1px",
+          "$type": "dimension",
+          "$description": "Default border"
+        },
+        "borderWidth.thick": {
+          "$value": "2px",
+          "$type": "dimension",
+          "$description": "Focus ring, emphasis"
+        }
+      },
+      "motion": {
+        "duration.fast": {
+          "$value": "120ms",
+          "$type": "duration",
+          "$description": "Hover/press feedback"
+        },
+        "duration.base": {
+          "$value": "200ms",
+          "$type": "duration",
+          "$description": "Default transition"
+        },
+        "duration.slow": {
+          "$value": "320ms",
+          "$type": "duration",
+          "$description": "Sheet/overlay reveal"
+        },
+        "easing.standard": {
+          "$value": "cubic-bezier(0.2, 0, 0, 1)",
+          "$type": "cubicBezier",
+          "$description": "Standard ease"
+        }
+      }
+    },
+    "semantic": {
+      "color.bg.canvas": {
+        "$value": "{neutral.50}",
+        "$type": "color",
+        "$description": "App background behind surfaces"
+      },
+      "color.bg.surface": {
+        "$value": "{neutral.0}",
+        "$type": "color",
+        "$description": "Card/sheet/control surface"
+      },
+      "color.bg.muted": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Secondary surface, hovered rows"
+      },
+      "color.bg.inverse": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Inverted surface (tooltips)"
+      },
+      "color.text.primary": {
+        "$value": "{neutral.900}",
+        "$type": "color",
+        "$description": "Primary reading text"
+      },
+      "color.text.secondary": {
+        "$value": "{neutral.500}",
+        "$type": "color",
+        "$description": "Supporting text"
+      },
+      "color.text.muted": {
+        "$value": "{neutral.400}",
+        "$type": "color",
+        "$description": "Placeholder, disabled text"
+      },
+      "color.text.onAction": {
+        "$value": "{neutral.0}",
+        "$type": "color",
+        "$description": "Text on primary/danger fills"
+      },
+      "color.action.primary": {
+        "$value": "{blue.500}",
+        "$type": "color",
+        "$description": "Primary CTA fill; AA on onAction"
+      },
+      "color.action.primaryHover": {
+        "$value": "{blue.600}",
+        "$type": "color",
+        "$description": "Primary CTA hover/pressed"
+      },
+      "color.action.secondary": {
+        "$value": "{neutral.100}",
+        "$type": "color",
+        "$description": "Secondary button fill"
+      },
+      "color.action.secondaryHover": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Secondary/ghost hover"
+      },
+      "color.action.danger": {
+        "$value": "{red.500}",
+        "$type": "color",
+        "$description": "Destructive CTA fill"
+      },
+      "color.action.dangerHover": {
+        "$value": "{red.600}",
+        "$type": "color",
+        "$description": "Destructive hover/pressed"
+      },
+      "color.border.default": {
+        "$value": "{neutral.200}",
+        "$type": "color",
+        "$description": "Hairline borders"
+      },
+      "color.border.strong": {
+        "$value": "{neutral.300}",
+        "$type": "color",
+        "$description": "Emphasized dividers"
+      },
+      "color.border.focus": {
+        "$value": "{blue.500}",
+        "$type": "color",
+        "$description": "Focus ring"
+      },
+      "color.status.success": {
+        "$value": "{green.500}",
+        "$type": "color",
+        "$description": "Success foreground"
+      },
+      "color.status.successBg": {
+        "$value": "{green.100}",
+        "$type": "color",
+        "$description": "Success background tint"
+      },
+      "color.status.warning": {
+        "$value": "{amber.500}",
+        "$type": "color",
+        "$description": "Warning foreground"
+      },
+      "color.status.warningBg": {
+        "$value": "{amber.100}",
+        "$type": "color",
+        "$description": "Warning background tint"
+      },
+      "color.status.danger": {
+        "$value": "{red.500}",
+        "$type": "color",
+        "$description": "Danger foreground"
+      },
+      "color.status.dangerBg": {
+        "$value": "{red.100}",
+        "$type": "color",
+        "$description": "Danger background tint"
+      },
+      "color.status.info": {
+        "$value": "{blue.500}",
+        "$type": "color",
+        "$description": "Info foreground"
+      },
+      "color.status.infoBg": {
+        "$value": "{blue.100}",
+        "$type": "color",
+        "$description": "Info background tint"
+      }
+    },
+    "composite": {
+      "type.display": {
+        "$type": "typography",
+        "$description": "Hero/marketing display",
+        "$value": {
+          "fontSize": "{fontSize.xxl}",
+          "fontWeight": "{fontWeight.bold}",
+          "lineHeight": "{lineHeight.tight}"
+        }
+      },
+      "type.heading": {
+        "$type": "typography",
+        "$description": "Page/section heading",
+        "$value": {
+          "fontSize": "{fontSize.xl}",
+          "fontWeight": "{fontWeight.semibold}",
+          "lineHeight": "{lineHeight.tight}"
+        }
+      },
+      "type.title": {
+        "$type": "typography",
+        "$description": "Card/group title",
+        "$value": {
+          "fontSize": "{fontSize.lg}",
+          "fontWeight": "{fontWeight.semibold}",
+          "lineHeight": "{lineHeight.snug}"
+        }
+      },
+      "type.body": {
+        "$type": "typography",
+        "$description": "Default body copy",
+        "$value": {
+          "fontSize": "{fontSize.md}",
+          "fontWeight": "{fontWeight.regular}",
+          "lineHeight": "{lineHeight.normal}"
+        }
+      },
+      "type.label": {
+        "$type": "typography",
+        "$description": "Form labels, button text",
+        "$value": {
+          "fontSize": "{fontSize.sm}",
+          "fontWeight": "{fontWeight.medium}",
+          "lineHeight": "{lineHeight.normal}"
+        }
+      },
+      "type.caption": {
+        "$type": "typography",
+        "$description": "Metadata, helper text",
+        "$value": {
+          "fontSize": "{fontSize.xs}",
+          "fontWeight": "{fontWeight.regular}",
+          "lineHeight": "{lineHeight.normal}"
+        }
+      },
+      "shadow.sm": {
+        "$type": "shadow",
+        "$description": "Subtle lift (chips, popovers)",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "2px",
+          "spread": "0px",
+          "color": "{alpha.shadow}"
+        }
+      },
+      "shadow.md": {
+        "$type": "shadow",
+        "$description": "Card elevation",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "6px",
+          "blur": "16px",
+          "spread": "-4px",
+          "color": "{alpha.shadow}"
+        }
+      },
+      "shadow.lg": {
+        "$type": "shadow",
+        "$description": "Modal/sheet elevation",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "16px",
+          "blur": "40px",
+          "spread": "-8px",
+          "color": "{alpha.shadow}"
+        }
+      },
+      "shadow.focus": {
+        "$type": "shadow",
+        "$description": "Keyboard focus ring",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "0px",
+          "blur": "0px",
+          "spread": "2px",
+          "color": "{color.border.focus}"
+        }
+      }
+    },
+    "component": {
+      "button.radius": {
+        "$value": "{radius.md}",
+        "$type": "dimension",
+        "$description": "Button corner radius"
+      },
+      "button.paddingX": {
+        "$value": "{space.md}",
+        "$type": "dimension",
+        "$description": "Button horizontal inset"
+      },
+      "button.gap": {
+        "$value": "{space.sm}",
+        "$type": "dimension",
+        "$description": "Icon-to-label gap"
+      },
+      "button.bg.primary": {
+        "$value": "{color.action.primary}",
+        "$type": "color",
+        "$description": "Primary button fill"
+      },
+      "button.fg.primary": {
+        "$value": "{color.text.onAction}",
+        "$type": "color",
+        "$description": "Primary button text"
+      },
+      "card.radius": {
+        "$value": "{radius.lg}",
+        "$type": "dimension",
+        "$description": "Card corner radius"
+      },
+      "card.padding": {
+        "$value": "{space.lg}",
+        "$type": "dimension",
+        "$description": "Card inset"
+      },
+      "card.bg": {
+        "$value": "{color.bg.surface}",
+        "$type": "color",
+        "$description": "Card surface"
+      },
+      "card.border": {
+        "$value": "{color.border.default}",
+        "$type": "color",
+        "$description": "Card hairline"
+      },
+      "input.height": {
+        "$value": "{size.control.md}",
+        "$type": "dimension",
+        "$description": "Text field height"
+      },
+      "input.radius": {
+        "$value": "{radius.md}",
+        "$type": "dimension",
+        "$description": "Text field radius"
+      },
+      "input.paddingX": {
+        "$value": "{space.md}",
+        "$type": "dimension",
+        "$description": "Text field inset"
+      },
+      "badge.radius": {
+        "$value": "{radius.pill}",
+        "$type": "dimension",
+        "$description": "Badge radius"
+      },
+      "badge.paddingX": {
+        "$value": "{space.sm}",
+        "$type": "dimension",
+        "$description": "Badge inset"
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "lg-0001",
+      "logicalId": "textfield",
+      "platform": "web",
+      "canonicalName": "TextField",
+      "category": "form",
+      "intentKeywords": [
+        "textfield",
+        "input",
+        "text",
+        "field"
+      ],
+      "purposeStatement": "TextField — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "TextField",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0002",
+      "logicalId": "textarea",
+      "platform": "web",
+      "canonicalName": "Textarea",
+      "category": "form",
+      "intentKeywords": [
+        "textarea",
+        "multiline",
+        "input",
+        "notes"
+      ],
+      "purposeStatement": "Textarea — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Textarea",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0003",
+      "logicalId": "select",
+      "platform": "web",
+      "canonicalName": "Select",
+      "category": "form",
+      "intentKeywords": [
+        "select",
+        "dropdown",
+        "options",
+        "choose"
+      ],
+      "purposeStatement": "Select — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Select",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0004",
+      "logicalId": "combobox",
+      "platform": "web",
+      "canonicalName": "Combobox",
+      "category": "form",
+      "intentKeywords": [
+        "combobox",
+        "autocomplete",
+        "search",
+        "select"
+      ],
+      "purposeStatement": "Combobox — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Combobox",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0005",
+      "logicalId": "checkbox",
+      "platform": "web",
+      "canonicalName": "Checkbox",
+      "category": "form",
+      "intentKeywords": [
+        "checkbox",
+        "check",
+        "boolean",
+        "agree"
+      ],
+      "purposeStatement": "Checkbox — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Checkbox",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0006",
+      "logicalId": "checkboxgroup",
+      "platform": "web",
+      "canonicalName": "CheckboxGroup",
+      "category": "form",
+      "intentKeywords": [
+        "checkboxgroup",
+        "multi",
+        "select",
+        "options"
+      ],
+      "purposeStatement": "CheckboxGroup — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "CheckboxGroup",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0007",
+      "logicalId": "radio",
+      "platform": "web",
+      "canonicalName": "Radio",
+      "category": "form",
+      "intentKeywords": [
+        "radio",
+        "single",
+        "choice"
+      ],
+      "purposeStatement": "Radio — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Radio",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0008",
+      "logicalId": "radiogroup",
+      "platform": "web",
+      "canonicalName": "RadioGroup",
+      "category": "form",
+      "intentKeywords": [
+        "radiogroup",
+        "options",
+        "single",
+        "choice"
+      ],
+      "purposeStatement": "RadioGroup — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "RadioGroup",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0009",
+      "logicalId": "switch",
+      "platform": "web",
+      "canonicalName": "Switch",
+      "category": "form",
+      "intentKeywords": [
+        "switch",
+        "toggle",
+        "on",
+        "off"
+      ],
+      "purposeStatement": "Switch — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Switch",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0010",
+      "logicalId": "slider",
+      "platform": "web",
+      "canonicalName": "Slider",
+      "category": "form",
+      "intentKeywords": [
+        "slider",
+        "range",
+        "drag",
+        "value"
+      ],
+      "purposeStatement": "Slider — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Slider",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0011",
+      "logicalId": "rangeslider",
+      "platform": "web",
+      "canonicalName": "RangeSlider",
+      "category": "form",
+      "intentKeywords": [
+        "rangeslider",
+        "min",
+        "max",
+        "range"
+      ],
+      "purposeStatement": "RangeSlider — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "RangeSlider",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0012",
+      "logicalId": "numberinput",
+      "platform": "web",
+      "canonicalName": "NumberInput",
+      "category": "form",
+      "intentKeywords": [
+        "numberinput",
+        "numeric",
+        "stepper",
+        "quantity"
+      ],
+      "purposeStatement": "NumberInput — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "NumberInput",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0013",
+      "logicalId": "pininput",
+      "platform": "web",
+      "canonicalName": "PinInput",
+      "category": "form",
+      "intentKeywords": [
+        "pininput",
+        "otp",
+        "code",
+        "verification"
+      ],
+      "purposeStatement": "PinInput — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "PinInput",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0014",
+      "logicalId": "datepicker",
+      "platform": "web",
+      "canonicalName": "DatePicker",
+      "category": "form",
+      "intentKeywords": [
+        "datepicker",
+        "calendar",
+        "date",
+        "schedule"
+      ],
+      "purposeStatement": "DatePicker — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "DatePicker",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0015",
+      "logicalId": "daterangepicker",
+      "platform": "web",
+      "canonicalName": "DateRangePicker",
+      "category": "form",
+      "intentKeywords": [
+        "daterangepicker",
+        "range",
+        "dates",
+        "period"
+      ],
+      "purposeStatement": "DateRangePicker — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "DateRangePicker",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0016",
+      "logicalId": "timepicker",
+      "platform": "web",
+      "canonicalName": "TimePicker",
+      "category": "form",
+      "intentKeywords": [
+        "timepicker",
+        "time",
+        "clock",
+        "hours"
+      ],
+      "purposeStatement": "TimePicker — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "TimePicker",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0017",
+      "logicalId": "colorpicker",
+      "platform": "web",
+      "canonicalName": "ColorPicker",
+      "category": "form",
+      "intentKeywords": [
+        "colorpicker",
+        "color",
+        "swatch",
+        "palette"
+      ],
+      "purposeStatement": "ColorPicker — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ColorPicker",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0018",
+      "logicalId": "fileupload",
+      "platform": "web",
+      "canonicalName": "FileUpload",
+      "category": "form",
+      "intentKeywords": [
+        "fileupload",
+        "file",
+        "dropzone",
+        "attach"
+      ],
+      "purposeStatement": "FileUpload — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "FileUpload",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0019",
+      "logicalId": "rating",
+      "platform": "web",
+      "canonicalName": "Rating",
+      "category": "form",
+      "intentKeywords": [
+        "rating",
+        "stars",
+        "score",
+        "review"
+      ],
+      "purposeStatement": "Rating — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Rating",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0020",
+      "logicalId": "taginput",
+      "platform": "web",
+      "canonicalName": "TagInput",
+      "category": "form",
+      "intentKeywords": [
+        "taginput",
+        "tags",
+        "chips",
+        "tokens"
+      ],
+      "purposeStatement": "TagInput — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "TagInput",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0021",
+      "logicalId": "label",
+      "platform": "web",
+      "canonicalName": "Label",
+      "category": "form",
+      "intentKeywords": [
+        "label",
+        "caption",
+        "field",
+        "name"
+      ],
+      "purposeStatement": "Label — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Label",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0022",
+      "logicalId": "formfield",
+      "platform": "web",
+      "canonicalName": "FormField",
+      "category": "form",
+      "intentKeywords": [
+        "formfield",
+        "wrapper",
+        "label",
+        "error"
+      ],
+      "purposeStatement": "FormField — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "FormField",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0023",
+      "logicalId": "fieldset",
+      "platform": "web",
+      "canonicalName": "Fieldset",
+      "category": "form",
+      "intentKeywords": [
+        "fieldset",
+        "group",
+        "form",
+        "section"
+      ],
+      "purposeStatement": "Fieldset — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Fieldset",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0024",
+      "logicalId": "searchinput",
+      "platform": "web",
+      "canonicalName": "SearchInput",
+      "category": "form",
+      "intentKeywords": [
+        "searchinput",
+        "search",
+        "query",
+        "find"
+      ],
+      "purposeStatement": "SearchInput — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "SearchInput",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0025",
+      "logicalId": "passwordinput",
+      "platform": "web",
+      "canonicalName": "PasswordInput",
+      "category": "form",
+      "intentKeywords": [
+        "passwordinput",
+        "password",
+        "secret",
+        "masked"
+      ],
+      "purposeStatement": "PasswordInput — form component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "PasswordInput",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0026",
+      "logicalId": "button",
+      "platform": "web",
+      "canonicalName": "Button",
+      "category": "action",
+      "intentKeywords": [
+        "button",
+        "action",
+        "submit",
+        "cta"
+      ],
+      "purposeStatement": "Button — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Button",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0027",
+      "logicalId": "iconbutton",
+      "platform": "web",
+      "canonicalName": "IconButton",
+      "category": "action",
+      "intentKeywords": [
+        "iconbutton",
+        "icon",
+        "action",
+        "compact"
+      ],
+      "purposeStatement": "IconButton — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "IconButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0028",
+      "logicalId": "buttongroup",
+      "platform": "web",
+      "canonicalName": "ButtonGroup",
+      "category": "action",
+      "intentKeywords": [
+        "buttongroup",
+        "segmented",
+        "actions",
+        "group"
+      ],
+      "purposeStatement": "ButtonGroup — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ButtonGroup",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0029",
+      "logicalId": "splitbutton",
+      "platform": "web",
+      "canonicalName": "SplitButton",
+      "category": "action",
+      "intentKeywords": [
+        "splitbutton",
+        "dropdown",
+        "action",
+        "menu"
+      ],
+      "purposeStatement": "SplitButton — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "SplitButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0030",
+      "logicalId": "togglebutton",
+      "platform": "web",
+      "canonicalName": "ToggleButton",
+      "category": "action",
+      "intentKeywords": [
+        "togglebutton",
+        "toggle",
+        "pressed",
+        "state"
+      ],
+      "purposeStatement": "ToggleButton — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ToggleButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0031",
+      "logicalId": "fab",
+      "platform": "web",
+      "canonicalName": "FAB",
+      "category": "action",
+      "intentKeywords": [
+        "fab",
+        "floating",
+        "action",
+        "primary"
+      ],
+      "purposeStatement": "FAB — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "FAB",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0032",
+      "logicalId": "copybutton",
+      "platform": "web",
+      "canonicalName": "CopyButton",
+      "category": "action",
+      "intentKeywords": [
+        "copybutton",
+        "copy",
+        "clipboard",
+        "duplicate"
+      ],
+      "purposeStatement": "CopyButton — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "CopyButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0033",
+      "logicalId": "linkbutton",
+      "platform": "web",
+      "canonicalName": "LinkButton",
+      "category": "action",
+      "intentKeywords": [
+        "linkbutton",
+        "link",
+        "navigate",
+        "anchor"
+      ],
+      "purposeStatement": "LinkButton — action component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "LinkButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0034",
+      "logicalId": "tabs",
+      "platform": "web",
+      "canonicalName": "Tabs",
+      "category": "navigation",
+      "intentKeywords": [
+        "tabs",
+        "tab",
+        "switch",
+        "sections"
+      ],
+      "purposeStatement": "Tabs — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Tabs",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0035",
+      "logicalId": "segmentedcontrol",
+      "platform": "web",
+      "canonicalName": "SegmentedControl",
+      "category": "navigation",
+      "intentKeywords": [
+        "segmentedcontrol",
+        "segmented",
+        "switcher",
+        "toggle"
+      ],
+      "purposeStatement": "SegmentedControl — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "SegmentedControl",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0036",
+      "logicalId": "breadcrumb",
+      "platform": "web",
+      "canonicalName": "Breadcrumb",
+      "category": "navigation",
+      "intentKeywords": [
+        "breadcrumb",
+        "trail",
+        "path",
+        "hierarchy"
+      ],
+      "purposeStatement": "Breadcrumb — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Breadcrumb",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0037",
+      "logicalId": "pagination",
+      "platform": "web",
+      "canonicalName": "Pagination",
+      "category": "navigation",
+      "intentKeywords": [
+        "pagination",
+        "pages",
+        "next",
+        "prev"
+      ],
+      "purposeStatement": "Pagination — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Pagination",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0038",
+      "logicalId": "menu",
+      "platform": "web",
+      "canonicalName": "Menu",
+      "category": "navigation",
+      "intentKeywords": [
+        "menu",
+        "dropdown",
+        "actions",
+        "list"
+      ],
+      "purposeStatement": "Menu — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Menu",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0039",
+      "logicalId": "navbar",
+      "platform": "web",
+      "canonicalName": "Navbar",
+      "category": "navigation",
+      "intentKeywords": [
+        "navbar",
+        "header",
+        "top",
+        "navigation"
+      ],
+      "purposeStatement": "Navbar — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Navbar",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0040",
+      "logicalId": "sidebar",
+      "platform": "web",
+      "canonicalName": "Sidebar",
+      "category": "navigation",
+      "intentKeywords": [
+        "sidebar",
+        "side",
+        "nav",
+        "drawer"
+      ],
+      "purposeStatement": "Sidebar — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Sidebar",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0041",
+      "logicalId": "stepper",
+      "platform": "web",
+      "canonicalName": "Stepper",
+      "category": "navigation",
+      "intentKeywords": [
+        "stepper",
+        "wizard",
+        "steps",
+        "progress"
+      ],
+      "purposeStatement": "Stepper — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Stepper",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0042",
+      "logicalId": "bottomnav",
+      "platform": "web",
+      "canonicalName": "BottomNav",
+      "category": "navigation",
+      "intentKeywords": [
+        "bottomnav",
+        "tabbar",
+        "mobile",
+        "bottom"
+      ],
+      "purposeStatement": "BottomNav — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "BottomNav",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0043",
+      "logicalId": "commandpalette",
+      "platform": "web",
+      "canonicalName": "CommandPalette",
+      "category": "navigation",
+      "intentKeywords": [
+        "commandpalette",
+        "command",
+        "search",
+        "shortcut"
+      ],
+      "purposeStatement": "CommandPalette — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "CommandPalette",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0044",
+      "logicalId": "anchor",
+      "platform": "web",
+      "canonicalName": "Anchor",
+      "category": "navigation",
+      "intentKeywords": [
+        "anchor",
+        "link",
+        "jump",
+        "section"
+      ],
+      "purposeStatement": "Anchor — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Anchor",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0045",
+      "logicalId": "backbutton",
+      "platform": "web",
+      "canonicalName": "BackButton",
+      "category": "navigation",
+      "intentKeywords": [
+        "backbutton",
+        "back",
+        "return",
+        "previous"
+      ],
+      "purposeStatement": "BackButton — navigation component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "BackButton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0046",
+      "logicalId": "card",
+      "platform": "web",
+      "canonicalName": "Card",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "card",
+        "panel",
+        "surface",
+        "container"
+      ],
+      "purposeStatement": "Card — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Card",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0047",
+      "logicalId": "table",
+      "platform": "web",
+      "canonicalName": "Table",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "table",
+        "rows",
+        "columns",
+        "grid"
+      ],
+      "purposeStatement": "Table — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Table",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0048",
+      "logicalId": "datagrid",
+      "platform": "web",
+      "canonicalName": "DataGrid",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "datagrid",
+        "spreadsheet",
+        "editable",
+        "table"
+      ],
+      "purposeStatement": "DataGrid — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "DataGrid",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0049",
+      "logicalId": "list",
+      "platform": "web",
+      "canonicalName": "List",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "list",
+        "items",
+        "vertical",
+        "collection"
+      ],
+      "purposeStatement": "List — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "List",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0050",
+      "logicalId": "listitem",
+      "platform": "web",
+      "canonicalName": "ListItem",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "listitem",
+        "row",
+        "entry",
+        "item"
+      ],
+      "purposeStatement": "ListItem — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ListItem",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0051",
+      "logicalId": "badge",
+      "platform": "web",
+      "canonicalName": "Badge",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "badge",
+        "tag",
+        "status",
+        "pill"
+      ],
+      "purposeStatement": "Badge — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Badge",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0052",
+      "logicalId": "tag",
+      "platform": "web",
+      "canonicalName": "Tag",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "tag",
+        "chip",
+        "label",
+        "keyword"
+      ],
+      "purposeStatement": "Tag — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Tag",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0053",
+      "logicalId": "avatar",
+      "platform": "web",
+      "canonicalName": "Avatar",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "avatar",
+        "profile",
+        "user",
+        "photo"
+      ],
+      "purposeStatement": "Avatar — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Avatar",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0054",
+      "logicalId": "avatargroup",
+      "platform": "web",
+      "canonicalName": "AvatarGroup",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "avatargroup",
+        "avatars",
+        "stack",
+        "team"
+      ],
+      "purposeStatement": "AvatarGroup — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "AvatarGroup",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0055",
+      "logicalId": "stat",
+      "platform": "web",
+      "canonicalName": "Stat",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "stat",
+        "metric",
+        "kpi",
+        "number"
+      ],
+      "purposeStatement": "Stat — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Stat",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0056",
+      "logicalId": "statsparkline",
+      "platform": "web",
+      "canonicalName": "StatSparkline",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "statsparkline",
+        "sparkline",
+        "trend",
+        "mini"
+      ],
+      "purposeStatement": "StatSparkline — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "StatSparkline",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0057",
+      "logicalId": "timeline",
+      "platform": "web",
+      "canonicalName": "Timeline",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "timeline",
+        "history",
+        "events",
+        "chronology"
+      ],
+      "purposeStatement": "Timeline — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Timeline",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0058",
+      "logicalId": "tree",
+      "platform": "web",
+      "canonicalName": "Tree",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "tree",
+        "hierarchy",
+        "nested",
+        "expand"
+      ],
+      "purposeStatement": "Tree — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Tree",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0059",
+      "logicalId": "descriptionlist",
+      "platform": "web",
+      "canonicalName": "DescriptionList",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "descriptionlist",
+        "keyvalue",
+        "details",
+        "pairs"
+      ],
+      "purposeStatement": "DescriptionList — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "DescriptionList",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0060",
+      "logicalId": "code",
+      "platform": "web",
+      "canonicalName": "Code",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "code",
+        "snippet",
+        "monospace",
+        "inline"
+      ],
+      "purposeStatement": "Code — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Code",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0061",
+      "logicalId": "codeblock",
+      "platform": "web",
+      "canonicalName": "CodeBlock",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "codeblock",
+        "syntax",
+        "highlight",
+        "code"
+      ],
+      "purposeStatement": "CodeBlock — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "CodeBlock",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0062",
+      "logicalId": "kbd",
+      "platform": "web",
+      "canonicalName": "Kbd",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "kbd",
+        "key",
+        "shortcut",
+        "keyboard"
+      ],
+      "purposeStatement": "Kbd — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Kbd",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0063",
+      "logicalId": "calendar",
+      "platform": "web",
+      "canonicalName": "Calendar",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "calendar",
+        "month",
+        "days",
+        "events"
+      ],
+      "purposeStatement": "Calendar — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Calendar",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0064",
+      "logicalId": "chart",
+      "platform": "web",
+      "canonicalName": "Chart",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "chart",
+        "graph",
+        "plot",
+        "visualization"
+      ],
+      "purposeStatement": "Chart — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Chart",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0065",
+      "logicalId": "map",
+      "platform": "web",
+      "canonicalName": "Map",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "map",
+        "location",
+        "geo",
+        "pins"
+      ],
+      "purposeStatement": "Map — dataDisplay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Map",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0066",
+      "logicalId": "alert",
+      "platform": "web",
+      "canonicalName": "Alert",
+      "category": "feedback",
+      "intentKeywords": [
+        "alert",
+        "warning",
+        "error",
+        "notice"
+      ],
+      "purposeStatement": "Alert — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Alert",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0067",
+      "logicalId": "toast",
+      "platform": "web",
+      "canonicalName": "Toast",
+      "category": "feedback",
+      "intentKeywords": [
+        "toast",
+        "notification",
+        "snackbar",
+        "transient"
+      ],
+      "purposeStatement": "Toast — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Toast",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0068",
+      "logicalId": "banner",
+      "platform": "web",
+      "canonicalName": "Banner",
+      "category": "feedback",
+      "intentKeywords": [
+        "banner",
+        "announcement",
+        "top",
+        "message"
+      ],
+      "purposeStatement": "Banner — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Banner",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0069",
+      "logicalId": "callout",
+      "platform": "web",
+      "canonicalName": "Callout",
+      "category": "feedback",
+      "intentKeywords": [
+        "callout",
+        "highlight",
+        "note",
+        "info"
+      ],
+      "purposeStatement": "Callout — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Callout",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0070",
+      "logicalId": "spinner",
+      "platform": "web",
+      "canonicalName": "Spinner",
+      "category": "feedback",
+      "intentKeywords": [
+        "spinner",
+        "loading",
+        "busy",
+        "progress"
+      ],
+      "purposeStatement": "Spinner — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Spinner",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0071",
+      "logicalId": "progressbar",
+      "platform": "web",
+      "canonicalName": "ProgressBar",
+      "category": "feedback",
+      "intentKeywords": [
+        "progressbar",
+        "progress",
+        "percent",
+        "loading"
+      ],
+      "purposeStatement": "ProgressBar — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ProgressBar",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0072",
+      "logicalId": "circularprogress",
+      "platform": "web",
+      "canonicalName": "CircularProgress",
+      "category": "feedback",
+      "intentKeywords": [
+        "circularprogress",
+        "ring",
+        "progress",
+        "loading"
+      ],
+      "purposeStatement": "CircularProgress — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "CircularProgress",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0073",
+      "logicalId": "skeleton",
+      "platform": "web",
+      "canonicalName": "Skeleton",
+      "category": "feedback",
+      "intentKeywords": [
+        "skeleton",
+        "placeholder",
+        "loading",
+        "shimmer"
+      ],
+      "purposeStatement": "Skeleton — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Skeleton",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0074",
+      "logicalId": "emptystate",
+      "platform": "web",
+      "canonicalName": "EmptyState",
+      "category": "feedback",
+      "intentKeywords": [
+        "emptystate",
+        "empty",
+        "nothing",
+        "placeholder"
+      ],
+      "purposeStatement": "EmptyState — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "EmptyState",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0075",
+      "logicalId": "inlineerror",
+      "platform": "web",
+      "canonicalName": "InlineError",
+      "category": "feedback",
+      "intentKeywords": [
+        "inlineerror",
+        "validation",
+        "field",
+        "error"
+      ],
+      "purposeStatement": "InlineError — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "InlineError",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0076",
+      "logicalId": "statusdot",
+      "platform": "web",
+      "canonicalName": "StatusDot",
+      "category": "feedback",
+      "intentKeywords": [
+        "statusdot",
+        "indicator",
+        "online",
+        "status"
+      ],
+      "purposeStatement": "StatusDot — feedback component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "StatusDot",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0077",
+      "logicalId": "modal",
+      "platform": "web",
+      "canonicalName": "Modal",
+      "category": "overlay",
+      "intentKeywords": [
+        "modal",
+        "dialog",
+        "popup",
+        "overlay"
+      ],
+      "purposeStatement": "Modal — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Modal",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0078",
+      "logicalId": "dialog",
+      "platform": "web",
+      "canonicalName": "Dialog",
+      "category": "overlay",
+      "intentKeywords": [
+        "dialog",
+        "confirm",
+        "modal",
+        "prompt"
+      ],
+      "purposeStatement": "Dialog — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Dialog",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0079",
+      "logicalId": "drawer",
+      "platform": "web",
+      "canonicalName": "Drawer",
+      "category": "overlay",
+      "intentKeywords": [
+        "drawer",
+        "panel",
+        "slide",
+        "side"
+      ],
+      "purposeStatement": "Drawer — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Drawer",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0080",
+      "logicalId": "sheet",
+      "platform": "web",
+      "canonicalName": "Sheet",
+      "category": "overlay",
+      "intentKeywords": [
+        "sheet",
+        "bottom",
+        "mobile",
+        "tray"
+      ],
+      "purposeStatement": "Sheet — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Sheet",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0081",
+      "logicalId": "popover",
+      "platform": "web",
+      "canonicalName": "Popover",
+      "category": "overlay",
+      "intentKeywords": [
+        "popover",
+        "floating",
+        "anchored",
+        "panel"
+      ],
+      "purposeStatement": "Popover — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Popover",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0082",
+      "logicalId": "tooltip",
+      "platform": "web",
+      "canonicalName": "Tooltip",
+      "category": "overlay",
+      "intentKeywords": [
+        "tooltip",
+        "hint",
+        "hover",
+        "label"
+      ],
+      "purposeStatement": "Tooltip — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Tooltip",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0083",
+      "logicalId": "hovercard",
+      "platform": "web",
+      "canonicalName": "HoverCard",
+      "category": "overlay",
+      "intentKeywords": [
+        "hovercard",
+        "preview",
+        "hover",
+        "card"
+      ],
+      "purposeStatement": "HoverCard — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "HoverCard",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0084",
+      "logicalId": "contextmenu",
+      "platform": "web",
+      "canonicalName": "ContextMenu",
+      "category": "overlay",
+      "intentKeywords": [
+        "contextmenu",
+        "rightclick",
+        "menu",
+        "actions"
+      ],
+      "purposeStatement": "ContextMenu — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ContextMenu",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0085",
+      "logicalId": "dropdown",
+      "platform": "web",
+      "canonicalName": "Dropdown",
+      "category": "overlay",
+      "intentKeywords": [
+        "dropdown",
+        "menu",
+        "select",
+        "options"
+      ],
+      "purposeStatement": "Dropdown — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Dropdown",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0086",
+      "logicalId": "toast",
+      "platform": "web",
+      "canonicalName": "Toast",
+      "category": "overlay",
+      "intentKeywords": [
+        "toast",
+        "notification",
+        "overlay",
+        "transient"
+      ],
+      "purposeStatement": "Toast — overlay component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Toast",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0087",
+      "logicalId": "stack",
+      "platform": "web",
+      "canonicalName": "Stack",
+      "category": "layout",
+      "intentKeywords": [
+        "stack",
+        "flex",
+        "row",
+        "column"
+      ],
+      "purposeStatement": "Stack — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Stack",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0088",
+      "logicalId": "grid",
+      "platform": "web",
+      "canonicalName": "Grid",
+      "category": "layout",
+      "intentKeywords": [
+        "grid",
+        "columns",
+        "layout",
+        "responsive"
+      ],
+      "purposeStatement": "Grid — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Grid",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0089",
+      "logicalId": "container",
+      "platform": "web",
+      "canonicalName": "Container",
+      "category": "layout",
+      "intentKeywords": [
+        "container",
+        "wrapper",
+        "max-width",
+        "center"
+      ],
+      "purposeStatement": "Container — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Container",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0090",
+      "logicalId": "divider",
+      "platform": "web",
+      "canonicalName": "Divider",
+      "category": "layout",
+      "intentKeywords": [
+        "divider",
+        "separator",
+        "rule",
+        "line"
+      ],
+      "purposeStatement": "Divider — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Divider",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0091",
+      "logicalId": "spacer",
+      "platform": "web",
+      "canonicalName": "Spacer",
+      "category": "layout",
+      "intentKeywords": [
+        "spacer",
+        "gap",
+        "space",
+        "flex"
+      ],
+      "purposeStatement": "Spacer — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Spacer",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0092",
+      "logicalId": "aspectratio",
+      "platform": "web",
+      "canonicalName": "AspectRatio",
+      "category": "layout",
+      "intentKeywords": [
+        "aspectratio",
+        "ratio",
+        "media",
+        "box"
+      ],
+      "purposeStatement": "AspectRatio — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "AspectRatio",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0093",
+      "logicalId": "scrollarea",
+      "platform": "web",
+      "canonicalName": "ScrollArea",
+      "category": "layout",
+      "intentKeywords": [
+        "scrollarea",
+        "scroll",
+        "overflow",
+        "container"
+      ],
+      "purposeStatement": "ScrollArea — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ScrollArea",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0094",
+      "logicalId": "center",
+      "platform": "web",
+      "canonicalName": "Center",
+      "category": "layout",
+      "intentKeywords": [
+        "center",
+        "middle",
+        "align",
+        "center"
+      ],
+      "purposeStatement": "Center — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Center",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0095",
+      "logicalId": "box",
+      "platform": "web",
+      "canonicalName": "Box",
+      "category": "layout",
+      "intentKeywords": [
+        "box",
+        "primitive",
+        "div",
+        "container"
+      ],
+      "purposeStatement": "Box — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Box",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0096",
+      "logicalId": "splitter",
+      "platform": "web",
+      "canonicalName": "Splitter",
+      "category": "layout",
+      "intentKeywords": [
+        "splitter",
+        "resizable",
+        "panes",
+        "split"
+      ],
+      "purposeStatement": "Splitter — layout component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Splitter",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0097",
+      "logicalId": "image",
+      "platform": "web",
+      "canonicalName": "Image",
+      "category": "media",
+      "intentKeywords": [
+        "image",
+        "picture",
+        "photo",
+        "img"
+      ],
+      "purposeStatement": "Image — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Image",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0098",
+      "logicalId": "icon",
+      "platform": "web",
+      "canonicalName": "Icon",
+      "category": "media",
+      "intentKeywords": [
+        "icon",
+        "glyph",
+        "symbol",
+        "svg"
+      ],
+      "purposeStatement": "Icon — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Icon",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0099",
+      "logicalId": "video",
+      "platform": "web",
+      "canonicalName": "Video",
+      "category": "media",
+      "intentKeywords": [
+        "video",
+        "player",
+        "media",
+        "clip"
+      ],
+      "purposeStatement": "Video — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Video",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0100",
+      "logicalId": "carousel",
+      "platform": "web",
+      "canonicalName": "Carousel",
+      "category": "media",
+      "intentKeywords": [
+        "carousel",
+        "slider",
+        "gallery",
+        "slides"
+      ],
+      "purposeStatement": "Carousel — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Carousel",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0101",
+      "logicalId": "gallery",
+      "platform": "web",
+      "canonicalName": "Gallery",
+      "category": "media",
+      "intentKeywords": [
+        "gallery",
+        "images",
+        "grid",
+        "photos"
+      ],
+      "purposeStatement": "Gallery — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Gallery",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0102",
+      "logicalId": "lightbox",
+      "platform": "web",
+      "canonicalName": "Lightbox",
+      "category": "media",
+      "intentKeywords": [
+        "lightbox",
+        "zoom",
+        "fullscreen",
+        "image"
+      ],
+      "purposeStatement": "Lightbox — media component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Lightbox",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0103",
+      "logicalId": "text",
+      "platform": "web",
+      "canonicalName": "Text",
+      "category": "typography",
+      "intentKeywords": [
+        "text",
+        "body",
+        "paragraph",
+        "copy"
+      ],
+      "purposeStatement": "Text — typography component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Text",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0104",
+      "logicalId": "heading",
+      "platform": "web",
+      "canonicalName": "Heading",
+      "category": "typography",
+      "intentKeywords": [
+        "heading",
+        "title",
+        "header",
+        "h1"
+      ],
+      "purposeStatement": "Heading — typography component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Heading",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0105",
+      "logicalId": "prose",
+      "platform": "web",
+      "canonicalName": "Prose",
+      "category": "typography",
+      "intentKeywords": [
+        "prose",
+        "article",
+        "richtext",
+        "content"
+      ],
+      "purposeStatement": "Prose — typography component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Prose",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0106",
+      "logicalId": "blockquote",
+      "platform": "web",
+      "canonicalName": "Blockquote",
+      "category": "typography",
+      "intentKeywords": [
+        "blockquote",
+        "quote",
+        "citation",
+        "pullquote"
+      ],
+      "purposeStatement": "Blockquote — typography component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Blockquote",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0107",
+      "logicalId": "link",
+      "platform": "web",
+      "canonicalName": "Link",
+      "category": "typography",
+      "intentKeywords": [
+        "link",
+        "anchor",
+        "href",
+        "navigate"
+      ],
+      "purposeStatement": "Link — typography component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Link",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0108",
+      "logicalId": "accordion",
+      "platform": "web",
+      "canonicalName": "Accordion",
+      "category": "disclosure",
+      "intentKeywords": [
+        "accordion",
+        "collapsible",
+        "expand",
+        "faq"
+      ],
+      "purposeStatement": "Accordion — disclosure component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Accordion",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0109",
+      "logicalId": "collapsible",
+      "platform": "web",
+      "canonicalName": "Collapsible",
+      "category": "disclosure",
+      "intentKeywords": [
+        "collapsible",
+        "toggle",
+        "expand",
+        "hide"
+      ],
+      "purposeStatement": "Collapsible — disclosure component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Collapsible",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0110",
+      "logicalId": "details",
+      "platform": "web",
+      "canonicalName": "Details",
+      "category": "disclosure",
+      "intentKeywords": [
+        "details",
+        "summary",
+        "expand",
+        "disclosure"
+      ],
+      "purposeStatement": "Details — disclosure component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "Details",
+        "importPath": "@/ds"
+      }
+    },
+    {
+      "id": "lg-0111",
+      "logicalId": "readmore",
+      "platform": "web",
+      "canonicalName": "ReadMore",
+      "category": "disclosure",
+      "intentKeywords": [
+        "readmore",
+        "truncate",
+        "expand",
+        "clamp"
+      ],
+      "purposeStatement": "ReadMore — disclosure component.",
+      "variants": [
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ]
+        }
+      ],
+      "web": {
+        "importName": "ReadMore",
+        "importPath": "@/ds"
+      }
+    }
+  ],
+  "platforms": {
+    "web": {
+      "target": "css-vars + ts-token-helper (+ tailwind v4 @theme, unscored)",
+      "transforms": [
+        {
+          "match": "*",
+          "rule": "cssVar = '--' + id, with each dot→'-' and camelCase→kebab. e.g. color.action.primary → --color-action-primary; fontSize.md → --font-size-md; space.md → --space-md"
+        },
+        {
+          "match": "color|dimension|fontWeight|number",
+          "rule": "scalar tokens become a CSS custom property and a `token.<path>` accessor that returns 'var(--…)'"
+        },
+        {
+          "match": "typography",
+          "rule": "composite → applied via <Text variant>; not a single var"
+        },
+        {
+          "match": "shadow",
+          "rule": "composite → single --shadow-<name> css var with the assembled box-shadow string"
+        }
+      ],
+      "tokenReferenceForms": [
+        "var(--<cssVar>)",
+        "token.<dotPath>",
+        "<Text variant=…> (typography)"
+      ]
+    },
+    "swift": {
+      "target": "DS enum namespace + Asset Catalog colors + ShapeStyle/Font extensions",
+      "transforms": [
+        {
+          "match": "space.*",
+          "rule": "DS.Spacing.<seg2>  (e.g. space.md → DS.Spacing.md)"
+        },
+        {
+          "match": "radius.*",
+          "rule": "DS.Radius.<seg2>"
+        },
+        {
+          "match": "size.control.*",
+          "rule": "DS.Size.control<Cap seg3>  (size.control.md → DS.Size.controlMd)"
+        },
+        {
+          "match": "size.icon.*",
+          "rule": "DS.Size.icon<Cap seg3>"
+        },
+        {
+          "match": "fontSize.*",
+          "rule": "DS.FontSize.<seg2>"
+        },
+        {
+          "match": "borderWidth.*",
+          "rule": "DS.BorderWidth.<seg2>"
+        },
+        {
+          "match": "color.*",
+          "rule": "Color.ds<CamelCase of remaining segments>  (color.action.primary → Color.dsActionPrimary)"
+        },
+        {
+          "match": "type.*",
+          "rule": "applied via .dsType(.<seg2>) modifier or Font.ds<Cap seg2>"
+        },
+        {
+          "match": "shadow.*",
+          "rule": "applied via .dsShadow(.<seg2>) modifier"
+        }
+      ],
+      "tokenReferenceForms": [
+        "DS.<Group>.<member>",
+        "Color.ds<Name>",
+        ".dsType(.<preset>)",
+        ".dsShadow(.<name>)"
+      ]
+    }
+  },
+  "indices": {
+    "byCategory": {},
+    "byIntent": {},
+    "byLogicalId": {},
+    "note": "Populated by `node harness/manifest-tools.js index`; kept out of source to avoid merge churn."
+  },
+  "decisionLog": [
+    {
+      "id": "dl-0001",
+      "componentId": "crd-swift-0001",
+      "type": "platform-codegen-gap",
+      "value": "raw shadow offset/blur/color numerics inside reference/swiftui/DS/Components/DSShadow.swift",
+      "justification": "Swift codegen emits scalar tokens (DS.Spacing/Radius/...) and semantic Color extensions but not composite shadow primitives, so the .dsShadow(_:) modifier encodes shadow.{sm,md,lg} values directly. These literals are encapsulated in ONE token-layer file and are the single source for swift shadows — downstream code references .dsShadow(.md), never the raw values.",
+      "status": "active",
+      "reviewBy": "2026-12-01",
+      "remediation": "extend codegen.js to emit a DS.Shadow representation; then DSShadow.swift references it."
+    }
+  ]
+}
