@@ -117,6 +117,14 @@ artifact exists*.
 5. **Lint gates in CI.** web: `stylelint-declaration-strict-value` + a token-adherence ESLint rule;
    swift: SwiftLint `no_magic_numbers` + custom rules banning `padding(<num>)`, `cornerRadius(<num>)`,
    `Color.red`, `.font(.system(size:`. Violations not in the decision log fail the build.
+6. **One canonical path per decision.** Where the system offers two *valid* ways to express the same
+   thing — a gap via `<Stack gap>` *or* `token.space` on a raw `<div>`; a status pill via `<Badge>`
+   *or* a token-styled `<span>` — pick ONE as canonical and route the other out. Redundant paths are
+   the subtle way two fully token-compliant agents still diverge (it shows up as a depressed
+   convergence score even when adherence and reuse are perfect). The canonical choices here:
+   **spacing/layout is expressed only through the layout component** (`<Stack gap>` / `DSStack(gap:)`),
+   **type only through `<Text>`/`DSText`**, and **every semantic element through its most specific
+   registered component** — never re-style on a raw element what a component already encodes.
 
 ## 4. Stack adapters
 

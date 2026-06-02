@@ -1,0 +1,1433 @@
+{
+  "conditions": {
+    "baseline-swift": {
+      "files": 10,
+      "TA": 0,
+      "taDetail": "0/161 styled decls reference tokens",
+      "CR": 0,
+      "crDetail": "0 reused / 37 missed",
+      "VC": 74.23,
+      "vcPerDim": {
+        "color": {
+          "observed": 10,
+          "defined": 20,
+          "efficiency": 1
+        },
+        "spacing": {
+          "observed": 16,
+          "defined": 8,
+          "efficiency": 0.5
+        },
+        "typography": {
+          "observed": 13,
+          "defined": 6,
+          "efficiency": 0.4615
+        },
+        "radius": {
+          "observed": 1,
+          "defined": 4,
+          "efficiency": 1
+        },
+        "shadow": {
+          "observed": 1,
+          "defined": 1,
+          "efficiency": 1
+        }
+      },
+      "CC": null,
+      "ccPerTask": [],
+      "composite": 16.5,
+      "tier": "poor",
+      "flags": [
+        "TA",
+        "CR"
+      ],
+      "perFile": [
+        {
+          "file": "runs/run1/baseline-swift/login-form/agent-1.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/24",
+          "CR": 0,
+          "crDetail": "0 reused / 3 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:24",
+            "spacing:40",
+            "spacing:28",
+            "spacing:16",
+            "size:20",
+            "size:20",
+            "size:20",
+            "size:52",
+            "size:52",
+            "size:52",
+            "typography:sys",
+            "typography:sys",
+            "typography:sys",
+            "typography:16",
+            "typography:sys",
+            "typography:16",
+            "typography:sys",
+            "typography:16",
+            "typography:sys",
+            "typography:sys",
+            "color:.white",
+            "color:Color(.secondarySystemGr",
+            "color:Color(.tertiarySystemGro",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSStack",
+            "DSStack",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/login-form/agent-2.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/21",
+          "CR": 0,
+          "crDetail": "0 reused / 6 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:28",
+            "spacing:24",
+            "spacing:4",
+            "spacing:16",
+            "size:52",
+            "size:52",
+            "size:20",
+            "size:52",
+            "typography:sys",
+            "typography:sys",
+            "typography:sys",
+            "typography:40",
+            "typography:sys",
+            "typography:sys",
+            "typography:sys",
+            "typography:16",
+            "typography:sys",
+            "color:.white",
+            "color:Color(.secondarySystemGr",
+            "color:Color(.tertiarySystemGro",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSButton",
+            "DSStack",
+            "DSStack",
+            "DSStack",
+            "DSStack",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/pricing-card/agent-1.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/21",
+          "CR": 0,
+          "crDetail": "0 reused / 9 missed",
+          "VC": 96.8,
+          "literals": [
+            "spacing:12",
+            "spacing:7",
+            "spacing:16",
+            "spacing:2",
+            "spacing:28",
+            "spacing:24",
+            "size:22",
+            "size:22",
+            "typography:11",
+            "typography:12",
+            "typography:28",
+            "typography:15",
+            "typography:44",
+            "typography:16",
+            "typography:11",
+            "typography:15",
+            "typography:17",
+            "color:.white",
+            "color:Color(.secondarySystemBa",
+            "shadow:inline",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSButton",
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/pricing-card/agent-2.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/23",
+          "CR": 0,
+          "crDetail": "0 reused / 3 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:20",
+            "spacing:4",
+            "spacing:20",
+            "spacing:20",
+            "spacing:24",
+            "spacing:24",
+            "spacing:24",
+            "spacing:12",
+            "spacing:7",
+            "size:52",
+            "typography:sys",
+            "typography:sys",
+            "typography:11",
+            "typography:sys",
+            "typography:48",
+            "typography:sys",
+            "typography:17",
+            "typography:sys",
+            "typography:sys",
+            "color:.white",
+            "color:.white",
+            "color:Color(.secondarySystemGr",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSButton",
+            "DSText",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/profile-header/agent-1.swift",
+          "task": "profile-header",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/18",
+          "CR": 0,
+          "crDetail": "0 reused / 3 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:16",
+            "spacing:12",
+            "spacing:18",
+            "spacing:9",
+            "spacing:7",
+            "spacing:2",
+            "spacing:16",
+            "size:52",
+            "size:52",
+            "typography:sys",
+            "typography:sys",
+            "typography:22",
+            "typography:sys",
+            "typography:sys",
+            "color:.white",
+            "color:following ? Color.accent",
+            "color:Color.primary.opacity(0.",
+            "color:Color(.systemBackground)"
+          ],
+          "missed": [
+            "DSStack",
+            "DSStack",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/profile-header/agent-2.swift",
+          "task": "profile-header",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/19",
+          "CR": 0,
+          "crDetail": "0 reused / 5 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:12",
+            "spacing:16",
+            "spacing:7",
+            "spacing:2",
+            "spacing:18",
+            "spacing:9",
+            "size:52",
+            "size:52",
+            "typography:sys",
+            "typography:sys",
+            "typography:20",
+            "typography:11",
+            "typography:sys",
+            "color:.white",
+            "color:isFollowing ? Color.acce",
+            "color:Color.primary.opacity(0.",
+            "color:Color.primary.opacity(0.",
+            "color:Color(.systemGroupedBack",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSText",
+            "DSText",
+            "DSStack",
+            "DSStack",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/settings-row/agent-1.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/10",
+          "CR": 0,
+          "crDetail": "0 reused / 2 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:18",
+            "spacing:14",
+            "spacing:20",
+            "spacing:20",
+            "radius:14",
+            "typography:sys",
+            "typography:sys",
+            "color:Color(.systemGroupedBack",
+            "color:Color(.systemGroupedBack",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSStack",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/settings-row/agent-2.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/7",
+          "CR": null,
+          "crDetail": "0 reused / 0 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:18",
+            "spacing:14",
+            "spacing:20",
+            "typography:sys",
+            "typography:sys",
+            "color:.green",
+            "color:Color(.secondarySystemGr"
+          ],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/baseline-swift/stat-card/agent-1.swift",
+          "task": "stat-card",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/9",
+          "CR": 0,
+          "crDetail": "0 reused / 4 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:20",
+            "spacing:10",
+            "spacing:5",
+            "size:260",
+            "typography:12",
+            "typography:40",
+            "typography:11",
+            "typography:13",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSText",
+            "DSText",
+            "DSText",
+            "DSStack"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-swift/stat-card/agent-2.swift",
+          "task": "stat-card",
+          "platform": "swift",
+          "TA": 0,
+          "taDetail": "0/9",
+          "CR": 0,
+          "crDetail": "0 reused / 2 missed",
+          "VC": 100,
+          "literals": [
+            "spacing:24",
+            "spacing:10",
+            "spacing:6",
+            "spacing:32",
+            "typography:sys",
+            "typography:44",
+            "typography:sys",
+            "typography:sys",
+            "shadow:inline"
+          ],
+          "missed": [
+            "DSText",
+            "DSStack"
+          ]
+        }
+      ]
+    },
+    "baseline-web": {
+      "files": 11,
+      "TA": 0,
+      "taDetail": "0/250 styled decls reference tokens",
+      "CR": 0,
+      "crDetail": "0 reused / 62 missed",
+      "VC": 48.29,
+      "vcPerDim": {
+        "color": {
+          "observed": 25,
+          "defined": 20,
+          "efficiency": 0.8
+        },
+        "spacing": {
+          "observed": 32,
+          "defined": 8,
+          "efficiency": 0.25
+        },
+        "typography": {
+          "observed": 43,
+          "defined": 6,
+          "efficiency": 0.1395
+        },
+        "radius": {
+          "observed": 10,
+          "defined": 4,
+          "efficiency": 0.4
+        },
+        "shadow": {
+          "observed": 12,
+          "defined": 12,
+          "efficiency": 1
+        }
+      },
+      "CC": null,
+      "ccPerTask": [],
+      "composite": 10.73,
+      "tier": "poor",
+      "flags": [
+        "TA",
+        "CR",
+        "VC"
+      ],
+      "perFile": [
+        {
+          "file": "runs/run1/baseline-web/login-form/agent-1.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 0,
+          "crDetail": "0 reused / 4 missed",
+          "VC": null,
+          "literals": [],
+          "missed": [
+            "TextField",
+            "TextField",
+            "Button",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/login-form/agent-2.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 0,
+          "crDetail": "0 reused / 4 missed",
+          "VC": null,
+          "literals": [],
+          "missed": [
+            "TextField",
+            "TextField",
+            "Button",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/notification-toast/agent-1.tsx",
+          "task": "notification-toast",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/24",
+          "CR": 0,
+          "crDetail": "0 reused / 6 missed",
+          "VC": 97.1,
+          "literals": [
+            "spacing:14",
+            "spacing:14px 16px",
+            "color:#ffffff",
+            "radius:14",
+            "borderShorthand:1px solid rgba(15, 23, 42, 0.06)",
+            "shadow:0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px -8px rgba(15, 23, 42, 0.18), 0 18px 40px -16px rgba(15, 23, 42, 0.16)",
+            "radius:50%",
+            "color:linear-gradient(180deg, rgba(16, 185, 129, 0.16) 0%, rgba(16, 185, 129, 0.10) 100%)",
+            "shadow:inset 0 0 0 1px rgba(16, 185, 129, 0.20)",
+            "spacing:2",
+            "typography:14",
+            "typography:20px",
+            "typography:600",
+            "typography:-0.01em",
+            "color:#0f172a",
+            "typography:13",
+            "typography:18px",
+            "typography:400",
+            "color:#64748b",
+            "typography:13",
+            "typography:600",
+            "typography:-0.01em",
+            "spacing:7px 12px",
+            "radius:9"
+          ],
+          "missed": [
+            "Card",
+            "Badge",
+            "Stack",
+            "Text",
+            "Text",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/pricing-card/agent-1.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/52",
+          "CR": 0,
+          "crDetail": "0 reused / 9 missed",
+          "VC": 75.5,
+          "literals": [
+            "spacing:0 auto",
+            "spacing:32",
+            "radius:24",
+            "color:#ffffff",
+            "borderShorthand:1px solid rgba(79, 70, 229, 0.14)",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 12px 28px -8px rgba(16, 24, 40, 0.14), 0 28px 56px -20px rgba(79, 70, 229, 0.22)",
+            "color:#0f172a",
+            "spacing:6",
+            "spacing:6px 12px",
+            "radius:999",
+            "color:linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)",
+            "color:#ffffff",
+            "typography:12",
+            "typography:600",
+            "typography:0.04em",
+            "shadow:0 4px 12px -2px rgba(79, 70, 229, 0.45)",
+            "radius:999",
+            "color:#ffffff",
+            "spacing:20px 0 0",
+            "typography:24",
+            "typography:1.2",
+            "typography:700",
+            "typography:-0.02em",
+            "color:#0f172a",
+            "spacing:8px 0 0",
+            "typography:15",
+            "typography:1.5",
+            "color:#64748b",
+            "spacing:8",
+            "spacing:24",
+            "typography:52",
+            "typography:1",
+            "typography:800",
+            "typography:-0.04em",
+            "color:#0f172a",
+            "typography:16",
+            "typography:500",
+            "color:#94a3b8",
+            "spacing:24px 0",
+            "color:linear-gradient(90deg, rgba(15,23,42,0) 0%, rgba(15,23,42,0.08) 50%, rgba(15,23,42,0) 100%)",
+            "spacing:14",
+            "spacing:12",
+            "typography:15",
+            "typography:1.4",
+            "color:#334155",
+            "spacing:28",
+            "spacing:15px 24px",
+            "radius:14",
+            "typography:16",
+            "typography:600",
+            "typography:-0.01em",
+            "color:#ffffff"
+          ],
+          "missed": [
+            "Card",
+            "Badge",
+            "Badge",
+            "Text",
+            "Text",
+            "Stack",
+            "Text",
+            "Text",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/pricing-card/agent-2.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/41",
+          "CR": 0,
+          "crDetail": "0 reused / 9 missed",
+          "VC": 77,
+          "literals": [
+            "radius:999",
+            "spacing:1",
+            "borderShorthand:1px solid ${}",
+            "radius:20",
+            "spacing:32px 28px",
+            "shadow:0 1px 2px rgba(15, 17, 21, 0.04), 0 12px 28px -8px rgba(15, 17, 21, 0.12), 0 30px 60px -20px rgba(79, 70, 229, 0.18)",
+            "spacing:18",
+            "spacing:6",
+            "spacing:6px 12px",
+            "radius:999",
+            "color:#ffffff",
+            "typography:12",
+            "typography:600",
+            "typography:0.3",
+            "typography:1",
+            "shadow:0 4px 12px -2px rgba(79, 70, 229, 0.45)",
+            "typography:22",
+            "typography:700",
+            "typography:1.2",
+            "spacing:8px 0 0",
+            "typography:15",
+            "typography:1.5",
+            "spacing:8",
+            "spacing:24",
+            "typography:48",
+            "typography:800",
+            "typography:1",
+            "typography:15",
+            "typography:500",
+            "spacing:24px 0",
+            "spacing:14",
+            "spacing:12",
+            "typography:15",
+            "typography:1.45",
+            "spacing:28",
+            "spacing:14px 20px",
+            "radius:12",
+            "color:#ffffff",
+            "typography:15",
+            "typography:600",
+            "typography:0.1"
+          ],
+          "missed": [
+            "Badge",
+            "Card",
+            "Badge",
+            "Text",
+            "Text",
+            "Stack",
+            "Text",
+            "Text",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/profile-header/agent-1.tsx",
+          "task": "profile-header",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/37",
+          "CR": 0,
+          "crDetail": "0 reused / 8 missed",
+          "VC": 89.2,
+          "literals": [
+            "spacing:16",
+            "spacing:16px 20px",
+            "color:#ffffff",
+            "borderShorthand:1px solid #ececef",
+            "radius:16",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06)",
+            "radius:50%",
+            "color:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+            "color:#ffffff",
+            "typography:18",
+            "typography:600",
+            "typography:0.2",
+            "shadow:0 2px 6px rgba(99, 102, 241, 0.28), inset 0 0 0 1px rgba(255,255,255,0.12)",
+            "spacing:3",
+            "typography:16",
+            "typography:600",
+            "typography:1.25",
+            "color:#101828",
+            "spacing:8",
+            "typography:13.5",
+            "typography:400",
+            "typography:1.3",
+            "color:#667085",
+            "spacing:1px 8px",
+            "typography:11",
+            "typography:600",
+            "typography:16px",
+            "typography:0.3",
+            "color:#475467",
+            "color:#f2f4f7",
+            "borderShorthand:1px solid #e4e7ec",
+            "radius:999",
+            "spacing:8px 18px",
+            "typography:14",
+            "typography:600",
+            "typography:0.1",
+            "radius:10"
+          ],
+          "missed": [
+            "Card",
+            "Badge",
+            "Stack",
+            "Text",
+            "Stack",
+            "Text",
+            "Badge",
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/profile-header/agent-2.tsx",
+          "task": "profile-header",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 0,
+          "crDetail": "0 reused / 1 missed",
+          "VC": null,
+          "literals": [],
+          "missed": [
+            "Button"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/settings-row/agent-1.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/22",
+          "CR": 0,
+          "crDetail": "0 reused / 6 missed",
+          "VC": 97.1,
+          "literals": [
+            "spacing:24",
+            "color:#f4f5f7",
+            "spacing:24",
+            "spacing:18px 20px",
+            "color:#ffffff",
+            "radius:14",
+            "borderShorthand:1px solid #ececef",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06)",
+            "spacing:3",
+            "typography:15",
+            "typography:20px",
+            "typography:600",
+            "color:#1a1d21",
+            "typography:-0.01em",
+            "typography:13",
+            "typography:18px",
+            "typography:400",
+            "color:#6b7280",
+            "radius:999",
+            "radius:50%",
+            "color:#ffffff",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.2), 0 1px 1px rgba(16, 24, 40, 0.12)"
+          ],
+          "missed": [
+            "Card",
+            "Stack",
+            "Text",
+            "Text",
+            "Button",
+            "Badge"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/settings-row/agent-2.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/21",
+          "CR": 0,
+          "crDetail": "0 reused / 6 missed",
+          "VC": 95,
+          "literals": [
+            "spacing:16",
+            "spacing:18px 20px",
+            "color:#ffffff",
+            "borderShorthand:1px solid #ececef",
+            "radius:14",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 1px rgba(16, 24, 40, 0.02)",
+            "spacing:3",
+            "typography:15",
+            "typography:600",
+            "typography:1.3",
+            "color:#1a1a1e",
+            "typography:-0.01em",
+            "typography:13",
+            "typography:400",
+            "typography:1.4",
+            "color:#71717a",
+            "typography:-0.005em",
+            "radius:999",
+            "radius:50%",
+            "color:#ffffff",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.18), 0 1px 3px rgba(16, 24, 40, 0.10)"
+          ],
+          "missed": [
+            "Card",
+            "Stack",
+            "Text",
+            "Text",
+            "Button",
+            "Badge"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/stat-card/agent-1.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/27",
+          "CR": 0,
+          "crDetail": "0 reused / 5 missed",
+          "VC": 90.9,
+          "literals": [
+            "spacing:14",
+            "spacing:24px 24px 26px",
+            "color:linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%)",
+            "radius:18",
+            "borderShorthand:1px solid #ececf0",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px -8px rgba(16, 24, 40, 0.08)",
+            "typography:13",
+            "typography:500",
+            "typography:16px",
+            "typography:0.01em",
+            "color:#6b7280",
+            "spacing:12",
+            "typography:38",
+            "typography:700",
+            "typography:42px",
+            "typography:-0.025em",
+            "color:#111827",
+            "spacing:4",
+            "spacing:3px 9px 3px 7px",
+            "radius:999",
+            "color:#ecfdf3",
+            "borderShorthand:1px solid #abefc6",
+            "color:#067647",
+            "typography:12.5",
+            "typography:600",
+            "typography:16px",
+            "typography:0.005em"
+          ],
+          "missed": [
+            "Card",
+            "Text",
+            "Stack",
+            "Text",
+            "Badge"
+          ]
+        },
+        {
+          "file": "runs/run1/baseline-web/stat-card/agent-2.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": 0,
+          "taDetail": "0/26",
+          "CR": 0,
+          "crDetail": "0 reused / 4 missed",
+          "VC": 92,
+          "literals": [
+            "spacing:14",
+            "spacing:24px 26px",
+            "color:linear-gradient(180deg, #ffffff 0%, #fcfcfd 100%)",
+            "borderShorthand:1px solid #ecedf1",
+            "radius:18",
+            "shadow:0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06)",
+            "typography:13",
+            "typography:600",
+            "typography:16px",
+            "typography:0.04em",
+            "color:#8a8f9c",
+            "typography:40",
+            "typography:700",
+            "typography:44px",
+            "typography:-0.025em",
+            "color:#101828",
+            "spacing:5",
+            "spacing:0 10px",
+            "color:#e7f6ec",
+            "borderShorthand:1px solid #c6ebd2",
+            "radius:999",
+            "typography:13",
+            "typography:600",
+            "typography:1",
+            "typography:-0.01em",
+            "color:#177a3c"
+          ],
+          "missed": [
+            "Card",
+            "Text",
+            "Text",
+            "Badge"
+          ]
+        }
+      ]
+    },
+    "framework-swift": {
+      "files": 13,
+      "TA": null,
+      "taDetail": "0/0 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "138 reused / 0 missed",
+      "VC": null,
+      "vcPerDim": {},
+      "CC": 100,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "pricing-card",
+          "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "profile-header",
+          "cc": 100,
+          "runs": 2
+        },
+        {
+          "task": "settings-row",
+          "cc": 100,
+          "runs": 2
+        },
+        {
+          "task": "stat-card",
+          "cc": 100,
+          "runs": 3
+        }
+      ],
+      "composite": 100,
+      "tier": "excellent",
+      "flags": [],
+      "perFile": [
+        {
+          "file": "runs/run1/framework-swift/login-form/agent-1.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/login-form/agent-2.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/login-form/agent-3.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/pricing-card/agent-1.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "14 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/pricing-card/agent-2.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/pricing-card/agent-3.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "13 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/profile-header/agent-1.swift",
+          "task": "profile-header",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/profile-header/agent-2.swift",
+          "task": "profile-header",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/settings-row/agent-1.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/settings-row/agent-2.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/stat-card/agent-1.swift",
+          "task": "stat-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/stat-card/agent-2.swift",
+          "task": "stat-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-swift/stat-card/agent-3.swift",
+          "task": "stat-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        }
+      ]
+    },
+    "framework-web": {
+      "files": 15,
+      "TA": 100,
+      "taDetail": "6/6 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "147 reused / 0 missed",
+      "VC": 100,
+      "vcPerDim": {
+        "color": {
+          "observed": 1,
+          "defined": 20,
+          "efficiency": 1
+        },
+        "spacing": {
+          "observed": 1,
+          "defined": 8,
+          "efficiency": 1
+        },
+        "radius": {
+          "observed": 1,
+          "defined": 4,
+          "efficiency": 1
+        }
+      },
+      "CC": 93.54,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "pricing-card",
+          "cc": 81,
+          "runs": 3
+        },
+        {
+          "task": "profile-header",
+          "cc": 100,
+          "runs": 3
+        },
+        {
+          "task": "settings-row",
+          "cc": 86.7,
+          "runs": 3
+        },
+        {
+          "task": "stat-card",
+          "cc": 100,
+          "runs": 3
+        }
+      ],
+      "composite": 99.35,
+      "tier": "excellent",
+      "flags": [],
+      "perFile": [
+        {
+          "file": "runs/run1/framework-web/login-form/agent-1.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/login-form/agent-2.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/login-form/agent-3.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/pricing-card/agent-1.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "14 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/pricing-card/agent-2.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": 100,
+          "taDetail": "2/2",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": 100,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/pricing-card/agent-3.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": 100,
+          "taDetail": "2/2",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": 100,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/profile-header/agent-1.tsx",
+          "task": "profile-header",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "9 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/profile-header/agent-2.tsx",
+          "task": "profile-header",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/profile-header/agent-3.tsx",
+          "task": "profile-header",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "8 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/settings-row/agent-1.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": 100,
+          "taDetail": "1/1",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": 100,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/settings-row/agent-2.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": 100,
+          "taDetail": "1/1",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": 100,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/settings-row/agent-3.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/stat-card/agent-1.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "5 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/stat-card/agent-2.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "5 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run1/framework-web/stat-card/agent-3.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "5 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "files": 21,
+      "TA": 0,
+      "taDetail": "0/411 styled decls reference tokens",
+      "CR": 0,
+      "crDetail": "0 reused / 99 missed",
+      "VC": 40.13,
+      "vcPerDim": {
+        "color": {
+          "observed": 35,
+          "defined": 20,
+          "efficiency": 0.5714
+        },
+        "spacing": {
+          "observed": 37,
+          "defined": 8,
+          "efficiency": 0.2162
+        },
+        "typography": {
+          "observed": 48,
+          "defined": 6,
+          "efficiency": 0.125
+        },
+        "radius": {
+          "observed": 10,
+          "defined": 4,
+          "efficiency": 0.4
+        },
+        "shadow": {
+          "observed": 13,
+          "defined": 13,
+          "efficiency": 1
+        }
+      },
+      "CC": null,
+      "ccPerTask": [],
+      "composite": 8.92,
+      "tier": "poor",
+      "flags": [
+        "TA",
+        "CR",
+        "VC"
+      ]
+    },
+    "framework": {
+      "files": 28,
+      "TA": 100,
+      "taDetail": "6/6 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "285 reused / 0 missed",
+      "VC": 100,
+      "vcPerDim": {
+        "color": {
+          "observed": 1,
+          "defined": 20,
+          "efficiency": 1
+        },
+        "spacing": {
+          "observed": 1,
+          "defined": 8,
+          "efficiency": 1
+        },
+        "radius": {
+          "observed": 1,
+          "defined": 4,
+          "efficiency": 1
+        }
+      },
+      "CC": 96.77,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 40,
+          "runs": 6
+        },
+        {
+          "task": "pricing-card",
+          "cc": 36.2,
+          "runs": 6
+        },
+        {
+          "task": "profile-header",
+          "cc": 40,
+          "runs": 5
+        },
+        {
+          "task": "settings-row",
+          "cc": 36,
+          "runs": 5
+        },
+        {
+          "task": "stat-card",
+          "cc": 40,
+          "runs": 6
+        }
+      ],
+      "composite": 99.68,
+      "tier": "excellent",
+      "flags": []
+    }
+  }
+}

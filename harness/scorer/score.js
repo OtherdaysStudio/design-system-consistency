@@ -27,43 +27,45 @@ function walkFiles(dir) {
 
 function platformOf(file) { return file.endsWith('.swift') ? 'swift' : 'web'; }
 
-export function scoreRuns(runsDir, resolved) {
-  const lk = buildLookups(resolved);
-  const files = walkFiles(runsDir);
-  // group by condition (first dir under runsDir) and task (second dir)
-  const conditions = {};
-  for (const f of files) {
-    const rel = path.relative(runsDir, f).split(path.sep);
-    const condition = rel[0] || 'default';
-    const task = rel[1] || 'default';
-    const platform = platformOf(f);
-    const code = fs.readFileSync(f, 'utf8');
-    const parsed = platform === 'swift' ? parseSwift(code, lk) : parseWeb(code, lk);
-    parsed.file = path.relative(ROOT, f); parsed.task = task; parsed.platform = platform;
-    ((conditions[condition] ||= {}).files ||= []).push(parsed);
+// Defensive: some agents wrap file contents in markdown fences. Strip them.
+function stripFences(code) {
+  let c = code.replace(/^﻿/, '');
+  const fence = c.match(/^\s*```[a-zA-Z]*\n([\s\S]*?)\n```\s*$/);
+  if (fence) return fence[1];
+  // leading fence only
+  c = c.replace(/^\s*```[a-zA-Z]*\n/, '').replace(/\n```\s*$/, '');
+  return c;
+}
+
+function scoreFileList(filesParsed, lk, { detail = true, ccOverride = undefined } = {}) {
+  const allDecls = filesParsed.flatMap((p) => p.decls);
+  const allReused = filesParsed.flatMap((p) => p.reused);
+  const allMissed = filesParsed.flatMap((p) => p.missed);
+  const ta = scoreTA(allDecls);
+  const cr = scoreCR(allReused, allMissed);
+  const vc = scoreVC(allDecls, lk.definedByDim);
+  // CC: group by task, mean pairwise jaccard within task, then average across tasks.
+  // CC is computed per-stack only (cross-stack pooling can't converge: <Button> vs DSButton).
+  const byTask = {};
+  for (const p of filesParsed) (byTask[p.task] ||= []).push(featureSet(p));
+  const ccPerTask = [];
+  for (const [task, sets] of Object.entries(byTask)) {
+    const r = scoreCC(sets);
+    if (r.value != null) ccPerTask.push({ task, cc: +(r.value * 100).toFixed(1), runs: r.runs });
   }
-
-  const report = { conditions: {} };
-  for (const [cond, data] of Object.entries(conditions)) {
-    const allDecls = data.files.flatMap((p) => p.decls);
-    const allReused = data.files.flatMap((p) => p.reused);
-    const allMissed = data.files.flatMap((p) => p.missed);
-    const ta = scoreTA(allDecls);
-    const cr = scoreCR(allReused, allMissed);
-    const vc = scoreVC(allDecls, lk.definedByDim);
-    // CC: group by task, mean pairwise jaccard within task, then average across tasks
-    const byTask = {};
-    for (const p of data.files) (byTask[p.task] ||= []).push(featureSet(p));
-    const ccPerTask = [];
-    for (const [task, sets] of Object.entries(byTask)) {
-      const r = scoreCC(sets);
-      if (r.value != null) ccPerTask.push({ task, cc: r.value, runs: r.runs });
-    }
-    const ccAvg = ccPerTask.length ? ccPerTask.reduce((s, x) => s + x.cc, 0) / ccPerTask.length : null;
-    const composite = scoreComposite({ TA: ta.value, CR: cr.value, VC: vc.value, CC: ccAvg });
-
-    // per-file detail (for debugging failure modes)
-    const perFile = data.files.map((p) => {
+  let ccAvg = ccPerTask.length ? ccPerTask.reduce((s, x) => s + x.cc, 0) / ccPerTask.length : null;
+  if (ccOverride !== undefined) ccAvg = ccOverride;
+  const composite = scoreComposite({ TA: ta.value, CR: cr.value, VC: vc.value, CC: ccAvg == null ? null : ccAvg / 100 });
+  const out = {
+    files: filesParsed.length,
+    TA: ta.value == null ? null : +ta.value.toFixed(2), taDetail: `${ta.num}/${ta.den} styled decls reference tokens`,
+    CR: cr.value == null ? null : +cr.value.toFixed(2), crDetail: `${cr.reused} reused / ${cr.missed} missed`,
+    VC: vc.value == null ? null : +(vc.value * 100).toFixed(2), vcPerDim: vc.perDim,
+    CC: ccAvg == null ? null : +ccAvg.toFixed(2), ccPerTask,
+    composite: composite.composite, tier: composite.tier, flags: composite.flags,
+  };
+  if (detail) {
+    out.perFile = filesParsed.map((p) => {
       const t = scoreTA(p.decls), c = scoreCR(p.reused, p.missed), v = scoreVC(p.decls, lk.definedByDim);
       return {
         file: p.file, task: p.task, platform: p.platform, error: p.error,
@@ -74,32 +76,67 @@ export function scoreRuns(runsDir, resolved) {
         missed: p.missed.map((m) => m.role),
       };
     });
+  }
+  return out;
+}
 
-    report.conditions[cond] = {
-      files: data.files.length,
-      TA: ta.value == null ? null : +ta.value.toFixed(2), taDetail: `${ta.num}/${ta.den} styled decls reference tokens`,
-      CR: cr.value == null ? null : +cr.value.toFixed(2), crDetail: `${cr.reused} reused / ${cr.missed} missed`,
-      VC: vc.value == null ? null : +(vc.value * 100).toFixed(2), vcPerDim: vc.perDim,
-      CC: ccAvg == null ? null : +(ccAvg * 100).toFixed(2), ccPerTask,
-      composite: composite.composite, tier: composite.tier, flags: composite.flags,
-      perFile,
-    };
+export function scoreRuns(runsDir, resolved) {
+  const lk = buildLookups(resolved);
+  const files = walkFiles(runsDir);
+  const conditions = {};
+  for (const f of files) {
+    const rel = path.relative(runsDir, f).split(path.sep);
+    const condition = rel[0] || 'default';
+    const task = rel[1] || 'default';
+    const platform = platformOf(f);
+    const code = stripFences(fs.readFileSync(f, 'utf8'));
+    const parsed = platform === 'swift' ? parseSwift(code, lk) : parseWeb(code, lk);
+    parsed.file = path.relative(ROOT, f); parsed.task = task; parsed.platform = platform;
+    ((conditions[condition] ||= {}).files ||= []).push(parsed);
+  }
+
+  const report = { conditions: {}, aggregate: {} };
+  for (const [cond, data] of Object.entries(conditions)) {
+    report.conditions[cond] = scoreFileList(data.files, lk);
+  }
+  // aggregate by base condition (strip trailing -web/-swift)
+  const byBase = {};
+  for (const [cond, data] of Object.entries(conditions)) {
+    const base = cond.replace(/-(web|swift)$/, '');
+    (byBase[base] ||= []).push(...data.files);
+  }
+  for (const [base, fileList] of Object.entries(byBase)) {
+    // CC averaged across the constituent per-stack conditions (not pooled cross-stack)
+    const stackCCs = Object.entries(report.conditions)
+      .filter(([c]) => c.replace(/-(web|swift)$/, '') === base)
+      .map(([, r]) => r.CC).filter((v) => v != null);
+    const ccOverride = stackCCs.length ? +(stackCCs.reduce((s, v) => s + v, 0) / stackCCs.length).toFixed(2) : null;
+    report.aggregate[base] = scoreFileList(fileList, lk, { detail: false, ccOverride });
   }
   return report;
 }
 
-function fmt(v) { return v == null ? ' n/a ' : String(v).padStart(6); }
+const fmt = (v) => (v == null ? 'n/a' : String(v)).padStart(7);
+const pad = (s, n) => String(s).padEnd(n);
 
 function printReport(report) {
   const conds = Object.entries(report.conditions);
-  console.log('\n┌─ Consistency Report ' + '─'.repeat(46));
-  console.log('│ %-12s %6s %6s %6s %6s │ %8s  %s', 'condition', 'TA', 'CR', 'VC', 'CC', 'COMPOSITE', 'tier');
-  console.log('│ ' + '─'.repeat(64));
+  console.log('\n' + '═'.repeat(78));
+  console.log('  CONSISTENCY REPORT' + (report.runLabel ? `  —  ${report.runLabel}` : ''));
+  console.log('═'.repeat(78));
+  console.log('  ' + pad('condition', 18) + fmt('TA') + fmt('CR') + fmt('VC') + fmt('CC') + '   ' + fmt('COMPOSITE') + '  tier');
+  console.log('  ' + '─'.repeat(74));
   for (const [cond, r] of conds) {
-    console.log('│ %-12s %s %s %s %s │ %7s%%  %s%s', cond, fmt(r.TA), fmt(r.CR), fmt(r.VC), fmt(r.CC),
-      fmt(r.composite), r.tier, r.flags.length ? `  ⚠ low:${r.flags.join(',')}` : '');
+    console.log('  ' + pad(cond, 18) + fmt(r.TA) + fmt(r.CR) + fmt(r.VC) + fmt(r.CC) + '   ' + fmt(r.composite) + '  ' +
+      r.tier + (r.flags.length ? `  ⚠ low:${r.flags.join(',')}` : ''));
   }
-  console.log('└' + '─'.repeat(66));
+  if (report.aggregate) {
+    console.log('  ' + '─'.repeat(74));
+    for (const [cond, r] of Object.entries(report.aggregate)) {
+      console.log('  ' + pad(cond + ' (both stacks)', 18) + fmt(r.TA) + fmt(r.CR) + fmt(r.VC) + fmt(r.CC) + '   ' + fmt(r.composite) + '  ' + r.tier);
+    }
+  }
+  console.log('═'.repeat(78));
   for (const [cond, r] of conds) {
     console.log(`\n[${cond}] ${r.taDetail}; ${r.crDetail}`);
     const offenders = r.perFile.filter((f) => (f.literals && f.literals.length) || (f.missed && f.missed.length) || f.error).slice(0, 12);
