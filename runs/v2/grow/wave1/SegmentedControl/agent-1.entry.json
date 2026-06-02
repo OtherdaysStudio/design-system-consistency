@@ -1,0 +1,36 @@
+{
+  "canonicalName": "SegmentedControl",
+  "platform": "web",
+  "category": "control",
+  "intentKeywords": ["segmented control", "tab switcher", "option group", "toggle group", "segmented", "single select", "view switcher", "choice group"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md"] },
+    { "name": "radius", "type": "enum", "values": ["pill", "md"] }
+  ],
+  "purposeStatement": "Horizontal single-select group of 2-4 equal-width segments for mutually exclusive option/view switching; NOT for route navigation, binary on/off (use Switch), multi-select, or triggering actions (use Button).",
+  "antiPatterns": [
+    { "pattern": "A row of styled <button>/<Button> elements toggling a 'selected' class to fake a segmented control", "reason": "Re-invents an existing registered component with ad-hoc selected styling and inconsistent radius/spacing.", "correctAlternative": "<SegmentedControl>", "severity": "should-not" },
+    { "pattern": "Using two <Switch> or several <Badge> elements to express a single mutually-exclusive choice", "reason": "Wrong semantics — these do not enforce single-selection and drift from the canonical control shape.", "correctAlternative": "<SegmentedControl>", "severity": "should-not" }
+  ],
+  "tokenMap": {
+    "all": [
+      "color.bg.muted",
+      "color.action.primary",
+      "color.text.onAction",
+      "color.text.muted",
+      "color.border.default",
+      "space.xs",
+      "space.sm",
+      "space.md",
+      "radius.pill",
+      "radius.md",
+      "size.control.sm",
+      "size.control.md",
+      "borderWidth.thin",
+      "duration.fast",
+      "easing.standard",
+      "type.label"
+    ]
+  },
+  "web": { "importName": "SegmentedControl", "importPath": "@/ds" }
+}

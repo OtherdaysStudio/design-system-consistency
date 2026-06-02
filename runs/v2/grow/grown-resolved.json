@@ -1,0 +1,1660 @@
+{
+  "tokens": [
+    {
+      "id": "neutral.0",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--neutral-0",
+      "swift": []
+    },
+    {
+      "id": "neutral.50",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#f6f7f9",
+      "canon": "#f6f7f9",
+      "cssVar": "--neutral-50",
+      "swift": []
+    },
+    {
+      "id": "neutral.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--neutral-100",
+      "swift": []
+    },
+    {
+      "id": "neutral.200",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--neutral-200",
+      "swift": []
+    },
+    {
+      "id": "neutral.300",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c1c8d4",
+      "canon": "#c1c8d4",
+      "cssVar": "--neutral-300",
+      "swift": []
+    },
+    {
+      "id": "neutral.400",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#97a1b2",
+      "canon": "#97a1b2",
+      "cssVar": "--neutral-400",
+      "swift": []
+    },
+    {
+      "id": "neutral.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#6b7585",
+      "canon": "#6b7585",
+      "cssVar": "--neutral-500",
+      "swift": []
+    },
+    {
+      "id": "neutral.700",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#3c4350",
+      "canon": "#3c4350",
+      "cssVar": "--neutral-700",
+      "swift": []
+    },
+    {
+      "id": "neutral.900",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--neutral-900",
+      "swift": []
+    },
+    {
+      "id": "blue.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e7efff",
+      "canon": "#e7efff",
+      "cssVar": "--blue-100",
+      "swift": []
+    },
+    {
+      "id": "blue.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--blue-500",
+      "swift": []
+    },
+    {
+      "id": "blue.600",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#1f57d6",
+      "canon": "#1f57d6",
+      "cssVar": "--blue-600",
+      "swift": []
+    },
+    {
+      "id": "red.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdeaea",
+      "canon": "#fdeaea",
+      "cssVar": "--red-100",
+      "swift": []
+    },
+    {
+      "id": "red.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--red-500",
+      "swift": []
+    },
+    {
+      "id": "red.600",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c93b40",
+      "canon": "#c93b40",
+      "cssVar": "--red-600",
+      "swift": []
+    },
+    {
+      "id": "green.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e6f6ee",
+      "canon": "#e6f6ee",
+      "cssVar": "--green-100",
+      "swift": []
+    },
+    {
+      "id": "green.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2fa46b",
+      "canon": "#2fa46b",
+      "cssVar": "--green-500",
+      "swift": []
+    },
+    {
+      "id": "amber.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdf1dc",
+      "canon": "#fdf1dc",
+      "cssVar": "--amber-100",
+      "swift": []
+    },
+    {
+      "id": "amber.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e8920c",
+      "canon": "#e8920c",
+      "cssVar": "--amber-500",
+      "swift": []
+    },
+    {
+      "id": "alpha.shadow",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "rgba(20,24,33,0.16)",
+      "canon": "#14182129",
+      "cssVar": "--alpha-shadow",
+      "swift": []
+    },
+    {
+      "id": "space.none",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "0px",
+      "canon": "0",
+      "cssVar": "--space-none",
+      "swift": [
+        "DS.Spacing.none"
+      ]
+    },
+    {
+      "id": "space.xs",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "4px",
+      "canon": "4",
+      "cssVar": "--space-xs",
+      "swift": [
+        "DS.Spacing.xs"
+      ]
+    },
+    {
+      "id": "space.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--space-sm",
+      "swift": [
+        "DS.Spacing.sm"
+      ]
+    },
+    {
+      "id": "space.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--space-md",
+      "swift": [
+        "DS.Spacing.md"
+      ]
+    },
+    {
+      "id": "space.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--space-lg",
+      "swift": [
+        "DS.Spacing.lg"
+      ]
+    },
+    {
+      "id": "space.xl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "32px",
+      "canon": "32",
+      "cssVar": "--space-xl",
+      "swift": [
+        "DS.Spacing.xl"
+      ]
+    },
+    {
+      "id": "space.xxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "48px",
+      "canon": "48",
+      "cssVar": "--space-xxl",
+      "swift": [
+        "DS.Spacing.xxl"
+      ]
+    },
+    {
+      "id": "space.xxxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "64px",
+      "canon": "64",
+      "cssVar": "--space-xxxl",
+      "swift": [
+        "DS.Spacing.xxxl"
+      ]
+    },
+    {
+      "id": "radius.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "6px",
+      "canon": "6",
+      "cssVar": "--radius-sm",
+      "swift": [
+        "DS.Radius.sm"
+      ]
+    },
+    {
+      "id": "radius.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--radius-md",
+      "swift": [
+        "DS.Radius.md"
+      ]
+    },
+    {
+      "id": "radius.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--radius-lg",
+      "swift": [
+        "DS.Radius.lg"
+      ]
+    },
+    {
+      "id": "radius.pill",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "999px",
+      "canon": "999",
+      "cssVar": "--radius-pill",
+      "swift": [
+        "DS.Radius.pill"
+      ]
+    },
+    {
+      "id": "size.control.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "32px",
+      "canon": "32",
+      "cssVar": "--size-control-sm",
+      "swift": [
+        "DS.Size.controlSm"
+      ]
+    },
+    {
+      "id": "size.control.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "40px",
+      "canon": "40",
+      "cssVar": "--size-control-md",
+      "swift": [
+        "DS.Size.controlMd"
+      ]
+    },
+    {
+      "id": "size.control.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "48px",
+      "canon": "48",
+      "cssVar": "--size-control-lg",
+      "swift": [
+        "DS.Size.controlLg"
+      ]
+    },
+    {
+      "id": "size.icon.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--size-icon-sm",
+      "swift": [
+        "DS.Size.iconSm"
+      ]
+    },
+    {
+      "id": "size.icon.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "20px",
+      "canon": "20",
+      "cssVar": "--size-icon-md",
+      "swift": [
+        "DS.Size.iconMd"
+      ]
+    },
+    {
+      "id": "size.icon.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--size-icon-lg",
+      "swift": [
+        "DS.Size.iconLg"
+      ]
+    },
+    {
+      "id": "fontSize.xs",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "12px",
+      "canon": "12",
+      "cssVar": "--font-size-xs",
+      "swift": [
+        "DS.FontSize.xs"
+      ]
+    },
+    {
+      "id": "fontSize.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "14px",
+      "canon": "14",
+      "cssVar": "--font-size-sm",
+      "swift": [
+        "DS.FontSize.sm"
+      ]
+    },
+    {
+      "id": "fontSize.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--font-size-md",
+      "swift": [
+        "DS.FontSize.md"
+      ]
+    },
+    {
+      "id": "fontSize.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "20px",
+      "canon": "20",
+      "cssVar": "--font-size-lg",
+      "swift": [
+        "DS.FontSize.lg"
+      ]
+    },
+    {
+      "id": "fontSize.xl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "28px",
+      "canon": "28",
+      "cssVar": "--font-size-xl",
+      "swift": [
+        "DS.FontSize.xl"
+      ]
+    },
+    {
+      "id": "fontSize.xxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "36px",
+      "canon": "36",
+      "cssVar": "--font-size-xxl",
+      "swift": [
+        "DS.FontSize.xxl"
+      ]
+    },
+    {
+      "id": "fontWeight.regular",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "400",
+      "canon": "400",
+      "cssVar": "--font-weight-regular",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.medium",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "500",
+      "canon": "500",
+      "cssVar": "--font-weight-medium",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.semibold",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "600",
+      "canon": "600",
+      "cssVar": "--font-weight-semibold",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.bold",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "700",
+      "canon": "700",
+      "cssVar": "--font-weight-bold",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.tight",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.2",
+      "canon": "1.2",
+      "cssVar": "--line-height-tight",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.snug",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.35",
+      "canon": "1.35",
+      "cssVar": "--line-height-snug",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.normal",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.5",
+      "canon": "1.5",
+      "cssVar": "--line-height-normal",
+      "swift": []
+    },
+    {
+      "id": "borderWidth.thin",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "borderWidth",
+      "value": "1px",
+      "canon": "1",
+      "cssVar": "--border-width-thin",
+      "swift": [
+        "DS.BorderWidth.thin"
+      ]
+    },
+    {
+      "id": "borderWidth.thick",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "borderWidth",
+      "value": "2px",
+      "canon": "2",
+      "cssVar": "--border-width-thick",
+      "swift": [
+        "DS.BorderWidth.thick"
+      ]
+    },
+    {
+      "id": "duration.fast",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "120ms",
+      "canon": "120ms",
+      "cssVar": "--duration-fast",
+      "swift": []
+    },
+    {
+      "id": "duration.base",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "200ms",
+      "canon": "200ms",
+      "cssVar": "--duration-base",
+      "swift": []
+    },
+    {
+      "id": "duration.slow",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "320ms",
+      "canon": "320ms",
+      "cssVar": "--duration-slow",
+      "swift": []
+    },
+    {
+      "id": "easing.standard",
+      "tier": "primitives",
+      "type": "cubicBezier",
+      "dimension": "cubicBezier",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "canon": "cubic-bezier(0.2, 0, 0, 1)",
+      "cssVar": "--easing-standard",
+      "swift": []
+    },
+    {
+      "id": "color.bg.canvas",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#f6f7f9",
+      "canon": "#f6f7f9",
+      "cssVar": "--color-bg-canvas",
+      "swift": [
+        "Color.dsBgCanvas",
+        ".dsBgCanvas"
+      ]
+    },
+    {
+      "id": "color.bg.surface",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--color-bg-surface",
+      "swift": [
+        "Color.dsBgSurface",
+        ".dsBgSurface"
+      ]
+    },
+    {
+      "id": "color.bg.muted",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--color-bg-muted",
+      "swift": [
+        "Color.dsBgMuted",
+        ".dsBgMuted"
+      ]
+    },
+    {
+      "id": "color.bg.inverse",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--color-bg-inverse",
+      "swift": [
+        "Color.dsBgInverse",
+        ".dsBgInverse"
+      ]
+    },
+    {
+      "id": "color.text.primary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--color-text-primary",
+      "swift": [
+        "Color.dsTextPrimary",
+        ".dsTextPrimary"
+      ]
+    },
+    {
+      "id": "color.text.secondary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#6b7585",
+      "canon": "#6b7585",
+      "cssVar": "--color-text-secondary",
+      "swift": [
+        "Color.dsTextSecondary",
+        ".dsTextSecondary"
+      ]
+    },
+    {
+      "id": "color.text.muted",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#97a1b2",
+      "canon": "#97a1b2",
+      "cssVar": "--color-text-muted",
+      "swift": [
+        "Color.dsTextMuted",
+        ".dsTextMuted"
+      ]
+    },
+    {
+      "id": "color.text.onAction",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--color-text-on-action",
+      "swift": [
+        "Color.dsTextOnAction",
+        ".dsTextOnAction"
+      ]
+    },
+    {
+      "id": "color.action.primary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-action-primary",
+      "swift": [
+        "Color.dsActionPrimary",
+        ".dsActionPrimary"
+      ]
+    },
+    {
+      "id": "color.action.primaryHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#1f57d6",
+      "canon": "#1f57d6",
+      "cssVar": "--color-action-primary-hover",
+      "swift": [
+        "Color.dsActionPrimaryHover",
+        ".dsActionPrimaryHover"
+      ]
+    },
+    {
+      "id": "color.action.secondary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--color-action-secondary",
+      "swift": [
+        "Color.dsActionSecondary",
+        ".dsActionSecondary"
+      ]
+    },
+    {
+      "id": "color.action.secondaryHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--color-action-secondary-hover",
+      "swift": [
+        "Color.dsActionSecondaryHover",
+        ".dsActionSecondaryHover"
+      ]
+    },
+    {
+      "id": "color.action.danger",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--color-action-danger",
+      "swift": [
+        "Color.dsActionDanger",
+        ".dsActionDanger"
+      ]
+    },
+    {
+      "id": "color.action.dangerHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c93b40",
+      "canon": "#c93b40",
+      "cssVar": "--color-action-danger-hover",
+      "swift": [
+        "Color.dsActionDangerHover",
+        ".dsActionDangerHover"
+      ]
+    },
+    {
+      "id": "color.border.default",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--color-border-default",
+      "swift": [
+        "Color.dsBorderDefault",
+        ".dsBorderDefault"
+      ]
+    },
+    {
+      "id": "color.border.strong",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c1c8d4",
+      "canon": "#c1c8d4",
+      "cssVar": "--color-border-strong",
+      "swift": [
+        "Color.dsBorderStrong",
+        ".dsBorderStrong"
+      ]
+    },
+    {
+      "id": "color.border.focus",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-border-focus",
+      "swift": [
+        "Color.dsBorderFocus",
+        ".dsBorderFocus"
+      ]
+    },
+    {
+      "id": "color.status.success",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2fa46b",
+      "canon": "#2fa46b",
+      "cssVar": "--color-status-success",
+      "swift": [
+        "Color.dsStatusSuccess",
+        ".dsStatusSuccess"
+      ]
+    },
+    {
+      "id": "color.status.successBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e6f6ee",
+      "canon": "#e6f6ee",
+      "cssVar": "--color-status-success-bg",
+      "swift": [
+        "Color.dsStatusSuccessBg",
+        ".dsStatusSuccessBg"
+      ]
+    },
+    {
+      "id": "color.status.warning",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e8920c",
+      "canon": "#e8920c",
+      "cssVar": "--color-status-warning",
+      "swift": [
+        "Color.dsStatusWarning",
+        ".dsStatusWarning"
+      ]
+    },
+    {
+      "id": "color.status.warningBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdf1dc",
+      "canon": "#fdf1dc",
+      "cssVar": "--color-status-warning-bg",
+      "swift": [
+        "Color.dsStatusWarningBg",
+        ".dsStatusWarningBg"
+      ]
+    },
+    {
+      "id": "color.status.danger",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--color-status-danger",
+      "swift": [
+        "Color.dsStatusDanger",
+        ".dsStatusDanger"
+      ]
+    },
+    {
+      "id": "color.status.dangerBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdeaea",
+      "canon": "#fdeaea",
+      "cssVar": "--color-status-danger-bg",
+      "swift": [
+        "Color.dsStatusDangerBg",
+        ".dsStatusDangerBg"
+      ]
+    },
+    {
+      "id": "color.status.info",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-status-info",
+      "swift": [
+        "Color.dsStatusInfo",
+        ".dsStatusInfo"
+      ]
+    },
+    {
+      "id": "color.status.infoBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e7efff",
+      "canon": "#e7efff",
+      "cssVar": "--color-status-info-bg",
+      "swift": [
+        "Color.dsStatusInfoBg",
+        ".dsStatusInfoBg"
+      ]
+    },
+    {
+      "id": "type.display",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "1.2"
+      },
+      "canon": null,
+      "cssVar": "--type-display",
+      "swift": [
+        ".dsType(.display)",
+        "Font.dsDisplay"
+      ]
+    },
+    {
+      "id": "type.heading",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "28px",
+        "fontWeight": "600",
+        "lineHeight": "1.2"
+      },
+      "canon": null,
+      "cssVar": "--type-heading",
+      "swift": [
+        ".dsType(.heading)",
+        "Font.dsHeading"
+      ]
+    },
+    {
+      "id": "type.title",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "1.35"
+      },
+      "canon": null,
+      "cssVar": "--type-title",
+      "swift": [
+        ".dsType(.title)",
+        "Font.dsTitle"
+      ]
+    },
+    {
+      "id": "type.body",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-body",
+      "swift": [
+        ".dsType(.body)",
+        "Font.dsBody"
+      ]
+    },
+    {
+      "id": "type.label",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-label",
+      "swift": [
+        ".dsType(.label)",
+        "Font.dsLabel"
+      ]
+    },
+    {
+      "id": "type.caption",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-caption",
+      "swift": [
+        ".dsType(.caption)",
+        "Font.dsCaption"
+      ]
+    },
+    {
+      "id": "shadow.sm",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-sm",
+      "swift": [
+        ".dsShadow(.sm)"
+      ]
+    },
+    {
+      "id": "shadow.md",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "6px",
+        "blur": "16px",
+        "spread": "-4px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-md",
+      "swift": [
+        ".dsShadow(.md)"
+      ]
+    },
+    {
+      "id": "shadow.lg",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "16px",
+        "blur": "40px",
+        "spread": "-8px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-lg",
+      "swift": [
+        ".dsShadow(.lg)"
+      ]
+    },
+    {
+      "id": "shadow.focus",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "2px",
+        "color": "#2f6df6"
+      },
+      "canon": null,
+      "cssVar": "--shadow-focus",
+      "swift": [
+        ".dsShadow(.focus)"
+      ]
+    },
+    {
+      "id": "button.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--button-radius",
+      "swift": []
+    },
+    {
+      "id": "button.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--button-padding-x",
+      "swift": []
+    },
+    {
+      "id": "button.gap",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--button-gap",
+      "swift": []
+    },
+    {
+      "id": "button.bg.primary",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--button-bg-primary",
+      "swift": []
+    },
+    {
+      "id": "button.fg.primary",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--button-fg-primary",
+      "swift": []
+    },
+    {
+      "id": "card.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--card-radius",
+      "swift": []
+    },
+    {
+      "id": "card.padding",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--card-padding",
+      "swift": []
+    },
+    {
+      "id": "card.bg",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--card-bg",
+      "swift": []
+    },
+    {
+      "id": "card.border",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--card-border",
+      "swift": []
+    },
+    {
+      "id": "input.height",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "40px",
+      "canon": "40",
+      "cssVar": "--input-height",
+      "swift": []
+    },
+    {
+      "id": "input.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--input-radius",
+      "swift": []
+    },
+    {
+      "id": "input.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--input-padding-x",
+      "swift": []
+    },
+    {
+      "id": "badge.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "999px",
+      "canon": "999",
+      "cssVar": "--badge-radius",
+      "swift": []
+    },
+    {
+      "id": "badge.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--badge-padding-x",
+      "swift": []
+    }
+  ],
+  "components": [
+    {
+      "id": "btn-web-0001",
+      "logicalId": "button",
+      "platform": "web",
+      "canonicalName": "Button",
+      "category": "button",
+      "intentKeywords": [
+        "button",
+        "action",
+        "submit",
+        "cta",
+        "click",
+        "primary",
+        "confirm",
+        "save"
+      ],
+      "importName": "Button",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "btn-swift-0001",
+      "logicalId": "button",
+      "platform": "swift",
+      "canonicalName": "DSButton",
+      "category": "button",
+      "intentKeywords": [
+        "button",
+        "action",
+        "submit",
+        "cta",
+        "tap",
+        "primary",
+        "confirm",
+        "save"
+      ],
+      "swiftConstruct": "DSButton(_:action:)"
+    },
+    {
+      "id": "crd-web-0001",
+      "logicalId": "card",
+      "platform": "web",
+      "canonicalName": "Card",
+      "category": "card",
+      "intentKeywords": [
+        "card",
+        "panel",
+        "surface",
+        "container",
+        "tile",
+        "box",
+        "section"
+      ],
+      "importName": "Card",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "crd-swift-0001",
+      "logicalId": "card",
+      "platform": "swift",
+      "canonicalName": "dsCard",
+      "category": "card",
+      "intentKeywords": [
+        "card",
+        "panel",
+        "surface",
+        "container",
+        "tile",
+        "box",
+        "section"
+      ],
+      "swiftConstruct": ".dsCard(_:)"
+    },
+    {
+      "id": "bdg-web-0001",
+      "logicalId": "badge",
+      "platform": "web",
+      "canonicalName": "Badge",
+      "category": "badge",
+      "intentKeywords": [
+        "badge",
+        "tag",
+        "chip",
+        "status",
+        "pill",
+        "label",
+        "count"
+      ],
+      "importName": "Badge",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "bdg-swift-0001",
+      "logicalId": "badge",
+      "platform": "swift",
+      "canonicalName": "DSBadge",
+      "category": "badge",
+      "intentKeywords": [
+        "badge",
+        "tag",
+        "chip",
+        "status",
+        "pill",
+        "label",
+        "count"
+      ],
+      "swiftConstruct": "DSBadge(_:tone:)"
+    },
+    {
+      "id": "inp-web-0001",
+      "logicalId": "input",
+      "platform": "web",
+      "canonicalName": "TextField",
+      "category": "input",
+      "intentKeywords": [
+        "input",
+        "field",
+        "text",
+        "form",
+        "entry",
+        "email",
+        "password",
+        "search"
+      ],
+      "importName": "TextField",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "inp-swift-0001",
+      "logicalId": "input",
+      "platform": "swift",
+      "canonicalName": "DSTextField",
+      "category": "input",
+      "intentKeywords": [
+        "input",
+        "field",
+        "text",
+        "form",
+        "entry",
+        "email",
+        "password",
+        "search"
+      ],
+      "swiftConstruct": "DSTextField(_:text:)"
+    },
+    {
+      "id": "txt-web-0001",
+      "logicalId": "text",
+      "platform": "web",
+      "canonicalName": "Text",
+      "category": "text",
+      "intentKeywords": [
+        "text",
+        "typography",
+        "label",
+        "heading",
+        "title",
+        "body",
+        "copy",
+        "caption",
+        "paragraph"
+      ],
+      "importName": "Text",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "txt-swift-0001",
+      "logicalId": "text",
+      "platform": "swift",
+      "canonicalName": "DSText",
+      "category": "text",
+      "intentKeywords": [
+        "text",
+        "typography",
+        "label",
+        "heading",
+        "title",
+        "body",
+        "copy",
+        "caption",
+        "paragraph"
+      ],
+      "swiftConstruct": "DSText(_:_:)"
+    },
+    {
+      "id": "stk-web-0001",
+      "logicalId": "stack",
+      "platform": "web",
+      "canonicalName": "Stack",
+      "category": "layout",
+      "intentKeywords": [
+        "stack",
+        "layout",
+        "row",
+        "column",
+        "flex",
+        "spacing",
+        "gap",
+        "group",
+        "vstack",
+        "hstack"
+      ],
+      "importName": "Stack",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "stk-swift-0001",
+      "logicalId": "stack",
+      "platform": "swift",
+      "canonicalName": "DSStack",
+      "category": "layout",
+      "intentKeywords": [
+        "stack",
+        "layout",
+        "row",
+        "column",
+        "spacing",
+        "gap",
+        "group",
+        "vstack",
+        "hstack"
+      ],
+      "swiftConstruct": "DSStack(_:gap:)"
+    },
+    {
+      "id": "swt-web-0001",
+      "logicalId": "switch",
+      "platform": "web",
+      "canonicalName": "Switch",
+      "category": "control",
+      "intentKeywords": [
+        "switch",
+        "toggle",
+        "on",
+        "off",
+        "boolean",
+        "enable",
+        "setting"
+      ],
+      "importName": "Switch",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "avt-web-0001",
+      "logicalId": "avatar",
+      "platform": "web",
+      "canonicalName": "Avatar",
+      "category": "media",
+      "intentKeywords": [
+        "avatar",
+        "profile",
+        "user",
+        "image",
+        "photo",
+        "initials",
+        "picture"
+      ],
+      "importName": "Avatar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "swt-swift-0001",
+      "logicalId": "switch",
+      "platform": "swift",
+      "canonicalName": "DSToggle",
+      "category": "control",
+      "intentKeywords": [
+        "switch",
+        "toggle",
+        "on",
+        "off",
+        "boolean",
+        "enable",
+        "setting"
+      ],
+      "swiftConstruct": "DSToggle(_:isOn:)"
+    },
+    {
+      "id": "avt-swift-0001",
+      "logicalId": "avatar",
+      "platform": "swift",
+      "canonicalName": "DSAvatar",
+      "category": "media",
+      "intentKeywords": [
+        "avatar",
+        "profile",
+        "user",
+        "image",
+        "photo",
+        "initials",
+        "picture"
+      ],
+      "swiftConstruct": "DSAvatar(name:size:)"
+    },
+    {
+      "id": "d4baae2585fc",
+      "logicalId": "8f30a1518af9",
+      "platform": "web",
+      "canonicalName": "Accordion",
+      "category": "disclosure",
+      "intentKeywords": [
+        "accordion",
+        "collapsible",
+        "collapsible section",
+        "expandable",
+        "expandable panel",
+        "disclosure",
+        "toggle section",
+        "show hide",
+        "expander"
+      ],
+      "importName": "Accordion",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "24a145808dcb",
+      "logicalId": "e300b456b566",
+      "platform": "web",
+      "canonicalName": "Breadcrumb",
+      "category": "navigation",
+      "intentKeywords": [
+        "breadcrumb",
+        "breadcrumb trail",
+        "path navigation",
+        "hierarchy nav",
+        "hierarchy navigation",
+        "ancestor links",
+        "current location",
+        "trail",
+        "path",
+        "navigation",
+        "hierarchy",
+        "nav",
+        "crumb",
+        "location",
+        "ancestors"
+      ],
+      "importName": "Breadcrumb",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "a33d8690ad37",
+      "logicalId": "b8fb566531e3",
+      "platform": "web",
+      "canonicalName": "SegmentedControl",
+      "category": "control",
+      "intentKeywords": [
+        "segmented control",
+        "tab switcher",
+        "option group",
+        "toggle group",
+        "segmented",
+        "single select",
+        "view switcher",
+        "choice group",
+        "control",
+        "tab",
+        "switcher",
+        "option",
+        "group",
+        "toggle",
+        "select",
+        "segment",
+        "mutually exclusive"
+      ],
+      "importName": "SegmentedControl",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "9fd492e2b377",
+      "logicalId": "a9d98c7c0bb8",
+      "platform": "web",
+      "canonicalName": "StatSparkline",
+      "category": "dataviz",
+      "intentKeywords": [
+        "sparkline",
+        "mini",
+        "trend",
+        "chart",
+        "inline",
+        "metric",
+        "graph",
+        "stat",
+        "line",
+        "bars",
+        "mini trend chart",
+        "inline metric graph",
+        "stat trend line",
+        "micro chart",
+        "trend bars"
+      ],
+      "importName": "StatSparkline",
+      "importPath": "@/ds"
+    }
+  ]
+}

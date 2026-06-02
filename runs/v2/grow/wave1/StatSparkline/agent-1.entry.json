@@ -1,0 +1,40 @@
+{
+  "canonicalName": "StatSparkline",
+  "platform": "web",
+  "category": "dataviz",
+  "intentKeywords": ["sparkline", "mini", "trend", "chart", "inline", "metric", "graph", "stat", "line", "bars"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] },
+    { "name": "tone", "type": "enum", "values": ["up", "down"] },
+    { "name": "variant", "type": "enum", "values": ["line", "bar"] }
+  ],
+  "purposeStatement": "A compact, axis-less inline trend line/bars summarising one stat's direction at a glance; NOT a full readable chart with axes/labels and NOT a static status pill (use Badge).",
+  "antiPatterns": [
+    {
+      "pattern": "An inline <svg> with a raw hex stroke and px width/height to draw a tiny trend line next to a number",
+      "reason": "Bypasses the token system and the registry, re-inventing a one-off chart that drifts in colour and sizing",
+      "correctAlternative": "<StatSparkline>",
+      "severity": "should-not"
+    },
+    {
+      "pattern": "Adding axis ticks, gridlines, value labels, or tooltips to convey precise readings",
+      "reason": "A sparkline communicates direction only; precise reads belong to a full chart component",
+      "correctAlternative": "<StatSparkline>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "size.control.lg",
+      "size.control.md",
+      "size.icon.sm",
+      "size.icon.lg",
+      "borderWidth.thin",
+      "borderWidth.thick",
+      "color.status.success",
+      "color.status.danger",
+      "space.none"
+    ]
+  },
+  "web": { "importName": "StatSparkline", "importPath": "@/ds" }
+}

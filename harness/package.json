@@ -16,5 +16,8 @@
     "postcss-scss": "^4.0.9",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.4"
   }
 }

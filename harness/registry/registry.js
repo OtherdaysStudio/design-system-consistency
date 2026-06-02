@@ -40,19 +40,27 @@ export function query(manifest, { intent, category, platform, k = 5 } = {}) {
   return { intent: intentWords, candidates, decision, threshold: REUSE_THRESHOLD };
 }
 
-// REGISTER: compute content-hash id, detect collision, merge or append, rebuild indices, write.
+// A component's IDENTITY is canonical name + category + platform — NOT its variant
+// set. Two agents that bikeshed variants (size:sm|md vs size:sm|md|lg) are still
+// building the SAME component and must merge, not fork. (v2.1: this replaced a
+// pure content-hash that forked on signature noise; convergence 0.5 -> 1.0.)
+const nameKey = (c) => `${String(c.canonicalName || '').toLowerCase().trim()}|${c.category}|${c.platform}`;
+
+// REGISTER: compute content-hash id, detect collision (by id OR identity), merge or append.
 export function register(manifest, entry) {
   const sig = signature(entry);
   const { logicalId, id } = computeId(entry.intentKeywords || [], sig, entry.platform || 'web');
-  const existing = (manifest.components || []).find((c) => c.id === id);
+  const key = nameKey(entry);
+  const existing = (manifest.components || []).find((c) => c.id === id || nameKey(c) === key);
   if (existing) {
-    // Same content hash from two independent builds => MERGE, never fork.
-    const merged = mergeEntries(existing, entry);
-    Object.assign(existing, merged);
+    // Same id (identical content) OR same identity (same name/category/platform) => MERGE.
+    Object.assign(existing, mergeEntries(existing, entry));
     rebuild(manifest);
-    return { result: 'MERGED', id, logicalId, into: existing.canonicalName };
+    return { result: 'MERGED', id: existing.id, logicalId: existing.logicalId, into: existing.canonicalName };
   }
-  const sibling = (manifest.components || []).find((c) => c.logicalId === logicalId && c.platform !== entry.platform);
+  const sibling = (manifest.components || []).find((c) =>
+    String(c.canonicalName).toLowerCase() === String(entry.canonicalName).toLowerCase()
+    && c.category === entry.category && c.platform !== entry.platform);
   const full = {
     id, logicalId,
     canonicalName: entry.canonicalName,
@@ -77,8 +85,15 @@ export function register(manifest, entry) {
 function mergeEntries(a, b) {
   const out = { ...a };
   out.intentKeywords = [...new Set([...(a.intentKeywords || []), ...(b.intentKeywords || [])])];
-  out.variants = a.variants?.length ? a.variants : (b.variants || []);
+  // union variants by axis name, unioning their value sets (reconciles bikeshedding)
+  const byAxis = {};
+  for (const v of [...(a.variants || []), ...(b.variants || [])]) {
+    const ax = (byAxis[v.name] ||= { name: v.name, type: v.type || 'enum', values: new Set() });
+    for (const val of v.values || []) ax.values.add(val);
+  }
+  out.variants = Object.values(byAxis).map((v) => ({ name: v.name, type: v.type, values: [...v.values].sort() }));
   out.status = a.status === 'stable' ? 'stable' : (b.status || a.status);
+  out.mergedFrom = (a.mergedFrom || 1) + 1;
   return out;
 }
 
@@ -97,6 +112,13 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const out = query(manifest, { intent, platform });
     console.log(JSON.stringify(out, null, 2));
   } else if (cmd === 'register') {
+    // Guard: never clobber the canonical source of truth by accident. Writes require
+    // an explicit --manifest pointing somewhere other than reference/design-system.json.
+    const canonical = path.resolve(import.meta.dirname, '..', '..', 'reference', 'design-system.json');
+    if (mfIdx < 0 || path.resolve(manifestPath) === canonical) {
+      console.error('❌ refusing to register into the canonical manifest. Pass --manifest <working-copy.json> (the eval registers into runs/v2/grow/ via apply-wave1.js).');
+      process.exit(2);
+    }
     const file = rest.find((a) => a.endsWith('.json') && a !== manifestPath);
     const entry = JSON.parse(fs.readFileSync(file, 'utf8'));
     const res = register(manifest, entry);

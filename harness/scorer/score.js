@@ -150,14 +150,53 @@ function printReport(report) {
   }
 }
 
+// Flat mode: score an entire directory tree as ONE unit (for a real repo CI gate).
+export function scoreFlat(dir, resolved) {
+  const lk = buildLookups(resolved);
+  const files = walkFiles(dir).map((f) => {
+    const code = stripFences(fs.readFileSync(f, 'utf8'));
+    const parsed = platformOf(f) === 'swift' ? parseSwift(code, lk) : parseWeb(code, lk);
+    parsed.file = path.relative(ROOT, f); parsed.task = path.basename(path.dirname(f)); parsed.platform = platformOf(f);
+    return parsed;
+  });
+  return { files: files.length, ...scoreFileList(files, lk) };
+}
+
 // ---- main ----
 if (import.meta.url === `file://${process.argv[1]}`) {
   const args = process.argv.slice(2);
-  const runsDir = path.resolve(args.find((a) => !a.startsWith('--')) || 'runs');
+  const dir = path.resolve(args.find((a) => !a.startsWith('--')) || 'runs');
   const manifestArg = args.includes('--manifest') ? args[args.indexOf('--manifest') + 1] : path.join(ROOT, 'reference', '_resolved.json');
   const jsonOut = args.includes('--json') ? args[args.indexOf('--json') + 1] : null;
+  const flat = args.includes('--flat');
+  const gateIdx = args.indexOf('--gate');
+  const gate = gateIdx >= 0 ? parseFloat(args[gateIdx + 1]) : null;
   const resolved = JSON.parse(fs.readFileSync(manifestArg, 'utf8'));
-  const report = scoreRuns(runsDir, resolved);
-  printReport(report);
-  if (jsonOut) { fs.writeFileSync(jsonOut, JSON.stringify(report, null, 2)); console.log('\nwrote', jsonOut); }
+
+  if (flat || gate != null) {
+    const r = scoreFlat(dir, resolved);
+    console.log(`\nConsistency (flat) for ${path.relative(ROOT, dir) || dir}`);
+    console.log(`  TA ${r.TA ?? 'n/a'}  CR ${r.CR ?? 'n/a'}  VC ${r.VC ?? 'n/a'}  →  COMPOSITE ${r.composite} (${r.tier})`);
+    console.log(`  ${r.taDetail}; ${r.crDetail}`);
+    if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify(r, null, 2));
+    if (gate != null) {
+      if (r.composite == null || r.composite < gate) {
+        console.error(`\n❌ consistency gate FAILED: composite ${r.composite} < ${gate}`);
+        const hints = [];
+        if (r.CR != null && r.CR < 100) hints.push('reuse registered components instead of hand-rolling (see "missed" below)');
+        if (r.TA != null && r.TA < 100) hints.push('replace raw literals with tokens (e.g. padding:16px -> token.space.md / DS.Spacing.md)');
+        for (const f of (r.perFile || [])) {
+          if (f.literals?.length) console.error(`   ${f.file}: literals ${f.literals.slice(0, 5).join(', ')}`);
+          if (f.missed?.length) console.error(`   ${f.file}: missed ${f.missed.join(', ')}`);
+        }
+        if (hints.length) console.error('\n   fix: ' + hints.join('\n        '));
+        process.exit(1);
+      }
+      console.log(`\n✅ consistency gate PASSED: composite ${r.composite} ≥ ${gate}`);
+    }
+  } else {
+    const report = scoreRuns(dir, resolved);
+    printReport(report);
+    if (jsonOut) { fs.writeFileSync(jsonOut, JSON.stringify(report, null, 2)); console.log('\nwrote', jsonOut); }
+  }
 }

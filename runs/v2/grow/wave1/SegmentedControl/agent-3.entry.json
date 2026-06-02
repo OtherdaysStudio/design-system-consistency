@@ -1,0 +1,36 @@
+{
+  "canonicalName": "SegmentedControl",
+  "platform": "web",
+  "category": "control",
+  "intentKeywords": ["segmented control", "tab switcher", "option group", "toggle group", "segment", "view switcher", "single select", "mutually exclusive"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md"] },
+    { "name": "radius", "type": "enum", "values": ["pill", "md"] }
+  ],
+  "purposeStatement": "Horizontal group of 2-4 equal-width segments for switching between mutually-exclusive views/options in one context; NOT for triggering actions (Button), binary on/off (Switch), or page navigation (Link).",
+  "antiPatterns": [
+    { "pattern": "A row of Buttons toggled by tracking which one is 'active' in local state", "reason": "Buttons trigger actions and have no single-select semantics or equal-width segment styling, so each build re-invents the selected/muted treatment differently.", "correctAlternative": "<SegmentedControl>", "severity": "should-not" },
+    { "pattern": "Multiple Switch components to pick one of several options", "reason": "Switch is binary on/off; using several for one-of-N is ambiguous and lets multiple be on at once.", "correctAlternative": "<SegmentedControl>", "severity": "should-not" },
+    { "pattern": "A raw <div> of <span>s styled inline with token literals for the selected pill", "reason": "An inline one-off bypasses the registered component, so radius/fill/text treatment drifts between screens.", "correctAlternative": "<SegmentedControl>", "severity": "should-not" }
+  ],
+  "tokenMap": {
+    "all": [
+      "color.action.primary",
+      "color.bg.muted",
+      "color.text.onAction",
+      "color.text.muted",
+      "space.xs",
+      "space.sm",
+      "space.md",
+      "radius.pill",
+      "radius.md",
+      "radius.sm",
+      "shadow.sm",
+      "duration.fast",
+      "easing.standard",
+      "type.label",
+      "type.caption"
+    ]
+  },
+  "web": { "importName": "SegmentedControl", "importPath": "@/ds" }
+}

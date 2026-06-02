@@ -1,0 +1,19 @@
+{
+  "canonicalName": "StatSparkline",
+  "platform": "web",
+  "category": "dataviz",
+  "intentKeywords": ["sparkline", "mini trend chart", "inline metric graph", "stat trend line", "micro chart", "trend bars"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] },
+    { "name": "tone", "type": "enum", "values": ["neutral", "success", "danger"] },
+    { "name": "variant", "type": "enum", "values": ["primary", "secondary"] }
+  ],
+  "purposeStatement": "A compact inline trend visualization (line or mini bars, no axis) for a single stat's recent movement; NOT for full charts with axes, legends, tooltips, or multi-series analytics graphs.",
+  "antiPatterns": [
+    { "pattern": "Hand-rolling an inline <svg> polyline with hardcoded stroke colors to show a stat's trend", "reason": "Re-invents a one-off, drifts on color/size, and bypasses token styling and registry reuse", "correctAlternative": "<StatSparkline>", "severity": "should-not" }
+  ],
+  "tokenMap": {
+    "all": ["color.status.success", "color.status.danger", "color.text.muted", "radius.sm", "space.xs", "type.caption"]
+  },
+  "web": { "importName": "StatSparkline", "importPath": "@/ds" }
+}

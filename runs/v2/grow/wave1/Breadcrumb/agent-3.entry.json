@@ -1,0 +1,22 @@
+{
+  "canonicalName": "Breadcrumb",
+  "platform": "web",
+  "category": "navigation",
+  "intentKeywords": ["breadcrumb", "trail", "path", "navigation", "hierarchy", "nav", "location", "ancestors"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+  ],
+  "purposeStatement": "Shows the user's position in a content hierarchy as a trail of ancestor links ending in the current page; NOT for tabs, menus, or a generic row of links.",
+  "antiPatterns": [
+    {
+      "pattern": "A hand-rolled <nav> of inline-styled <a> elements joined by a literal '/' or raw-colored span separators",
+      "reason": "Re-invents hierarchy navigation with raw color/gap literals, fragmenting the type scale and spacing scale and bypassing the registered component.",
+      "correctAlternative": "<Breadcrumb>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": ["space.xs", "color.text.primary", "color.text.secondary", "color.text.muted", "type.label", "type.caption", "type.body"]
+  },
+  "web": { "importName": "Breadcrumb", "importPath": "@/ds" }
+}

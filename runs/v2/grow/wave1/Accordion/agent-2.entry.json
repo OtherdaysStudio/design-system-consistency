@@ -1,0 +1,53 @@
+{
+  "canonicalName": "Accordion",
+  "platform": "web",
+  "category": "disclosure",
+  "intentKeywords": [
+    "accordion",
+    "collapsible",
+    "collapsible section",
+    "expandable panel",
+    "expandable",
+    "disclosure",
+    "toggle section",
+    "show hide",
+    "expander"
+  ],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+  ],
+  "purposeStatement": "A single collapsible section whose header row toggles a body region open/closed; use to progressively disclose one block of content. NOT for tabs (mutually exclusive views), navigation, or a persistent always-visible surface (use Card).",
+  "antiPatterns": [
+    {
+      "pattern": "A raw <div>/<button> wired with onClick + inline padding/border-radius/box-shadow and a rotating chevron to expand/collapse content",
+      "reason": "Re-invents the disclosure pattern as an inline one-off, hardcodes spacing/border/radius literals, and drops the aria-expanded/aria-controls accessibility wiring.",
+      "correctAlternative": "<Accordion>",
+      "severity": "should-not"
+    },
+    {
+      "pattern": "Using <Card> with a manually toggled hidden body to fake collapsibility",
+      "reason": "Card is a static bounded surface with no disclosure semantics; faking toggle state on it diverges from the canonical expand/collapse component.",
+      "correctAlternative": "<Accordion>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "color.bg.surface",
+      "color.border.default",
+      "color.text.primary",
+      "color.text.secondary",
+      "radius.md",
+      "borderWidth.thin",
+      "space.none",
+      "space.sm",
+      "space.md",
+      "space.lg",
+      "size.icon.sm",
+      "size.icon.md",
+      "duration.fast",
+      "easing.standard"
+    ]
+  },
+  "web": { "importName": "Accordion", "importPath": "@/ds" }
+}

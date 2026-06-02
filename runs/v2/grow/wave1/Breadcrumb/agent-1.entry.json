@@ -1,0 +1,40 @@
+{
+  "canonicalName": "Breadcrumb",
+  "platform": "web",
+  "category": "navigation",
+  "intentKeywords": [
+    "breadcrumb",
+    "breadcrumb trail",
+    "path navigation",
+    "hierarchy nav",
+    "hierarchy navigation",
+    "ancestor links",
+    "current location",
+    "trail"
+  ],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+  ],
+  "purposeStatement": "Shows the user's position in a navigational hierarchy as a row of ancestor links ending in the current page; NOT for primary site navigation, tabs, or stepping through a linear wizard.",
+  "antiPatterns": [
+    {
+      "pattern": "A hand-rolled row of <a> tags joined by a literal '/' or '>' character with ad-hoc margins",
+      "reason": "Re-invents the trail with raw separators and off-token spacing, drifting from the registered crumb spacing, type scale, and current-page treatment.",
+      "correctAlternative": "<Breadcrumb>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "color.action.primary",
+      "color.text.primary",
+      "color.text.secondary",
+      "color.text.muted",
+      "space.xs",
+      "type.caption",
+      "type.label",
+      "type.body"
+    ]
+  },
+  "web": { "importName": "Breadcrumb", "importPath": "@/ds" }
+}

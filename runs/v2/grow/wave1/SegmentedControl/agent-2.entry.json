@@ -1,0 +1,47 @@
+{
+  "canonicalName": "SegmentedControl",
+  "platform": "web",
+  "category": "control",
+  "intentKeywords": ["segmented", "control", "tab", "switcher", "option", "group", "toggle", "select"],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md"] },
+    { "name": "radius", "type": "enum", "values": ["pill", "md"] }
+  ],
+  "purposeStatement": "Horizontal mutually-exclusive group of 2-4 equal-width segments where exactly one is selected; use to switch between a small fixed set of peer views/options. NOT for page navigation, binary on/off (use Switch), or >4 options / free text (use Select).",
+  "antiPatterns": [
+    {
+      "pattern": "A row of raw <button>s with inline background/padding faking a selected tab",
+      "reason": "Re-invents an inline one-off with hardcoded styling that drifts from the token scale instead of reusing the registered control.",
+      "correctAlternative": "<SegmentedControl>",
+      "severity": "should-not"
+    },
+    {
+      "pattern": "Using a Switch or multiple checkboxes for a single-choice option group",
+      "reason": "A segmented control encodes single-select among peers; a Switch is binary and checkboxes imply multi-select.",
+      "correctAlternative": "<SegmentedControl>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "size.control.sm",
+      "size.control.md",
+      "radius.pill",
+      "radius.md",
+      "radius.sm",
+      "space.xs",
+      "space.md",
+      "color.bg.muted",
+      "color.action.primary",
+      "color.border.default",
+      "color.text.onAction",
+      "color.text.muted",
+      "borderWidth.thin",
+      "shadow.sm",
+      "duration.fast",
+      "easing.standard",
+      "type.label"
+    ]
+  },
+  "web": { "importName": "SegmentedControl", "importPath": "@/ds" }
+}

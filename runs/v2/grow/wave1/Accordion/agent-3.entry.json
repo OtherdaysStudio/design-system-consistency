@@ -1,0 +1,13 @@
+{
+  "canonicalName": "Accordion",
+  "platform": "web",
+  "category": "disclosure",
+  "intentKeywords": ["accordion", "collapsible", "collapsible section", "expandable", "expandable panel", "disclosure", "show hide", "toggle section", "expander"],
+  "variants": [{ "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }],
+  "purposeStatement": "A single collapsible section whose header row toggles a body region; use to progressively disclose secondary content. NOT for mutually-exclusive tabbed panels (use a tab component) and NOT for focus-trapping overlays (use a modal).",
+  "antiPatterns": [
+    { "pattern": "A raw <div> with an onClick handler and inline padding/border that shows/hides content", "reason": "Re-invents disclosure as a token-less one-off, losing surface/border/radius consistency and accessible aria-expanded/region semantics.", "correctAlternative": "<Accordion>", "severity": "should-not" }
+  ],
+  "tokenMap": { "all": ["color.bg.surface", "color.border.default", "color.text.primary", "color.text.secondary", "radius.md", "space.sm", "space.md", "space.lg", "borderWidth.thin", "size.icon.sm", "duration.fast", "easing.standard", "type.title"] },
+  "web": { "importName": "Accordion", "importPath": "@/ds" }
+}

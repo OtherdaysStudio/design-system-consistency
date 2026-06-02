@@ -1,0 +1,49 @@
+{
+  "canonicalName": "Accordion",
+  "platform": "web",
+  "category": "disclosure",
+  "intentKeywords": [
+    "accordion",
+    "collapsible",
+    "collapsible section",
+    "expandable",
+    "expandable panel",
+    "disclosure",
+    "toggle section",
+    "show hide",
+    "expander"
+  ],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }
+  ],
+  "purposeStatement": "A single collapsible disclosure section whose header row toggles a body region; use to progressively reveal one optional block of content. NOT for navigation, tabs, or modals, and NOT for a static grouping surface (use Card).",
+  "antiPatterns": [
+    {
+      "pattern": "<div> + onClick toggling visibility with inline padding/border/radius to fake a collapsible header and body",
+      "reason": "re-invents the disclosure surface and hardcodes spacing/border/radius literals, drifting from the token scale and skipping accessible expand/collapse semantics",
+      "correctAlternative": "<Accordion>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "color.bg.surface",
+      "color.border.default",
+      "color.text.primary",
+      "color.text.secondary",
+      "radius.md",
+      "borderWidth.thin",
+      "space.sm",
+      "space.md",
+      "space.lg",
+      "size.icon.sm",
+      "duration.fast",
+      "duration.base",
+      "easing.standard"
+    ]
+  },
+  "web": {
+    "importName": "Accordion",
+    "importPath": "@/ds"
+  }
+}

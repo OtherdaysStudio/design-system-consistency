@@ -1,0 +1,52 @@
+{
+  "canonicalName": "Breadcrumb",
+  "platform": "web",
+  "category": "navigation",
+  "intentKeywords": [
+    "breadcrumb",
+    "trail",
+    "path",
+    "navigation",
+    "hierarchy",
+    "nav",
+    "crumb",
+    "location"
+  ],
+  "variants": [
+    {
+      "name": "size",
+      "type": "enum",
+      "values": ["sm", "md", "lg"]
+    },
+    {
+      "name": "separator",
+      "type": "enum",
+      "values": ["chevron", "slash"]
+    }
+  ],
+  "purposeStatement": "A horizontal trail of links showing the user's position in a content hierarchy, last crumb being the current page. Use for path/hierarchy navigation only — NOT a tab bar, primary nav menu, or stepper.",
+  "antiPatterns": [
+    {
+      "pattern": "<div>/<nav> of <a> tags with raw '>' or '/' text and inline color/gap literals",
+      "reason": "re-invents the breadcrumb with ad-hoc spacing, colors, and a one-off separator instead of registered tokens and primitives",
+      "correctAlternative": "<Breadcrumb>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "type.caption",
+      "type.label",
+      "type.body",
+      "color.text.primary",
+      "color.text.secondary",
+      "color.text.muted",
+      "space.xs",
+      "space.sm"
+    ]
+  },
+  "web": {
+    "importName": "Breadcrumb",
+    "importPath": "@/ds"
+  }
+}

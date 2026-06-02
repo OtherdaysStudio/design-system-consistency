@@ -1,0 +1,50 @@
+{
+  "canonicalName": "StatSparkline",
+  "platform": "web",
+  "category": "dataviz",
+  "intentKeywords": [
+    "sparkline",
+    "mini",
+    "trend",
+    "chart",
+    "inline",
+    "metric",
+    "graph",
+    "stat",
+    "line",
+    "bars"
+  ],
+  "variants": [
+    { "name": "size", "type": "enum", "values": ["sm", "md", "lg"] },
+    { "name": "tone", "type": "enum", "values": ["neutral", "success", "danger"] },
+    { "name": "variant", "type": "enum", "values": ["line", "bar"] }
+  ],
+  "purposeStatement": "A compact, axis-less inline trend (line or mini bars) for a single stat; NOT for full charts that need axes, ticks, legends, or interaction.",
+  "antiPatterns": [
+    {
+      "pattern": "inline <svg> with a raw hex stroke and pixel width to fake a trend line",
+      "reason": "re-invents the sparkline and hardcodes color/size literals instead of tokens",
+      "correctAlternative": "<StatSparkline>",
+      "severity": "should-not"
+    }
+  ],
+  "tokenMap": {
+    "all": [
+      "size.control.sm",
+      "size.control.md",
+      "size.control.lg",
+      "borderWidth.thin",
+      "borderWidth.thick",
+      "space.xs",
+      "space.sm",
+      "type.caption"
+    ],
+    "neutral": ["color.text.muted", "color.bg.muted"],
+    "success": ["color.status.success", "color.status.successBg"],
+    "danger": ["color.status.danger", "color.status.dangerBg"]
+  },
+  "web": {
+    "importName": "StatSparkline",
+    "importPath": "@/ds"
+  }
+}
