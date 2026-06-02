@@ -33,6 +33,12 @@ reference the design system.
 The exact workflow scripts used are under the session's `workflows/scripts/` (dc-run1, dc-run2); the
 prompts are embedded there. To re-run, re-issue the workflow with a fresh `runs/<id>` path.
 
+## Visual proof (optional)
+`node render/build-gallery.mjs <task>` esbuild-bundles the *actual* generated files for a task
+(framework vs baseline) against the real DS into `render/dist/gallery-<task>.html`. Serve the dir
+(`python3 -m http.server` — `file://` is blocked in headless Chromium) and screenshot to see whether
+the measured convergence is visually real. Sample outputs are in `docs/images/`.
+
 ## Iterating the framework
 The score is a feedback loop. When a sub-metric lands below target, the per-file offender list
 (`literals[...]`, `missed: [...]`) localizes the cause; sharpen the framework/manifest, regenerate,

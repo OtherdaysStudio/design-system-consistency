@@ -52,13 +52,45 @@ registered component; never re-style on a raw element what a component already e
 
 ## Run 2 (refined framework, N=5 — a harder convergence test)
 
-<!-- RUN2_TABLE -->
+| Condition | Token Adherence | Component Reuse | Value Clustering | Convergence | **Composite** |
+|---|---:|---:|---:|---:|---:|
+| framework-web (N=5) | n/a¹ | 100% | n/a¹ | 98.9% | **99.72%** |
+| framework-swift (N=5) | 100% | 100% | 100% | 95.3% | **99.53%** |
+| **framework (both stacks)** | **100%** | **100%** | **100%** | **97.1%** | **99.71%** |
 
-With the redundant path removed, agents express **everything** through registered components — leaving
-no raw style declarations to even measure (TA/VC become n/a: there is nothing un-tokenized because
-there is nothing raw). Component reuse and cross-session convergence are both **100%** across 5
-independent agents per task on both stacks. Example output (web pricing card) is pure
-`<Card>/<Stack>/<Text>/<Badge>/<Button>` with zero literals.
+¹ With the redundant path removed, the **web** agents express *everything* through registered
+components — leaving no raw style declarations to even measure (TA/VC = n/a: there is nothing
+un-tokenized because there is nothing raw). Example output (web pricing card) is pure
+`<Card>/<Stack>/<Text>/<Badge>/<Button>` with zero literals. SwiftUI agents kept a few token-driven
+declarations (a `Spacer`, a `.frame` icon size), so SwiftUI TA/VC register a real **100%**.
+
+**Component reuse is 100% on both stacks** across 5 independent agents per task — 185+ component
+instances, zero hand-rolled clones, zero raw literals.
+
+### The CC residual is healthy latitude, not drift
+The remaining convergence gap localizes to two under-specified tasks (swift notification-toast 71.9,
+web profile-header 93.3). The feature-set diff shows it is **not inconsistency**: every agent used the
+*identical core components* and *only* tokens. The variance is genuine design choice — e.g., the
+toast brief literally said *"a success badge/dot"*, so some agents chose `<Badge>` and one chose a
+`Text` dot; both are token-correct. Forcing CC to 100 would mean eliminating legitimate composition
+freedom, which is not what consistency means. The framework guarantees what matters — **reuse the
+system's decisions (CR/TA = 100), never re-invent** — while leaving room to design.
+
+## Visual proof: convergence you can see
+
+The score says independent agents converge. Rendering the *actual* generated components against the
+real DS (esbuild bundle of the run files; `harness/render/build-gallery.mjs`) shows it directly —
+**left: 5 agents with the framework; right: 2 cold-generation agents, same task.**
+
+![Pricing card — 5 framework agents converge; 2 baseline agents diverge](images/pricing-card-gallery.png)
+
+![Stat card — framework cards are pixel-identical; baseline differs in badge/casing/shadow](images/stat-card-gallery.png)
+
+![Login form — framework uses DS blue + identical fields; baseline re-invents in purple](images/login-form-gallery.png)
+
+The framework column is one consistent UI rendered five times; the baseline column re-invents the
+component each time — ad-hoc **purple** instead of the DS blue, different badge styles, different
+shadows and spacing. That difference *is* the 9% → 99.7% gap, made visible.
 
 ## Interpretation
 

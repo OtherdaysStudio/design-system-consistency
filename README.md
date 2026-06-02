@@ -58,6 +58,11 @@ with the framework, on both stacks:
 
 See [`docs/RESULTS.md`](docs/RESULTS.md) for the full per-stack, per-task breakdown and methodology.
 
+And convergence you can *see* — the same task, built by 5 independent agents with the framework
+(left) vs. 2 cold-generation agents (right), rendered from the actual generated files:
+
+![5 framework agents converge; baseline re-invents in purple](docs/images/stat-card-gallery.png)
+
 ## Reproduce it
 
 ```bash

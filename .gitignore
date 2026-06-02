@@ -5,3 +5,5 @@ runs/**/raw/
 reference/_resolved.json
 reference/web/USAGE.md
 reference/swiftui/USAGE.md
+harness/render/dist/
+.playwright-mcp/
