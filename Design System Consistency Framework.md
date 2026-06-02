@@ -5,6 +5,12 @@ description: Enforce and maintain design consistency in SwiftUI codebases — co
 
 # SwiftUI Design Consistency
 
+> **▸ Superseded / generalized.** This v1 sketch has been built upon and generalized into a
+> cross-stack framework (web + SwiftUI), grounded in research and empirically validated to reach
+> ~99% consistency. See [`framework/SKILL.md`](./framework/SKILL.md) (core), the SwiftUI adapter
+> [`framework/adapters/swiftui.md`](./framework/adapters/swiftui.md), and the measured proof in
+> [`docs/RESULTS.md`](./docs/RESULTS.md). This original is kept as the historical starting point.
+
 > **This document is a rough starting point, not a finished spec.** It captures one person's
 > first-pass thinking about how design consistency *should* work in a SwiftUI app. Your job is
 > not to follow it literally — it's to **consistently improve on it**. Treat every section as a

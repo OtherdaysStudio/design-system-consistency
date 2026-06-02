@@ -1,0 +1,472 @@
+{
+  "conditions": {
+    "framework-swift": {
+      "files": 15,
+      "TA": null,
+      "taDetail": "0/0 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "185 reused / 0 missed",
+      "VC": null,
+      "vcPerDim": {},
+      "CC": 100,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 100,
+          "runs": 5
+        },
+        {
+          "task": "pricing-card",
+          "cc": 100,
+          "runs": 5
+        },
+        {
+          "task": "settings-row",
+          "cc": 100,
+          "runs": 5
+        }
+      ],
+      "composite": 100,
+      "tier": "excellent",
+      "flags": [],
+      "perFile": [
+        {
+          "file": "runs/run2/framework-swift/login-form/agent-1.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/login-form/agent-2.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/login-form/agent-3.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/login-form/agent-4.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/login-form/agent-5.swift",
+          "task": "login-form",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "16 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/pricing-card/agent-1.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/pricing-card/agent-2.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/pricing-card/agent-3.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/pricing-card/agent-4.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "13 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/pricing-card/agent-5.swift",
+          "task": "pricing-card",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "13 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/settings-row/agent-1.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/settings-row/agent-2.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/settings-row/agent-3.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/settings-row/agent-4.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-swift/settings-row/agent-5.swift",
+          "task": "settings-row",
+          "platform": "swift",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "7 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        }
+      ]
+    },
+    "framework-web": {
+      "files": 16,
+      "TA": null,
+      "taDetail": "0/0 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "184 reused / 0 missed",
+      "VC": null,
+      "vcPerDim": {},
+      "CC": 100,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 100,
+          "runs": 5
+        },
+        {
+          "task": "pricing-card",
+          "cc": 100,
+          "runs": 5
+        },
+        {
+          "task": "settings-row",
+          "cc": 100,
+          "runs": 5
+        }
+      ],
+      "composite": 100,
+      "tier": "excellent",
+      "flags": [],
+      "perFile": [
+        {
+          "file": "runs/run2/framework-web/login-form/agent-1.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/login-form/agent-2.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/login-form/agent-3.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/login-form/agent-4.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/login-form/agent-5.tsx",
+          "task": "login-form",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/pricing-card/agent-1.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/pricing-card/agent-2.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/pricing-card/agent-3.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/pricing-card/agent-4.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "15 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/pricing-card/agent-5.tsx",
+          "task": "pricing-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "14 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/settings-row/agent-1.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/settings-row/agent-2.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/settings-row/agent-3.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/settings-row/agent-4.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/settings-row/agent-5.tsx",
+          "task": "settings-row",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "6 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        },
+        {
+          "file": "runs/run2/framework-web/stat-card/agent-1.tsx",
+          "task": "stat-card",
+          "platform": "web",
+          "TA": null,
+          "taDetail": "0/0",
+          "CR": 100,
+          "crDetail": "5 reused / 0 missed",
+          "VC": null,
+          "literals": [],
+          "missed": []
+        }
+      ]
+    }
+  },
+  "aggregate": {
+    "framework": {
+      "files": 31,
+      "TA": null,
+      "taDetail": "0/0 styled decls reference tokens",
+      "CR": 100,
+      "crDetail": "369 reused / 0 missed",
+      "VC": null,
+      "vcPerDim": {},
+      "CC": 100,
+      "ccPerTask": [
+        {
+          "task": "login-form",
+          "cc": 44.4,
+          "runs": 10
+        },
+        {
+          "task": "pricing-card",
+          "cc": 44.4,
+          "runs": 10
+        },
+        {
+          "task": "settings-row",
+          "cc": 44.4,
+          "runs": 10
+        }
+      ],
+      "composite": 100,
+      "tier": "excellent",
+      "flags": []
+    }
+  }
+}
