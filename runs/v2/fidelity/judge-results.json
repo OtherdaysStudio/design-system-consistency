@@ -1,0 +1,89 @@
+{
+  "summary": "VLM judges rendered framework output vs the brief — the consistent!=correct gate",
+  "agentCount": 6,
+  "logs": [],
+  "result": [
+    {
+      "task": "Visual QA of LEFT column (\"WITH framework\") — 5 Pro pricing cards by 5 independent agents",
+      "matchesBrief": true,
+      "visualFidelity": 4,
+      "crossAgentConsistency": 3,
+      "issues": [
+        "All 5 cards contain every brief element (Most popular pill, Pro tier name, description, large $29 with /mo, 3 feature lines, full-width Choose Pro CTA, elevated white surface), so the brief is satisfied.",
+        "Feature-line treatment is inconsistent across agents: agents 1 and 2 render features with a checkmark icon and dark near-black text; agents 3, 4, and 5 drop the checkmark entirely and use lighter gray text with looser line spacing. This is the biggest consistency break and makes 3 of 5 cards read as plain text rather than a feature/check list.",
+        "Feature ordering varies: agents 1, 2 list 'Unlimited projects / Priority support / Advanced analytics' while agents 3, 4, 5 list 'Unlimited projects / Advanced analytics / Priority support'.",
+        "Description copy differs between agents: 'scale your team' (agent 1), 'scale your work' (agent 2), 'ship faster' (agents 3/4/5) — minor, agent-authored, but not identical.",
+        "Checkless gray feature text on agents 3/4/5 is slightly lower contrast than the dark text on agents 1/2, though still legible.",
+        "Consistent and correct across all 5: pale-blue rounded 'Most popular' pill with blue text, bold 'Pro' heading, large bold '$29' with small gray baseline-aligned '/mo', full-width royal-blue 'Choose Pro' CTA with centered white label, and elevated white card surface with subtle shadow/border on gray background.",
+        "No broken layouts, clipping, overflow, or misalignment detected; pill, price, and CTA are visually tight and near-identical across cards."
+      ]
+    },
+    {
+      "task": "Visual QA of the LEFT column (\"WITH framework\") — 5 Pro pricing cards built by 5 independent agents, judged against the brief (Most popular pill, tier name, description, large $29 price with /mo, feature lines, full-width primary CTA, elevated surface).",
+      "matchesBrief": true,
+      "visualFidelity": 4,
+      "crossAgentConsistency": 3,
+      "issues": [
+        "Feature-line checkmarks are inconsistent across agents: agents 1 and 2 render a check icon before each feature line, but agents 3, 4, and 5 show plain text with NO check icons. 2 of 5 cards have the icon affordance, 3 do not.",
+        "Feature ORDER drifts: agents 1 & 2 list Unlimited projects / Priority support / Advanced analytics, while agents 3, 4 & 5 list Unlimited projects / Advanced analytics / Priority support.",
+        "Feature-line vertical spacing differs: the checkmark cards (agents 1-2) use tighter line spacing; the no-icon cards (agents 3-5) use noticeably looser gaps between feature rows, so the lists do not visually match.",
+        "Description copy varies across supposedly-identical agents ('scale your team' vs 'scale your work' vs 'ship faster'), an unintended content inconsistency.",
+        "Agent 5's card sits alone on a third row, breaking the 2-column grid rhythm and looking slightly orphaned.",
+        "Feature lines on the no-icon cards (3-5) read as lower-affordance/medium-gray body text rather than clear benefit bullets; without the check glyph they lose the 'included feature' signal the brief implied."
+      ]
+    },
+    {
+      "task": "Visual QA of LEFT column (\"WITH framework\") — 5 stat cards built by 5 independent agents, against brief: 'Monthly revenue' caption, large '$48.2k', success '+12.5%' badge, on a surface.",
+      "matchesBrief": true,
+      "visualFidelity": 4,
+      "crossAgentConsistency": 4,
+      "issues": [
+        "Caption color is inconsistent across agents: agents 1/3/5 use a darker slate gray (rgb 94,102,117) for 'Monthly revenue', while agents 2/4 use a lighter gray (rgb 151,161,178). The lighter variant is a visible mismatch when scanning the column.",
+        "The lighter caption on agents 2 and 4 (rgb 151,161,178 on white) is borderline low-contrast for a label — it reads notably weaker than the same caption on cards 1/3/5 and dips toward sub-AA territory for small text.",
+        "Everything else is pixel-consistent: value '$48.2k' is identical near-black (rgb 23,27,35) on all 5; badges are identical light-green pills with green '+12.5%' text (same 55px width, same left edge x=79, same bg rgb ~230,246,238); left-alignment of caption/value/badge, card width, border, corner radius and padding all match across the 5 cards.",
+        "Minor: vertical card-to-card spacing and the 'agent N' labels are uniform; no broken/misaligned elements, no overflow, no arrow-icon inconsistency in badges (none use arrows, consistently)."
+      ]
+    },
+    {
+      "task": "Visual QA of the LEFT column (\"WITH framework\") — 5 stat cards built by 5 independent agents, against the brief: 'Monthly revenue' caption, large '$48.2k', a success '+12.5%' badge, on a surface.",
+      "matchesBrief": true,
+      "visualFidelity": 4,
+      "crossAgentConsistency": 5,
+      "issues": [
+        "All 5 cards are essentially pixel-identical: same white card surface, rounded corners, subtle border, left-aligned content, and identical padding/spacing rhythm. Excellent cross-agent convergence.",
+        "Every card contains all four required elements: 'Monthly revenue' caption (muted gray, top-left), large bold '$48.2k' value, and a green '+12.5%' success badge on a pale-green pill, on a surface.",
+        "Success badge is the most minimal valid reading of the brief: it conveys success only via green text/pill + the '+' sign, with NO up-arrow / trend glyph. The Baseline column cards both include an arrow, so the framework cards arguably under-signal 'success' relative to a richer interpretation.",
+        "Badge contrast is adequate but on the softer side — medium-green text (~#3a8f63) on a very pale mint pill. Legible at this size but borderline for small-text WCAG; could be slightly punchier.",
+        "Caption 'Monthly revenue' is sentence case here, whereas the right/baseline column shows an uppercase variant — confirms the framework enforced a single casing convention (good), but worth noting it is the lower-emphasis treatment.",
+        "No visual breakage, misalignment, overflow, or clipping detected in any of the 5 cards. Vertical baseline alignment of caption / value / badge is consistent across all instances.",
+        "Cards are slightly content-light / airy: a fair amount of empty space to the right of the value and below the badge, so the composition reads a touch sparse, but nothing off-brief."
+      ]
+    },
+    {
+      "task": "Visual QA of LEFT column (\"WITH framework\") — 5 settings-row cards built by 5 independent agents. Brief: 'Push notifications' label + helper line on the left, toggle switch (on) right-aligned, comfortable padding, on a surface.",
+      "matchesBrief": false,
+      "visualFidelity": 3,
+      "crossAgentConsistency": 5,
+      "issues": [
+        "CRITICAL / off-brief: the toggle is NOT right-aligned in any of the 5 cards. It sits immediately to the right of the label text (center-left of the card), leaving roughly the entire right half of every card as dead whitespace. The brief explicitly required a 'right-aligned' toggle. Notably the Baseline (right) column does push the toggle to the card's right edge correctly — so the framework cards converged on a layout that misses the single most specific spatial instruction.",
+        "Because all 5 agents converged on the same layout, they all reproduce the same right-alignment error identically — high consistency masking a shared off-brief mistake.",
+        "Label + helper text, on-toggle, comfortable padding, and the white-card-on-gray-panel surface are all present and correct in every card.",
+        "Minor: in the on state the white knob sits very tight against the inner right edge of the track, looking slightly cramped at high zoom, though acceptable at normal scale.",
+        "Layout reads as 'label + toggle hugging the text' rather than a true two-end (space-between) settings row, which is the conventional and expected pattern for this brief."
+      ]
+    },
+    {
+      "task": "Visual QA of LEFT column (\"WITH framework\") — 5 settings-row cards built by 5 independent agents. Brief: 'Push notifications' label + helper line on the left, a toggle switch (on) right-aligned, comfortable padding, on a surface.",
+      "matchesBrief": false,
+      "visualFidelity": 3,
+      "crossAgentConsistency": 5,
+      "issues": [
+        "Toggle is NOT right-aligned in any of the 5 cards — the core brief requirement is missed. The toggle sits immediately to the right of the label (roughly left-of-center) with a large empty gap stretching to the card's right edge. A correct settings row uses space-between so the toggle hugs the right edge (as the Baseline/right column actually does). All 5 framework agents converged on the same wrong layout.",
+        "Because the toggle floats mid-row, the rows read as unbalanced/unfinished — the wide dead space on the right makes each card look broken rather than like a real settings list item.",
+        "The label+helper text block and the toggle are not vertically center-aligned to each other in a way that reads intentional; the toggle is roughly centered against the two-line text but its left-shifted horizontal position is the dominant problem.",
+        "Consistency is near-perfect (effectively pixel-identical surface, radius, padding, type scale, toggle size/color, card height), but this high consistency just means all 5 agents reproduced the SAME layout error — consistency does not equal correctness here.",
+        "Positive: each card has a clean white surface, comfortable padding, correct text hierarchy (bold label + muted gray helper), and the toggle is correctly in the ON state (blue track, knob to the right) with adequate contrast. The only material defect is alignment/off-brief positioning."
+      ]
+    }
+  ]
+}
