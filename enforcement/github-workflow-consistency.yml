@@ -1,0 +1,24 @@
+# Copy to .github/workflows/consistency.yml in a consuming repo.
+# Fails the PR if design-system consistency drops below threshold, and uploads the report.
+name: design-system-consistency
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Install harness deps
+        run: cd harness && npm ci --omit=dev || npm i @babel/parser @babel/traverse postcss postcss-scss
+      - name: Regenerate token table from manifest
+        run: node harness/codegen.js
+      - name: Consistency gate
+        run: node harness/scorer/score.js src --flat --gate ${{ vars.DS_CONSISTENCY_THRESHOLD || 90 }} --json consistency-report.json
+      - name: Upload report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: consistency-report, path: consistency-report.json }

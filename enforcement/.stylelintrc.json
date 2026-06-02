@@ -1,0 +1,13 @@
+{
+  "comment": "Drop into a web project to forbid raw values in CSS/SCSS. Requires: npm i -D stylelint stylelint-declaration-strict-value",
+  "plugins": ["stylelint-declaration-strict-value"],
+  "rules": {
+    "scale-unlimited/declaration-strict-value": [
+      ["/color/", "fill", "stroke", "background", "background-color", "border-color", "box-shadow", "/^margin/", "/^padding/", "gap", "/radius/", "font-size", "line-height", "z-index"],
+      {
+        "ignoreValues": ["transparent", "currentColor", "inherit", "initial", "unset", "none", "auto", "0", "/^var\\(--/", "/^\\$/"],
+        "message": "Use a design token (var(--…)) — raw values fragment the system. See framework/MANIFEST_SCHEMA.md."
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Consistency pre-commit gate. Install: cp enforcement/hooks/pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit
+# Scores the staged UI source against the design-system manifest; blocks the commit below threshold.
+set -euo pipefail
+
+THRESHOLD="${DS_CONSISTENCY_THRESHOLD:-90}"
+SRC_DIR="${DS_CONSISTENCY_SRC:-src}"           # where your components live
+HARNESS="${DS_CONSISTENCY_HARNESS:-harness}"   # path to the scorer harness
+RESOLVED="${DS_CONSISTENCY_RESOLVED:-reference/_resolved.json}"
+
+[ -d "$SRC_DIR" ] || { echo "ds-consistency: no $SRC_DIR, skipping"; exit 0; }
+
+node "$HARNESS/scorer/score.js" "$SRC_DIR" --flat --gate "$THRESHOLD" --manifest "$RESOLVED" || {
+  echo ""
+  echo "✋ commit blocked: design-system consistency below ${THRESHOLD}%."
+  echo "   Reuse registered components and replace raw literals with tokens, then re-commit."
+  echo "   (Intentional exceptions: record them in decision-log.json.)"
+  exit 1
+}

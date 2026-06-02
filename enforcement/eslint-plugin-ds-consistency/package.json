@@ -1,0 +1,9 @@
+{
+  "name": "eslint-plugin-ds-consistency",
+  "version": "1.0.0",
+  "description": "Fail the build on raw style literals in JSX — enforce design tokens.",
+  "type": "module",
+  "main": "index.js",
+  "peerDependencies": { "eslint": ">=8" },
+  "license": "MIT"
+}

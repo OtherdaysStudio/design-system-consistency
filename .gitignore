@@ -7,3 +7,4 @@ reference/web/USAGE.md
 reference/swiftui/USAGE.md
 harness/render/dist/
 .playwright-mcp/
+enforcement/eslint-plugin-ds-consistency/node_modules

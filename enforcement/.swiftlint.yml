@@ -1,0 +1,33 @@
+# Drop into a SwiftUI project root. Forbids the magic numbers / raw colors / raw
+# fonts that the DS namespace (DS.*, Color.ds*, .dsType) is meant to replace.
+# Exceptions belong in the design system's decision-log, not here.
+opt_in_rules:
+  - no_magic_numbers
+no_magic_numbers:
+  severity: error
+custom_rules:
+  ds_no_raw_padding:
+    name: "Raw padding literal"
+    regex: '\.padding\(\s*-?\d+(\.\d+)?\s*[,)]'
+    message: "Use DS.Spacing.* (e.g. .padding(DS.Spacing.md)) or DSStack(gap:)."
+    severity: error
+  ds_no_raw_corner_radius:
+    name: "Raw cornerRadius literal"
+    regex: '\.cornerRadius\(\s*-?\d+(\.\d+)?\s*\)'
+    message: "Use DS.Radius.* (e.g. .cornerRadius(DS.Radius.md)) — or .dsCard()."
+    severity: error
+  ds_no_raw_frame_dim:
+    name: "Raw frame width/height literal"
+    regex: '\.frame\([^)]*(width|height):\s*-?\d+(\.\d+)?'
+    message: "Use DS.Size.* for control/icon sizes instead of a raw frame dimension."
+    severity: warning
+  ds_no_system_color:
+    name: "Raw system Color"
+    regex: 'Color\.(red|blue|green|black|white|gray|grey|orange|pink|purple|yellow)\b|Color\(\s*red:|Color\(\s*hex:'
+    message: "Use a semantic Color.ds* token (e.g. Color.dsActionPrimary)."
+    severity: error
+  ds_no_system_font_size:
+    name: "Raw system font size"
+    regex: '\.font\(\s*\.system\(\s*size:'
+    message: "Use .dsType(.body) / Font.ds* — never .system(size:)."
+    severity: error
