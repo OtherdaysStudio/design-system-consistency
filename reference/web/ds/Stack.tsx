@@ -15,7 +15,8 @@ import { token } from './tokens';
 
 export type StackDirection = 'row' | 'column';
 export type StackGap = 'none' | 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-export type StackAlign = 'start' | 'center' | 'end' | 'stretch';
+export type StackAlign = 'start' | 'center' | 'end' | 'stretch' | 'baseline';
+export type StackJustify = 'start' | 'center' | 'end' | 'between';
 
 const GAP_TOKEN: Record<StackGap, string> = {
   none: token.space.none,
@@ -31,19 +32,29 @@ const ALIGN_VALUE: Record<StackAlign, CSSProperties['alignItems']> = {
   center: 'center',
   end: 'flex-end',
   stretch: 'stretch',
+  baseline: 'baseline',
+};
+
+const JUSTIFY_VALUE: Record<StackJustify, CSSProperties['justifyContent']> = {
+  start: 'flex-start',
+  center: 'center',
+  end: 'flex-end',
+  between: 'space-between',
 };
 
 export interface StackProps extends HTMLAttributes<HTMLDivElement> {
   direction?: StackDirection;
   gap?: StackGap;
   align?: StackAlign;
+  /** Distribute children along the main axis — `between` pushes them to the ends. */
+  justify?: StackJustify;
   /** Allow children to wrap onto multiple lines. */
   wrap?: boolean;
   children?: ReactNode;
 }
 
 export const Stack = forwardRef<HTMLDivElement, StackProps>(function Stack(
-  { direction = 'column', gap = 'md', align = 'stretch', wrap = false, style, children, ...rest },
+  { direction = 'column', gap = 'md', align = 'stretch', justify, wrap = false, style, children, ...rest },
   ref,
 ) {
   const baseStyle: CSSProperties = {
@@ -51,6 +62,7 @@ export const Stack = forwardRef<HTMLDivElement, StackProps>(function Stack(
     flexDirection: direction,
     gap: GAP_TOKEN[gap],
     alignItems: ALIGN_VALUE[align],
+    justifyContent: justify ? JUSTIFY_VALUE[justify] : undefined,
     flexWrap: wrap ? 'wrap' : 'nowrap',
     ...style,
   };

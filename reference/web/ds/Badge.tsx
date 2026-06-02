@@ -28,26 +28,36 @@ const TONE_STYLE: Record<BadgeTone, ToneStyle> = {
 
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
   tone?: BadgeTone;
+  /** Prepend a small filled status dot in the tone color (e.g. a "saved" indicator). */
+  dot?: boolean;
   children?: ReactNode;
 }
 
 export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
-  { tone = 'neutral', className, style, children, ...rest },
+  { tone = 'neutral', dot = false, className, style, children, ...rest },
   ref,
 ) {
   const t = TONE_STYLE[tone];
+  const dotOnly = dot && (children == null || children === '');
 
   const baseStyle: CSSProperties = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: token.space.xs,
-    background: t.background,
+    background: dotOnly ? 'transparent' : t.background,
     color: t.color,
-    paddingInline: token.badge.paddingX,
-    paddingBlock: token.space.xs,
+    paddingInline: dotOnly ? token.space.none : token.badge.paddingX,
+    paddingBlock: dotOnly ? token.space.none : token.space.xs,
     borderRadius: token.badge.radius,
     whiteSpace: 'nowrap',
     ...style,
+  };
+  const dotStyle: CSSProperties = {
+    width: token.space.sm,
+    height: token.space.sm,
+    borderRadius: token.radius.pill,
+    background: t.color,
+    flex: '0 0 auto',
   };
 
   return (
@@ -57,6 +67,7 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
       style={baseStyle}
       {...rest}
     >
+      {dot && <span aria-hidden style={dotStyle} />}
       {children}
     </span>
   );

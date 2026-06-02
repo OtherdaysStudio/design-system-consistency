@@ -243,6 +243,11 @@
           "$value": "36px",
           "$type": "dimension",
           "$description": "Display"
+        },
+        "fontSize.huge": {
+          "$value": "44px",
+          "$type": "dimension",
+          "$description": "Hero numbers/prices for impact"
         }
       },
       "fontWeight": {
@@ -543,6 +548,15 @@
           "blur": "0px",
           "spread": "2px",
           "color": "{color.border.focus}"
+        }
+      },
+      "type.hero": {
+        "$type": "typography",
+        "$description": "Impact display for hero prices/stats",
+        "$value": {
+          "fontSize": "{fontSize.huge}",
+          "fontWeight": "{fontWeight.bold}",
+          "lineHeight": "{lineHeight.tight}"
         }
       }
     },

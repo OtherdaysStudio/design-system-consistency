@@ -67,7 +67,8 @@ export const token = {
     "md": "var(--font-size-md)",
     "lg": "var(--font-size-lg)",
     "xl": "var(--font-size-xl)",
-    "xxl": "var(--font-size-xxl)"
+    "xxl": "var(--font-size-xxl)",
+    "huge": "var(--font-size-huge)"
   },
   "fontWeight": {
     "regular": "var(--font-weight-regular)",

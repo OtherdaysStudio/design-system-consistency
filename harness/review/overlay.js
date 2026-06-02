@@ -46,6 +46,13 @@
       this.classList.toggle('active', on);
     });
     document.getElementById('rv-export').addEventListener('click', exportJSON);
+    var clearBtn = document.getElementById('rv-clear');
+    if (clearBtn) clearBtn.addEventListener('click', function () {
+      if (!confirm('Clear all comments?')) return;
+      store = { sections: {} }; localStorage.removeItem(KEY);
+      document.querySelectorAll('.rv-section .rv-notes textarea').forEach(function (t) { t.value = ''; });
+      refresh();
+    });
     refresh();
   }
 

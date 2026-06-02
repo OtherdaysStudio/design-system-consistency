@@ -10,14 +10,15 @@ const DS = path.join(ROOT, 'reference', 'web', 'ds');
 const OUT = path.join(ROOT, 'harness', 'review', 'dist');
 fs.mkdirSync(OUT, { recursive: true });
 
-// one good instance per framework-built task (run2) + the real-app screens
+// curated, review-fixed screens (addresses the v2 review comments)
+const SCREENS = process.env.REVIEW_SRC || `${ROOT}/reference/web/screens`;
 const SECTIONS = [
-  { id: 'pricing-card', label: 'Pricing card', file: `${ROOT}/runs/run2/framework-web/pricing-card/agent-1.tsx` },
-  { id: 'login-form', label: 'Login form', file: `${ROOT}/runs/run2/framework-web/login-form/agent-1.tsx` },
-  { id: 'settings-row', label: 'Settings row', file: `${ROOT}/runs/run2/framework-web/settings-row/agent-1.tsx` },
-  { id: 'stat-card', label: 'Stat card', file: `${ROOT}/runs/run2/framework-web/stat-card/agent-1.tsx` },
-  { id: 'profile-header', label: 'Profile header', file: `${ROOT}/runs/run2/framework-web/profile-header/agent-1.tsx` },
-  { id: 'notification-toast', label: 'Notification toast', file: `${ROOT}/runs/run2/framework-web/notification-toast/agent-1.tsx` },
+  { id: 'pricing-card', label: 'Pricing card', file: `${SCREENS}/PricingCard.tsx` },
+  { id: "login-form", label: "Login form", file: `${SCREENS}/LoginForm.tsx` },
+  { id: 'settings-row', label: 'Settings row', file: `${SCREENS}/SettingsRow.tsx` },
+  { id: 'stat-card', label: 'Stat card', file: `${SCREENS}/StatCard.tsx` },
+  { id: 'profile-header', label: 'Profile header', file: `${SCREENS}/ProfileHeader.tsx` },
+  { id: 'notification-toast', label: 'Notification toast', file: `${SCREENS}/NotificationToast.tsx` },
 ].filter((s) => fs.existsSync(s.file));
 
 let imports = '', cells = '';
@@ -105,6 +106,7 @@ body { margin: 0; font-family: system-ui, sans-serif; background: var(--color-bg
   <span class="rv-hint" id="rv-hint">Turn on comment mode, then click a spot on any design to pin a note. Or use the section notes box.</span>
   <span style="flex:1"></span>
   <span class="rv-hint" id="rv-total">0 comments</span>
+  <button class="rv-btn" id="rv-clear">Clear all</button>
   <button class="rv-btn primary" id="rv-export">Export feedback ⬇</button>
 </div>
 <div id="root"></div>

@@ -25,6 +25,7 @@ public enum DS {
         public static let lg: CGFloat = 20
         public static let xl: CGFloat = 28
         public static let xxl: CGFloat = 36
+        public static let huge: CGFloat = 44
     }
     public enum BorderWidth {
         public static let thin: CGFloat = 1
@@ -75,6 +76,7 @@ public extension Font {
     static let dsBody = Font.system(size: 16, weight: .regular)
     static let dsLabel = Font.system(size: 14, weight: .medium)
     static let dsCaption = Font.system(size: 12, weight: .regular)
+    static let dsHero = Font.system(size: 44, weight: .bold)
 }
 
 public enum DSTypePreset { case display, heading, title, body, label, caption }

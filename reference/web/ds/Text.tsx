@@ -11,6 +11,7 @@ import { token } from './tokens';
  */
 
 export type TextVariant =
+  | 'hero'
   | 'display'
   | 'heading'
   | 'title'
@@ -21,6 +22,7 @@ export type TextVariant =
 export type TextColor = 'primary' | 'secondary' | 'muted' | 'onAction';
 
 const TYPE_CLASS: Record<TextVariant, string> = {
+  hero: 'type-hero',
   display: 'type-display',
   heading: 'type-heading',
   title: 'type-title',
@@ -38,6 +40,7 @@ const COLOR_TOKEN: Record<TextColor, string> = {
 
 /** Sensible default semantic element per typographic variant. */
 const DEFAULT_TAG: Record<TextVariant, ElementType> = {
+  hero: 'div',
   display: 'h1',
   heading: 'h2',
   title: 'h3',
