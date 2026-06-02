@@ -211,6 +211,11 @@
           "$value": "24px",
           "$type": "dimension",
           "$description": "Large icon"
+        },
+        "size.control.touch": {
+          "$value": "44px",
+          "$type": "dimension",
+          "$description": "Minimum touch-target height for interactive controls (iOS HIG 44; Material 48)"
         }
       },
       "fontSize": {
@@ -1653,6 +1658,15 @@
       "status": "active",
       "reviewBy": "2026-12-01",
       "remediation": "extend codegen.js to emit a DS.Shadow representation; then DSShadow.swift references it."
+    },
+    {
+      "id": "dl-0002",
+      "type": "platform-constraint",
+      "scope": "typography+touch",
+      "rule": "Body and form-input font sizes MUST be >= 16px on touch surfaces (smaller triggers iOS input auto-zoom). Larger type presets (title/heading/display/hero) scale fluidly mobile->desktop; body/label/caption stay fixed. Primary touch controls use size.control.touch (>=44px).",
+      "source": "learnui.design — Font Sizes in UI Design: The Complete Guide (Erik Kennedy, 2024); iOS HIG / Material touch targets.",
+      "status": "active",
+      "reviewBy": "2027-06-01"
     }
   ]
 }

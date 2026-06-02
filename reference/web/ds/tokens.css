@@ -37,6 +37,7 @@
   --size-icon-sm: 16px;
   --size-icon-md: 20px;
   --size-icon-lg: 24px;
+  --size-control-touch: 44px;
   --font-size-xs: 12px;
   --font-size-sm: 14px;
   --font-size-md: 16px;
@@ -102,10 +103,10 @@
   --badge-padding-x: 8px;
 }
 
-.type-display { font-size: 36px; font-weight: 700; line-height: 1.2; }
-.type-heading { font-size: 28px; font-weight: 600; line-height: 1.2; }
-.type-title { font-size: 20px; font-weight: 600; line-height: 1.35; }
+.type-display { font-size: clamp(34px, calc(34px + (44 - 34) * ((100vw - 375px) / 905)), 44px); font-weight: 700; line-height: 1.2; }
+.type-heading { font-size: clamp(28px, calc(28px + (34 - 28) * ((100vw - 375px) / 905)), 34px); font-weight: 600; line-height: 1.2; }
+.type-title { font-size: clamp(20px, calc(20px + (24 - 20) * ((100vw - 375px) / 905)), 24px); font-weight: 600; line-height: 1.35; }
 .type-body { font-size: 16px; font-weight: 400; line-height: 1.5; }
 .type-label { font-size: 14px; font-weight: 500; line-height: 1.5; }
 .type-caption { font-size: 12px; font-weight: 400; line-height: 1.5; }
-.type-hero { font-size: 44px; font-weight: 700; line-height: 1.2; }
+.type-hero { font-size: clamp(40px, calc(40px + (56 - 40) * ((100vw - 375px) / 905)), 56px); font-weight: 700; line-height: 1.2; }

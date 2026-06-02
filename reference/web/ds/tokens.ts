@@ -53,7 +53,8 @@ export const token = {
     "control": {
       "sm": "var(--size-control-sm)",
       "md": "var(--size-control-md)",
-      "lg": "var(--size-control-lg)"
+      "lg": "var(--size-control-lg)",
+      "touch": "var(--size-control-touch)"
     },
     "icon": {
       "sm": "var(--size-icon-sm)",

@@ -46,6 +46,23 @@ components carry the primitives needed to compose well — reach for them instea
 - Components ship **self-contained defaults** (e.g. `ProfileHeader` renders without props) — a
   component that throws in isolation isn't done.
 
+## Mobile & touch readiness (a primitive most desktop-first systems lack)
+A design system that only sizes for desktop is missing a primitive (SKILL §7). Field-tested
+numbers (source: learnui.design — *Font Sizes in UI Design: The Complete Guide*; iOS HIG / Material):
+
+- **Body & form-input font size ≥ 16px, always.** Below 16px, iOS Safari auto-zooms an input on
+  focus and the layout jumps. Aperture body/input = `type.body` (16px) — keep it there; never style a
+  field smaller.
+- **Mobile vs desktop type ramp.** Mobile: titles 28-40, body 16-20. Desktop: titles 35-50, body up
+  to 24. Aperture's larger presets are now **fluid** — `type.title/heading/display/hero` emit
+  `clamp(mobileMin … desktopMax)` (interpolated 375px→1280px), so they're mobile-right at small widths
+  and grow on desktop. Body/label/caption stay fixed.
+- **Touch targets ≥ 44px.** Interactive controls on touch surfaces need a ≥44px hit area (iOS HIG 44,
+  Material 48). The default `size.control.md` (40px) is desktop-comfortable but below the touch
+  minimum — use `size.control.touch` (44px) for the primary tappable control on mobile.
+- **Fewest font sizes possible.** The guide's #1 rule (≈4 sizes total) is the same small-scale
+  discipline this framework enforces — resist adding type steps; reuse `<Text variant>`.
+
 ## Drift signals the scorer (and you) look for
 
 | Signal | Why it's drift | Fix |

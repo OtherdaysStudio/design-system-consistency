@@ -42,12 +42,18 @@ for (const t of resolved.values()) {
   }
 }
 cssLines.push('}');
-// typography utility classes
+// typography utility classes — larger presets are FLUID (mobile→desktop) per
+// learnui.design font-size guidance (titles 28-40 mobile → 35-50 desktop). Body/
+// label/caption stay fixed and ≥16px (the iOS input auto-zoom rule). Fluid formula
+// interpolates between a 375px-mobile and 1280px-desktop viewport.
+const FLUID = { 'type.title': [20, 24], 'type.heading': [28, 34], 'type.display': [34, 44], 'type.hero': [40, 56] };
+const fluid = (min, max) => `clamp(${min}px, calc(${min}px + (${max} - ${min}) * ((100vw - 375px) / 905)), ${max}px)`;
 cssLines.push('');
 for (const t of resolved.values()) {
   if (t.type !== 'typography') continue;
   const cls = '.' + t.id.replace('.', '-'); // type.body -> .type-body
-  cssLines.push(`${cls} { font-size: ${t.value.fontSize}; font-weight: ${t.value.fontWeight}; line-height: ${t.value.lineHeight}; }`);
+  const fz = FLUID[t.id] ? fluid(FLUID[t.id][0], FLUID[t.id][1]) : t.value.fontSize;
+  cssLines.push(`${cls} { font-size: ${fz}; font-weight: ${t.value.fontWeight}; line-height: ${t.value.lineHeight}; }`);
 }
 const cssOut = cssLines.join('\n') + '\n';
 

@@ -35,6 +35,7 @@ public enum DS {
         public static let controlSm: CGFloat = 32
         public static let controlMd: CGFloat = 40
         public static let controlLg: CGFloat = 48
+        public static let controlTouch: CGFloat = 44
         public static let iconSm: CGFloat = 16
         public static let iconMd: CGFloat = 20
         public static let iconLg: CGFloat = 24

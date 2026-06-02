@@ -9,3 +9,4 @@ harness/render/dist/
 .playwright-mcp/
 enforcement/eslint-plugin-ds-consistency/node_modules
 harness/review/dist/
+.gstack/
