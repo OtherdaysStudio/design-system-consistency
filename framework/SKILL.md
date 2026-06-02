@@ -204,6 +204,15 @@ brief.** The composite is the *reuse/drift* gate; contrast + visual review is th
 gate — a high composite is necessary but not sufficient. Ship both. (`harness/fidelity/contrast.js`
 + the render/review tooling.)
 
+**(d) Motion is part of the system — always pair with `/springy-motion`.** Consistent *static* UI
+still feels dead; motion is what explains *what just changed*. Treat motion as first-class, tokenized
+DS state, not decoration: spring easings live as tokens (`--easing-snap` for press/toggle,
+`--easing-pop` for entrances) and ship as a `motion.css` utility layer (`.ds-pressable`, `.ds-enter`)
+baked into the components. Non-negotiables from `/springy-motion`: **`transform`/`opacity` only**,
+**frequency governs intensity** (high-frequency press = Snap/subtle; rare entrances = Pop), and a
+**reduced-motion variant** (a calmer crossfade, never just "off"). When generating or reviewing UI
+with this framework, load `/springy-motion` and apply its presets.
+
 ## 8. Output contract
 
 For any task, produce: the view/refactor code; any new design-system additions **clearly marked as

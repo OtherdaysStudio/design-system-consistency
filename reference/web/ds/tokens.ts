@@ -89,10 +89,15 @@ export const token = {
   "duration": {
     "fast": "var(--duration-fast)",
     "base": "var(--duration-base)",
-    "slow": "var(--duration-slow)"
+    "slow": "var(--duration-slow)",
+    "press": "var(--duration-press)",
+    "snap": "var(--duration-snap)",
+    "pop": "var(--duration-pop)"
   },
   "easing": {
-    "standard": "var(--easing-standard)"
+    "standard": "var(--easing-standard)",
+    "snap": "var(--easing-snap)",
+    "pop": "var(--easing-pop)"
   },
   "color": {
     "bg": {

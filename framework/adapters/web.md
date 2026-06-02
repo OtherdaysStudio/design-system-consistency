@@ -63,6 +63,17 @@ numbers (source: learnui.design — *Font Sizes in UI Design: The Complete Guide
 - **Fewest font sizes possible.** The guide's #1 rule (≈4 sizes total) is the same small-scale
   discipline this framework enforces — resist adding type steps; reuse `<Text variant>`.
 
+## Motion (always pair with `/springy-motion`)
+Motion is a tokenized DS layer, not an afterthought (SKILL §7d). Spring easings are tokens, applied
+via `reference/web/ds/motion.css` (import after `tokens.css`):
+- **Press / toggle → Snap** (`--easing-snap`, ~120-300ms, no overshoot). `<Button>` ships
+  `.ds-pressable` (`:active` → `scale(0.96)`); `<Switch>` thumb glides on `--easing-snap`.
+- **Entrances → Pop** (`--easing-pop`, ~640ms, ~9% overshoot). Add `.ds-enter` (+ `.ds-enter-1/2/3`
+  to stagger) to cards/badges/toasts as they appear. Never animate from `scale(0)` — start at 0.96.
+- **`transform` + `opacity` only**; a `@media (prefers-reduced-motion: reduce)` block swaps every
+  spring for a calm crossfade. Generate custom springs with `/springy-motion`'s `(duration, bounce)`
+  model, not stiffness/damping.
+
 ## Drift signals the scorer (and you) look for
 
 | Signal | Why it's drift | Fix |

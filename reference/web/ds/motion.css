@@ -1,0 +1,32 @@
+/* Aperture DS — motion layer. Pairs with the /springy-motion skill.
+ * Rules honored: transform+opacity ONLY, frequency governs intensity (press = Snap,
+ * entrances = Pop), reduced-motion is a calmer variant (crossfade) not "off".
+ * Springs come from design tokens (--easing-snap / --easing-pop). Import after tokens.css. */
+
+/* Press — Snap, high-frequency so subtle + fast. Bake onto any interactive control. */
+.ds-pressable { transition: transform var(--duration-press) cubic-bezier(0, 0, 0.58, 1); }
+.ds-pressable:active { transform: scale(0.96); }
+
+/* Hover lift — only for genuinely interactive surfaces (links/clickable cards). */
+.ds-hoverable { transition: transform var(--duration-snap) var(--easing-snap), box-shadow 160ms ease-out; will-change: transform; }
+.ds-hoverable:hover { transform: translateY(-2px); }
+
+/* Entrance — Pop. Cards / badges / toasts appearing. Never from scale(0); start at 0.96. */
+@keyframes ds-pop-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.ds-enter { animation: ds-pop-in var(--duration-pop) var(--easing-pop) both; }
+.ds-enter-1 { animation-delay: 50ms; }
+.ds-enter-2 { animation-delay: 100ms; }
+.ds-enter-3 { animation-delay: 150ms; }
+
+@keyframes ds-fade-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* Reduced motion: keep functional feedback, drop the spatial movement. Calmer, not gone. */
+@media (prefers-reduced-motion: reduce) {
+  .ds-pressable, .ds-hoverable { transition: none; }
+  .ds-pressable:active { transform: none; opacity: 0.85; } /* opacity still signals the press */
+  .ds-hoverable:hover { transform: none; }
+  .ds-enter, .ds-enter-1, .ds-enter-2, .ds-enter-3 { animation: ds-fade-in 160ms ease-out both; }
+}

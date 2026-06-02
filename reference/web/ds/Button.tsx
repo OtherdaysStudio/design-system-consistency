@@ -97,7 +97,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     border: `${token.borderWidth.thin} solid ${v.border}`,
     cursor: disabled ? 'not-allowed' : 'pointer',
     opacity: disabled ? 0.5 : 1,
-    transition: 'background 120ms ease',
+    // background tween + press-scale (Snap). The :active scale itself lives in
+    // motion.css (.ds-pressable) since inline styles can't express :active.
+    transition: 'background var(--duration-press, 120ms) ease, transform var(--duration-press, 120ms) cubic-bezier(0, 0, 0.58, 1)',
     userSelect: 'none',
     whiteSpace: 'nowrap',
     ...style,
@@ -108,7 +110,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
       ref={ref}
       type={type}
       disabled={disabled}
-      className={['type-label', className].filter(Boolean).join(' ')}
+      className={['type-label', 'ds-pressable', className].filter(Boolean).join(' ')}
       style={baseStyle}
       onMouseEnter={(e) => {
         if (!disabled) e.currentTarget.style.background = v.hoverBackground;

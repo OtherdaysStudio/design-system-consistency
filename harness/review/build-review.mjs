@@ -66,7 +66,7 @@ await esbuild.build({
   define: { 'process.env.NODE_ENV': '"production"' },
 });
 
-const tokensCss = fs.readFileSync(path.join(DS, 'tokens.css'), 'utf8');
+const tokensCss = fs.readFileSync(path.join(DS, 'tokens.css'), 'utf8') + '\n' + fs.readFileSync(path.join(DS, 'motion.css'), 'utf8');
 const overlay = fs.readFileSync(path.join(import.meta.dirname, 'overlay.js'), 'utf8');
 const html = `<!doctype html><html><head><meta charset="utf-8"><title>Aperture DS — design review</title>
 <style>

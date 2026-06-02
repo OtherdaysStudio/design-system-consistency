@@ -326,6 +326,31 @@
           "$value": "cubic-bezier(0.2, 0, 0, 1)",
           "$type": "cubicBezier",
           "$description": "Standard ease"
+        },
+        "duration.press": {
+          "$value": "120ms",
+          "$type": "duration",
+          "$description": "Press/tap feedback (Snap)"
+        },
+        "duration.snap": {
+          "$value": "300ms",
+          "$type": "duration",
+          "$description": "Snap spring settle (toggle/selection)"
+        },
+        "duration.pop": {
+          "$value": "640ms",
+          "$type": "duration",
+          "$description": "Pop spring settle (entrances/delight)"
+        },
+        "easing.snap": {
+          "$value": "linear(0,0.075,0.227,0.390,0.536,0.656,0.750,0.821,0.873,0.911,0.938,0.957,0.971,0.980,0.986,0.991,0.994,0.996,0.997,0.998,0.999,1)",
+          "$type": "cubicBezier",
+          "$description": "Snap spring (duration 0.2, bounce 0) — press/toggle. Source: /springy-motion"
+        },
+        "easing.pop": {
+          "$value": "linear(0,0.094,0.303,0.540,0.752,0.914,1.020,1.076,1.094,1.089,1.070,1.048,1.027,1.011,1.000,0.993,0.991,0.991,0.993,0.995,0.997,1)",
+          "$type": "cubicBezier",
+          "$description": "Pop spring (duration 0.4, bounce 0.4, ~9% overshoot) — entrances/success. Source: /springy-motion"
         }
       }
     },

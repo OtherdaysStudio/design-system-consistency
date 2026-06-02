@@ -47,9 +47,11 @@ await esbuild.build({
 });
 
 const tokensCss = fs.readFileSync(path.join(DS, 'tokens.css'), 'utf8');
+const motionCss = fs.readFileSync(path.join(DS, 'motion.css'), 'utf8');
 const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aperture DS — samples</title>
 <style>
 ${tokensCss}
+${motionCss}
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--color-bg-canvas); font-family: system-ui, sans-serif; color: var(--color-text-primary); }
 .sx-page { max-width: 920px; margin: 0 auto; padding: 28px 20px 64px; display: flex; flex-direction: column; gap: 40px; }

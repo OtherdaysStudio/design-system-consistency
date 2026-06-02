@@ -9,8 +9,8 @@ const TIERS = [
 export function PricingTiers() {
   return (
     <Stack direction="row" gap="md" align="stretch" wrap>
-      {TIERS.map((t) => (
-        <Card key={t.name} variant={t.tone ? 'elevated' : 'default'} style={{ flex: '1 1 220px' }}>
+      {TIERS.map((t, i) => (
+        <Card key={t.name} variant={t.tone ? 'elevated' : 'default'} className={`ds-enter ds-enter-${i + 1}`} style={{ flex: '1 1 220px' }}>
           <Stack direction="column" gap="lg" align="stretch">
             <Stack direction="row" gap="sm" align="center" justify="between">
               <Text variant="title">{t.name}</Text>

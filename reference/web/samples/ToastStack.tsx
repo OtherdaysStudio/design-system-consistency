@@ -9,8 +9,8 @@ const TOASTS = [
 export function ToastStack() {
   return (
     <Stack direction="column" gap="sm" align="stretch">
-      {TOASTS.map((t) => (
-        <Card key={t.title} variant="elevated" padding="sm">
+      {TOASTS.map((t, i) => (
+        <Card key={t.title} variant="elevated" padding="sm" className={`ds-enter ds-enter-${i + 1}`}>
           <Stack direction="row" gap="md" align="center" justify="between">
             <Stack direction="row" gap="sm" align="center">
               <Badge tone={t.tone} dot />

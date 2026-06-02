@@ -92,7 +92,7 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(function Switch
     background: checked ? token.color.action.primary : token.color.bg.muted,
     cursor: disabled ? 'not-allowed' : 'pointer',
     opacity: disabled ? 0.5 : 1,
-    transition: 'background 120ms ease',
+    transition: 'background var(--duration-press, 120ms) ease',
     flexShrink: 0,
     ...style,
   };
@@ -110,7 +110,8 @@ export const Switch = forwardRef<HTMLButtonElement, SwitchProps>(function Switch
     transform: checked
       ? `translateX(calc(${g.width} - ${g.thumb} - ${g.inset} - ${g.inset}))`
       : 'translateX(0)',
-    transition: 'transform 120ms ease',
+    // Thumb glides on the Snap spring (transform-only). Source: /springy-motion.
+    transition: 'transform var(--duration-snap, 300ms) var(--easing-snap, ease)',
   };
 
   return (

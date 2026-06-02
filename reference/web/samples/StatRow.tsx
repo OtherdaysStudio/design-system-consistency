@@ -9,8 +9,8 @@ const STATS = [
 export function StatRow() {
   return (
     <Stack direction="row" gap="md" align="stretch" wrap>
-      {STATS.map((s) => (
-        <Card key={s.label} style={{ flex: '1 1 200px' }}>
+      {STATS.map((s, i) => (
+        <Card key={s.label} className={`ds-enter ds-enter-${i + 1}`} style={{ flex: '1 1 200px' }}>
           <Stack direction="column" gap="sm" align="start">
             <Text variant="caption" color="secondary">{s.label}</Text>
             <Stack direction="row" gap="sm" align="center">
