@@ -7,6 +7,24 @@ This builds on the v1 SwiftUI sketch (`Design System Consistency Framework.md`) 
 the same insight (consistency is a **retrieval** problem before a creation problem), now stack-agnostic
 (web + SwiftUI), grounded in one machine-queryable manifest, and — critically — **measured**.
 
+## Install the skill (Claude Code)
+
+One command — installs into `~/.claude/skills/`, no npm account needed:
+
+```bash
+npx github:OtherdaysStudio/design-system-consistency
+```
+
+Install into a specific project's `.claude/skills/` instead of your user dir:
+
+```bash
+npx github:OtherdaysStudio/design-system-consistency -- --target=/path/to/project
+```
+
+Start a new Claude Code session and it triggers automatically whenever you build, style, or audit UI.
+(Prefer plugins? The repo is also a valid skill bundle — drop `framework/` into any `.claude/skills/`
+folder, or grab the packaged `dist/design-system-consistency.skill`.)
+
 ## The thesis
 
 Most AI UI drift is blamed on taste. It isn't. ~70% is **retrieval failure** (the token/component
