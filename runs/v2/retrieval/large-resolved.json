@@ -1,0 +1,2931 @@
+{
+  "tokens": [
+    {
+      "id": "neutral.0",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--neutral-0",
+      "swift": []
+    },
+    {
+      "id": "neutral.50",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#f6f7f9",
+      "canon": "#f6f7f9",
+      "cssVar": "--neutral-50",
+      "swift": []
+    },
+    {
+      "id": "neutral.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--neutral-100",
+      "swift": []
+    },
+    {
+      "id": "neutral.200",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--neutral-200",
+      "swift": []
+    },
+    {
+      "id": "neutral.300",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c1c8d4",
+      "canon": "#c1c8d4",
+      "cssVar": "--neutral-300",
+      "swift": []
+    },
+    {
+      "id": "neutral.400",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#97a1b2",
+      "canon": "#97a1b2",
+      "cssVar": "--neutral-400",
+      "swift": []
+    },
+    {
+      "id": "neutral.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#6b7585",
+      "canon": "#6b7585",
+      "cssVar": "--neutral-500",
+      "swift": []
+    },
+    {
+      "id": "neutral.700",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#3c4350",
+      "canon": "#3c4350",
+      "cssVar": "--neutral-700",
+      "swift": []
+    },
+    {
+      "id": "neutral.900",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--neutral-900",
+      "swift": []
+    },
+    {
+      "id": "blue.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e7efff",
+      "canon": "#e7efff",
+      "cssVar": "--blue-100",
+      "swift": []
+    },
+    {
+      "id": "blue.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--blue-500",
+      "swift": []
+    },
+    {
+      "id": "blue.600",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#1f57d6",
+      "canon": "#1f57d6",
+      "cssVar": "--blue-600",
+      "swift": []
+    },
+    {
+      "id": "red.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdeaea",
+      "canon": "#fdeaea",
+      "cssVar": "--red-100",
+      "swift": []
+    },
+    {
+      "id": "red.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--red-500",
+      "swift": []
+    },
+    {
+      "id": "red.600",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c93b40",
+      "canon": "#c93b40",
+      "cssVar": "--red-600",
+      "swift": []
+    },
+    {
+      "id": "green.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e6f6ee",
+      "canon": "#e6f6ee",
+      "cssVar": "--green-100",
+      "swift": []
+    },
+    {
+      "id": "green.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2fa46b",
+      "canon": "#2fa46b",
+      "cssVar": "--green-500",
+      "swift": []
+    },
+    {
+      "id": "amber.100",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdf1dc",
+      "canon": "#fdf1dc",
+      "cssVar": "--amber-100",
+      "swift": []
+    },
+    {
+      "id": "amber.500",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e8920c",
+      "canon": "#e8920c",
+      "cssVar": "--amber-500",
+      "swift": []
+    },
+    {
+      "id": "alpha.shadow",
+      "tier": "primitives",
+      "type": "color",
+      "dimension": "color",
+      "value": "rgba(20,24,33,0.16)",
+      "canon": "#14182129",
+      "cssVar": "--alpha-shadow",
+      "swift": []
+    },
+    {
+      "id": "space.none",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "0px",
+      "canon": "0",
+      "cssVar": "--space-none",
+      "swift": [
+        "DS.Spacing.none"
+      ]
+    },
+    {
+      "id": "space.xs",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "4px",
+      "canon": "4",
+      "cssVar": "--space-xs",
+      "swift": [
+        "DS.Spacing.xs"
+      ]
+    },
+    {
+      "id": "space.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--space-sm",
+      "swift": [
+        "DS.Spacing.sm"
+      ]
+    },
+    {
+      "id": "space.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--space-md",
+      "swift": [
+        "DS.Spacing.md"
+      ]
+    },
+    {
+      "id": "space.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--space-lg",
+      "swift": [
+        "DS.Spacing.lg"
+      ]
+    },
+    {
+      "id": "space.xl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "32px",
+      "canon": "32",
+      "cssVar": "--space-xl",
+      "swift": [
+        "DS.Spacing.xl"
+      ]
+    },
+    {
+      "id": "space.xxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "48px",
+      "canon": "48",
+      "cssVar": "--space-xxl",
+      "swift": [
+        "DS.Spacing.xxl"
+      ]
+    },
+    {
+      "id": "space.xxxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "spacing",
+      "value": "64px",
+      "canon": "64",
+      "cssVar": "--space-xxxl",
+      "swift": [
+        "DS.Spacing.xxxl"
+      ]
+    },
+    {
+      "id": "radius.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "6px",
+      "canon": "6",
+      "cssVar": "--radius-sm",
+      "swift": [
+        "DS.Radius.sm"
+      ]
+    },
+    {
+      "id": "radius.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--radius-md",
+      "swift": [
+        "DS.Radius.md"
+      ]
+    },
+    {
+      "id": "radius.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--radius-lg",
+      "swift": [
+        "DS.Radius.lg"
+      ]
+    },
+    {
+      "id": "radius.pill",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "radius",
+      "value": "999px",
+      "canon": "999",
+      "cssVar": "--radius-pill",
+      "swift": [
+        "DS.Radius.pill"
+      ]
+    },
+    {
+      "id": "size.control.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "32px",
+      "canon": "32",
+      "cssVar": "--size-control-sm",
+      "swift": [
+        "DS.Size.controlSm"
+      ]
+    },
+    {
+      "id": "size.control.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "40px",
+      "canon": "40",
+      "cssVar": "--size-control-md",
+      "swift": [
+        "DS.Size.controlMd"
+      ]
+    },
+    {
+      "id": "size.control.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "48px",
+      "canon": "48",
+      "cssVar": "--size-control-lg",
+      "swift": [
+        "DS.Size.controlLg"
+      ]
+    },
+    {
+      "id": "size.icon.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--size-icon-sm",
+      "swift": [
+        "DS.Size.iconSm"
+      ]
+    },
+    {
+      "id": "size.icon.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "20px",
+      "canon": "20",
+      "cssVar": "--size-icon-md",
+      "swift": [
+        "DS.Size.iconMd"
+      ]
+    },
+    {
+      "id": "size.icon.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "size",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--size-icon-lg",
+      "swift": [
+        "DS.Size.iconLg"
+      ]
+    },
+    {
+      "id": "fontSize.xs",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "12px",
+      "canon": "12",
+      "cssVar": "--font-size-xs",
+      "swift": [
+        "DS.FontSize.xs"
+      ]
+    },
+    {
+      "id": "fontSize.sm",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "14px",
+      "canon": "14",
+      "cssVar": "--font-size-sm",
+      "swift": [
+        "DS.FontSize.sm"
+      ]
+    },
+    {
+      "id": "fontSize.md",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--font-size-md",
+      "swift": [
+        "DS.FontSize.md"
+      ]
+    },
+    {
+      "id": "fontSize.lg",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "20px",
+      "canon": "20",
+      "cssVar": "--font-size-lg",
+      "swift": [
+        "DS.FontSize.lg"
+      ]
+    },
+    {
+      "id": "fontSize.xl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "28px",
+      "canon": "28",
+      "cssVar": "--font-size-xl",
+      "swift": [
+        "DS.FontSize.xl"
+      ]
+    },
+    {
+      "id": "fontSize.xxl",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "typography",
+      "value": "36px",
+      "canon": "36",
+      "cssVar": "--font-size-xxl",
+      "swift": [
+        "DS.FontSize.xxl"
+      ]
+    },
+    {
+      "id": "fontWeight.regular",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "400",
+      "canon": "400",
+      "cssVar": "--font-weight-regular",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.medium",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "500",
+      "canon": "500",
+      "cssVar": "--font-weight-medium",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.semibold",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "600",
+      "canon": "600",
+      "cssVar": "--font-weight-semibold",
+      "swift": []
+    },
+    {
+      "id": "fontWeight.bold",
+      "tier": "primitives",
+      "type": "fontWeight",
+      "dimension": "typography",
+      "value": "700",
+      "canon": "700",
+      "cssVar": "--font-weight-bold",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.tight",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.2",
+      "canon": "1.2",
+      "cssVar": "--line-height-tight",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.snug",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.35",
+      "canon": "1.35",
+      "cssVar": "--line-height-snug",
+      "swift": []
+    },
+    {
+      "id": "lineHeight.normal",
+      "tier": "primitives",
+      "type": "number",
+      "dimension": "typography",
+      "value": "1.5",
+      "canon": "1.5",
+      "cssVar": "--line-height-normal",
+      "swift": []
+    },
+    {
+      "id": "borderWidth.thin",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "borderWidth",
+      "value": "1px",
+      "canon": "1",
+      "cssVar": "--border-width-thin",
+      "swift": [
+        "DS.BorderWidth.thin"
+      ]
+    },
+    {
+      "id": "borderWidth.thick",
+      "tier": "primitives",
+      "type": "dimension",
+      "dimension": "borderWidth",
+      "value": "2px",
+      "canon": "2",
+      "cssVar": "--border-width-thick",
+      "swift": [
+        "DS.BorderWidth.thick"
+      ]
+    },
+    {
+      "id": "duration.fast",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "120ms",
+      "canon": "120ms",
+      "cssVar": "--duration-fast",
+      "swift": []
+    },
+    {
+      "id": "duration.base",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "200ms",
+      "canon": "200ms",
+      "cssVar": "--duration-base",
+      "swift": []
+    },
+    {
+      "id": "duration.slow",
+      "tier": "primitives",
+      "type": "duration",
+      "dimension": "duration",
+      "value": "320ms",
+      "canon": "320ms",
+      "cssVar": "--duration-slow",
+      "swift": []
+    },
+    {
+      "id": "easing.standard",
+      "tier": "primitives",
+      "type": "cubicBezier",
+      "dimension": "cubicBezier",
+      "value": "cubic-bezier(0.2, 0, 0, 1)",
+      "canon": "cubic-bezier(0.2, 0, 0, 1)",
+      "cssVar": "--easing-standard",
+      "swift": []
+    },
+    {
+      "id": "color.bg.canvas",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#f6f7f9",
+      "canon": "#f6f7f9",
+      "cssVar": "--color-bg-canvas",
+      "swift": [
+        "Color.dsBgCanvas",
+        ".dsBgCanvas"
+      ]
+    },
+    {
+      "id": "color.bg.surface",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--color-bg-surface",
+      "swift": [
+        "Color.dsBgSurface",
+        ".dsBgSurface"
+      ]
+    },
+    {
+      "id": "color.bg.muted",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--color-bg-muted",
+      "swift": [
+        "Color.dsBgMuted",
+        ".dsBgMuted"
+      ]
+    },
+    {
+      "id": "color.bg.inverse",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--color-bg-inverse",
+      "swift": [
+        "Color.dsBgInverse",
+        ".dsBgInverse"
+      ]
+    },
+    {
+      "id": "color.text.primary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#171b23",
+      "canon": "#171b23",
+      "cssVar": "--color-text-primary",
+      "swift": [
+        "Color.dsTextPrimary",
+        ".dsTextPrimary"
+      ]
+    },
+    {
+      "id": "color.text.secondary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#6b7585",
+      "canon": "#6b7585",
+      "cssVar": "--color-text-secondary",
+      "swift": [
+        "Color.dsTextSecondary",
+        ".dsTextSecondary"
+      ]
+    },
+    {
+      "id": "color.text.muted",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#97a1b2",
+      "canon": "#97a1b2",
+      "cssVar": "--color-text-muted",
+      "swift": [
+        "Color.dsTextMuted",
+        ".dsTextMuted"
+      ]
+    },
+    {
+      "id": "color.text.onAction",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--color-text-on-action",
+      "swift": [
+        "Color.dsTextOnAction",
+        ".dsTextOnAction"
+      ]
+    },
+    {
+      "id": "color.action.primary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-action-primary",
+      "swift": [
+        "Color.dsActionPrimary",
+        ".dsActionPrimary"
+      ]
+    },
+    {
+      "id": "color.action.primaryHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#1f57d6",
+      "canon": "#1f57d6",
+      "cssVar": "--color-action-primary-hover",
+      "swift": [
+        "Color.dsActionPrimaryHover",
+        ".dsActionPrimaryHover"
+      ]
+    },
+    {
+      "id": "color.action.secondary",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#eceef2",
+      "canon": "#eceef2",
+      "cssVar": "--color-action-secondary",
+      "swift": [
+        "Color.dsActionSecondary",
+        ".dsActionSecondary"
+      ]
+    },
+    {
+      "id": "color.action.secondaryHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--color-action-secondary-hover",
+      "swift": [
+        "Color.dsActionSecondaryHover",
+        ".dsActionSecondaryHover"
+      ]
+    },
+    {
+      "id": "color.action.danger",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--color-action-danger",
+      "swift": [
+        "Color.dsActionDanger",
+        ".dsActionDanger"
+      ]
+    },
+    {
+      "id": "color.action.dangerHover",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c93b40",
+      "canon": "#c93b40",
+      "cssVar": "--color-action-danger-hover",
+      "swift": [
+        "Color.dsActionDangerHover",
+        ".dsActionDangerHover"
+      ]
+    },
+    {
+      "id": "color.border.default",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--color-border-default",
+      "swift": [
+        "Color.dsBorderDefault",
+        ".dsBorderDefault"
+      ]
+    },
+    {
+      "id": "color.border.strong",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#c1c8d4",
+      "canon": "#c1c8d4",
+      "cssVar": "--color-border-strong",
+      "swift": [
+        "Color.dsBorderStrong",
+        ".dsBorderStrong"
+      ]
+    },
+    {
+      "id": "color.border.focus",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-border-focus",
+      "swift": [
+        "Color.dsBorderFocus",
+        ".dsBorderFocus"
+      ]
+    },
+    {
+      "id": "color.status.success",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2fa46b",
+      "canon": "#2fa46b",
+      "cssVar": "--color-status-success",
+      "swift": [
+        "Color.dsStatusSuccess",
+        ".dsStatusSuccess"
+      ]
+    },
+    {
+      "id": "color.status.successBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e6f6ee",
+      "canon": "#e6f6ee",
+      "cssVar": "--color-status-success-bg",
+      "swift": [
+        "Color.dsStatusSuccessBg",
+        ".dsStatusSuccessBg"
+      ]
+    },
+    {
+      "id": "color.status.warning",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e8920c",
+      "canon": "#e8920c",
+      "cssVar": "--color-status-warning",
+      "swift": [
+        "Color.dsStatusWarning",
+        ".dsStatusWarning"
+      ]
+    },
+    {
+      "id": "color.status.warningBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdf1dc",
+      "canon": "#fdf1dc",
+      "cssVar": "--color-status-warning-bg",
+      "swift": [
+        "Color.dsStatusWarningBg",
+        ".dsStatusWarningBg"
+      ]
+    },
+    {
+      "id": "color.status.danger",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e5484d",
+      "canon": "#e5484d",
+      "cssVar": "--color-status-danger",
+      "swift": [
+        "Color.dsStatusDanger",
+        ".dsStatusDanger"
+      ]
+    },
+    {
+      "id": "color.status.dangerBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#fdeaea",
+      "canon": "#fdeaea",
+      "cssVar": "--color-status-danger-bg",
+      "swift": [
+        "Color.dsStatusDangerBg",
+        ".dsStatusDangerBg"
+      ]
+    },
+    {
+      "id": "color.status.info",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--color-status-info",
+      "swift": [
+        "Color.dsStatusInfo",
+        ".dsStatusInfo"
+      ]
+    },
+    {
+      "id": "color.status.infoBg",
+      "tier": "semantic",
+      "type": "color",
+      "dimension": "color",
+      "value": "#e7efff",
+      "canon": "#e7efff",
+      "cssVar": "--color-status-info-bg",
+      "swift": [
+        "Color.dsStatusInfoBg",
+        ".dsStatusInfoBg"
+      ]
+    },
+    {
+      "id": "type.display",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "36px",
+        "fontWeight": "700",
+        "lineHeight": "1.2"
+      },
+      "canon": null,
+      "cssVar": "--type-display",
+      "swift": [
+        ".dsType(.display)",
+        "Font.dsDisplay"
+      ]
+    },
+    {
+      "id": "type.heading",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "28px",
+        "fontWeight": "600",
+        "lineHeight": "1.2"
+      },
+      "canon": null,
+      "cssVar": "--type-heading",
+      "swift": [
+        ".dsType(.heading)",
+        "Font.dsHeading"
+      ]
+    },
+    {
+      "id": "type.title",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "lineHeight": "1.35"
+      },
+      "canon": null,
+      "cssVar": "--type-title",
+      "swift": [
+        ".dsType(.title)",
+        "Font.dsTitle"
+      ]
+    },
+    {
+      "id": "type.body",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-body",
+      "swift": [
+        ".dsType(.body)",
+        "Font.dsBody"
+      ]
+    },
+    {
+      "id": "type.label",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-label",
+      "swift": [
+        ".dsType(.label)",
+        "Font.dsLabel"
+      ]
+    },
+    {
+      "id": "type.caption",
+      "tier": "composite",
+      "type": "typography",
+      "dimension": "typography",
+      "value": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "1.5"
+      },
+      "canon": null,
+      "cssVar": "--type-caption",
+      "swift": [
+        ".dsType(.caption)",
+        "Font.dsCaption"
+      ]
+    },
+    {
+      "id": "shadow.sm",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-sm",
+      "swift": [
+        ".dsShadow(.sm)"
+      ]
+    },
+    {
+      "id": "shadow.md",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "6px",
+        "blur": "16px",
+        "spread": "-4px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-md",
+      "swift": [
+        ".dsShadow(.md)"
+      ]
+    },
+    {
+      "id": "shadow.lg",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "16px",
+        "blur": "40px",
+        "spread": "-8px",
+        "color": "rgba(20,24,33,0.16)"
+      },
+      "canon": null,
+      "cssVar": "--shadow-lg",
+      "swift": [
+        ".dsShadow(.lg)"
+      ]
+    },
+    {
+      "id": "shadow.focus",
+      "tier": "composite",
+      "type": "shadow",
+      "dimension": "shadow",
+      "value": {
+        "offsetX": "0px",
+        "offsetY": "0px",
+        "blur": "0px",
+        "spread": "2px",
+        "color": "#2f6df6"
+      },
+      "canon": null,
+      "cssVar": "--shadow-focus",
+      "swift": [
+        ".dsShadow(.focus)"
+      ]
+    },
+    {
+      "id": "button.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--button-radius",
+      "swift": []
+    },
+    {
+      "id": "button.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--button-padding-x",
+      "swift": []
+    },
+    {
+      "id": "button.gap",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--button-gap",
+      "swift": []
+    },
+    {
+      "id": "button.bg.primary",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#2f6df6",
+      "canon": "#2f6df6",
+      "cssVar": "--button-bg-primary",
+      "swift": []
+    },
+    {
+      "id": "button.fg.primary",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--button-fg-primary",
+      "swift": []
+    },
+    {
+      "id": "card.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--card-radius",
+      "swift": []
+    },
+    {
+      "id": "card.padding",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "24px",
+      "canon": "24",
+      "cssVar": "--card-padding",
+      "swift": []
+    },
+    {
+      "id": "card.bg",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#ffffff",
+      "canon": "#ffffff",
+      "cssVar": "--card-bg",
+      "swift": []
+    },
+    {
+      "id": "card.border",
+      "tier": "component",
+      "type": "color",
+      "dimension": "color",
+      "value": "#dde1e8",
+      "canon": "#dde1e8",
+      "cssVar": "--card-border",
+      "swift": []
+    },
+    {
+      "id": "input.height",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "40px",
+      "canon": "40",
+      "cssVar": "--input-height",
+      "swift": []
+    },
+    {
+      "id": "input.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "10px",
+      "canon": "10",
+      "cssVar": "--input-radius",
+      "swift": []
+    },
+    {
+      "id": "input.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "16px",
+      "canon": "16",
+      "cssVar": "--input-padding-x",
+      "swift": []
+    },
+    {
+      "id": "badge.radius",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "999px",
+      "canon": "999",
+      "cssVar": "--badge-radius",
+      "swift": []
+    },
+    {
+      "id": "badge.paddingX",
+      "tier": "component",
+      "type": "dimension",
+      "dimension": "dimension",
+      "value": "8px",
+      "canon": "8",
+      "cssVar": "--badge-padding-x",
+      "swift": []
+    }
+  ],
+  "components": [
+    {
+      "id": "lg-0001",
+      "logicalId": "textfield",
+      "platform": "web",
+      "canonicalName": "TextField",
+      "category": "form",
+      "intentKeywords": [
+        "textfield",
+        "input",
+        "text",
+        "field"
+      ],
+      "importName": "TextField",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0002",
+      "logicalId": "textarea",
+      "platform": "web",
+      "canonicalName": "Textarea",
+      "category": "form",
+      "intentKeywords": [
+        "textarea",
+        "multiline",
+        "input",
+        "notes"
+      ],
+      "importName": "Textarea",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0003",
+      "logicalId": "select",
+      "platform": "web",
+      "canonicalName": "Select",
+      "category": "form",
+      "intentKeywords": [
+        "select",
+        "dropdown",
+        "options",
+        "choose"
+      ],
+      "importName": "Select",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0004",
+      "logicalId": "combobox",
+      "platform": "web",
+      "canonicalName": "Combobox",
+      "category": "form",
+      "intentKeywords": [
+        "combobox",
+        "autocomplete",
+        "search",
+        "select"
+      ],
+      "importName": "Combobox",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0005",
+      "logicalId": "checkbox",
+      "platform": "web",
+      "canonicalName": "Checkbox",
+      "category": "form",
+      "intentKeywords": [
+        "checkbox",
+        "check",
+        "boolean",
+        "agree"
+      ],
+      "importName": "Checkbox",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0006",
+      "logicalId": "checkboxgroup",
+      "platform": "web",
+      "canonicalName": "CheckboxGroup",
+      "category": "form",
+      "intentKeywords": [
+        "checkboxgroup",
+        "multi",
+        "select",
+        "options"
+      ],
+      "importName": "CheckboxGroup",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0007",
+      "logicalId": "radio",
+      "platform": "web",
+      "canonicalName": "Radio",
+      "category": "form",
+      "intentKeywords": [
+        "radio",
+        "single",
+        "choice"
+      ],
+      "importName": "Radio",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0008",
+      "logicalId": "radiogroup",
+      "platform": "web",
+      "canonicalName": "RadioGroup",
+      "category": "form",
+      "intentKeywords": [
+        "radiogroup",
+        "options",
+        "single",
+        "choice"
+      ],
+      "importName": "RadioGroup",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0009",
+      "logicalId": "switch",
+      "platform": "web",
+      "canonicalName": "Switch",
+      "category": "form",
+      "intentKeywords": [
+        "switch",
+        "toggle",
+        "on",
+        "off"
+      ],
+      "importName": "Switch",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0010",
+      "logicalId": "slider",
+      "platform": "web",
+      "canonicalName": "Slider",
+      "category": "form",
+      "intentKeywords": [
+        "slider",
+        "range",
+        "drag",
+        "value"
+      ],
+      "importName": "Slider",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0011",
+      "logicalId": "rangeslider",
+      "platform": "web",
+      "canonicalName": "RangeSlider",
+      "category": "form",
+      "intentKeywords": [
+        "rangeslider",
+        "min",
+        "max",
+        "range"
+      ],
+      "importName": "RangeSlider",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0012",
+      "logicalId": "numberinput",
+      "platform": "web",
+      "canonicalName": "NumberInput",
+      "category": "form",
+      "intentKeywords": [
+        "numberinput",
+        "numeric",
+        "stepper",
+        "quantity"
+      ],
+      "importName": "NumberInput",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0013",
+      "logicalId": "pininput",
+      "platform": "web",
+      "canonicalName": "PinInput",
+      "category": "form",
+      "intentKeywords": [
+        "pininput",
+        "otp",
+        "code",
+        "verification"
+      ],
+      "importName": "PinInput",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0014",
+      "logicalId": "datepicker",
+      "platform": "web",
+      "canonicalName": "DatePicker",
+      "category": "form",
+      "intentKeywords": [
+        "datepicker",
+        "calendar",
+        "date",
+        "schedule"
+      ],
+      "importName": "DatePicker",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0015",
+      "logicalId": "daterangepicker",
+      "platform": "web",
+      "canonicalName": "DateRangePicker",
+      "category": "form",
+      "intentKeywords": [
+        "daterangepicker",
+        "range",
+        "dates",
+        "period"
+      ],
+      "importName": "DateRangePicker",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0016",
+      "logicalId": "timepicker",
+      "platform": "web",
+      "canonicalName": "TimePicker",
+      "category": "form",
+      "intentKeywords": [
+        "timepicker",
+        "time",
+        "clock",
+        "hours"
+      ],
+      "importName": "TimePicker",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0017",
+      "logicalId": "colorpicker",
+      "platform": "web",
+      "canonicalName": "ColorPicker",
+      "category": "form",
+      "intentKeywords": [
+        "colorpicker",
+        "color",
+        "swatch",
+        "palette"
+      ],
+      "importName": "ColorPicker",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0018",
+      "logicalId": "fileupload",
+      "platform": "web",
+      "canonicalName": "FileUpload",
+      "category": "form",
+      "intentKeywords": [
+        "fileupload",
+        "file",
+        "dropzone",
+        "attach"
+      ],
+      "importName": "FileUpload",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0019",
+      "logicalId": "rating",
+      "platform": "web",
+      "canonicalName": "Rating",
+      "category": "form",
+      "intentKeywords": [
+        "rating",
+        "stars",
+        "score",
+        "review"
+      ],
+      "importName": "Rating",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0020",
+      "logicalId": "taginput",
+      "platform": "web",
+      "canonicalName": "TagInput",
+      "category": "form",
+      "intentKeywords": [
+        "taginput",
+        "tags",
+        "chips",
+        "tokens"
+      ],
+      "importName": "TagInput",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0021",
+      "logicalId": "label",
+      "platform": "web",
+      "canonicalName": "Label",
+      "category": "form",
+      "intentKeywords": [
+        "label",
+        "caption",
+        "field",
+        "name"
+      ],
+      "importName": "Label",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0022",
+      "logicalId": "formfield",
+      "platform": "web",
+      "canonicalName": "FormField",
+      "category": "form",
+      "intentKeywords": [
+        "formfield",
+        "wrapper",
+        "label",
+        "error"
+      ],
+      "importName": "FormField",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0023",
+      "logicalId": "fieldset",
+      "platform": "web",
+      "canonicalName": "Fieldset",
+      "category": "form",
+      "intentKeywords": [
+        "fieldset",
+        "group",
+        "form",
+        "section"
+      ],
+      "importName": "Fieldset",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0024",
+      "logicalId": "searchinput",
+      "platform": "web",
+      "canonicalName": "SearchInput",
+      "category": "form",
+      "intentKeywords": [
+        "searchinput",
+        "search",
+        "query",
+        "find"
+      ],
+      "importName": "SearchInput",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0025",
+      "logicalId": "passwordinput",
+      "platform": "web",
+      "canonicalName": "PasswordInput",
+      "category": "form",
+      "intentKeywords": [
+        "passwordinput",
+        "password",
+        "secret",
+        "masked"
+      ],
+      "importName": "PasswordInput",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0026",
+      "logicalId": "button",
+      "platform": "web",
+      "canonicalName": "Button",
+      "category": "action",
+      "intentKeywords": [
+        "button",
+        "action",
+        "submit",
+        "cta"
+      ],
+      "importName": "Button",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0027",
+      "logicalId": "iconbutton",
+      "platform": "web",
+      "canonicalName": "IconButton",
+      "category": "action",
+      "intentKeywords": [
+        "iconbutton",
+        "icon",
+        "action",
+        "compact"
+      ],
+      "importName": "IconButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0028",
+      "logicalId": "buttongroup",
+      "platform": "web",
+      "canonicalName": "ButtonGroup",
+      "category": "action",
+      "intentKeywords": [
+        "buttongroup",
+        "segmented",
+        "actions",
+        "group"
+      ],
+      "importName": "ButtonGroup",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0029",
+      "logicalId": "splitbutton",
+      "platform": "web",
+      "canonicalName": "SplitButton",
+      "category": "action",
+      "intentKeywords": [
+        "splitbutton",
+        "dropdown",
+        "action",
+        "menu"
+      ],
+      "importName": "SplitButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0030",
+      "logicalId": "togglebutton",
+      "platform": "web",
+      "canonicalName": "ToggleButton",
+      "category": "action",
+      "intentKeywords": [
+        "togglebutton",
+        "toggle",
+        "pressed",
+        "state"
+      ],
+      "importName": "ToggleButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0031",
+      "logicalId": "fab",
+      "platform": "web",
+      "canonicalName": "FAB",
+      "category": "action",
+      "intentKeywords": [
+        "fab",
+        "floating",
+        "action",
+        "primary"
+      ],
+      "importName": "FAB",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0032",
+      "logicalId": "copybutton",
+      "platform": "web",
+      "canonicalName": "CopyButton",
+      "category": "action",
+      "intentKeywords": [
+        "copybutton",
+        "copy",
+        "clipboard",
+        "duplicate"
+      ],
+      "importName": "CopyButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0033",
+      "logicalId": "linkbutton",
+      "platform": "web",
+      "canonicalName": "LinkButton",
+      "category": "action",
+      "intentKeywords": [
+        "linkbutton",
+        "link",
+        "navigate",
+        "anchor"
+      ],
+      "importName": "LinkButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0034",
+      "logicalId": "tabs",
+      "platform": "web",
+      "canonicalName": "Tabs",
+      "category": "navigation",
+      "intentKeywords": [
+        "tabs",
+        "tab",
+        "switch",
+        "sections"
+      ],
+      "importName": "Tabs",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0035",
+      "logicalId": "segmentedcontrol",
+      "platform": "web",
+      "canonicalName": "SegmentedControl",
+      "category": "navigation",
+      "intentKeywords": [
+        "segmentedcontrol",
+        "segmented",
+        "switcher",
+        "toggle"
+      ],
+      "importName": "SegmentedControl",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0036",
+      "logicalId": "breadcrumb",
+      "platform": "web",
+      "canonicalName": "Breadcrumb",
+      "category": "navigation",
+      "intentKeywords": [
+        "breadcrumb",
+        "trail",
+        "path",
+        "hierarchy"
+      ],
+      "importName": "Breadcrumb",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0037",
+      "logicalId": "pagination",
+      "platform": "web",
+      "canonicalName": "Pagination",
+      "category": "navigation",
+      "intentKeywords": [
+        "pagination",
+        "pages",
+        "next",
+        "prev"
+      ],
+      "importName": "Pagination",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0038",
+      "logicalId": "menu",
+      "platform": "web",
+      "canonicalName": "Menu",
+      "category": "navigation",
+      "intentKeywords": [
+        "menu",
+        "dropdown",
+        "actions",
+        "list"
+      ],
+      "importName": "Menu",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0039",
+      "logicalId": "navbar",
+      "platform": "web",
+      "canonicalName": "Navbar",
+      "category": "navigation",
+      "intentKeywords": [
+        "navbar",
+        "header",
+        "top",
+        "navigation"
+      ],
+      "importName": "Navbar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0040",
+      "logicalId": "sidebar",
+      "platform": "web",
+      "canonicalName": "Sidebar",
+      "category": "navigation",
+      "intentKeywords": [
+        "sidebar",
+        "side",
+        "nav",
+        "drawer"
+      ],
+      "importName": "Sidebar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0041",
+      "logicalId": "stepper",
+      "platform": "web",
+      "canonicalName": "Stepper",
+      "category": "navigation",
+      "intentKeywords": [
+        "stepper",
+        "wizard",
+        "steps",
+        "progress"
+      ],
+      "importName": "Stepper",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0042",
+      "logicalId": "bottomnav",
+      "platform": "web",
+      "canonicalName": "BottomNav",
+      "category": "navigation",
+      "intentKeywords": [
+        "bottomnav",
+        "tabbar",
+        "mobile",
+        "bottom"
+      ],
+      "importName": "BottomNav",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0043",
+      "logicalId": "commandpalette",
+      "platform": "web",
+      "canonicalName": "CommandPalette",
+      "category": "navigation",
+      "intentKeywords": [
+        "commandpalette",
+        "command",
+        "search",
+        "shortcut"
+      ],
+      "importName": "CommandPalette",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0044",
+      "logicalId": "anchor",
+      "platform": "web",
+      "canonicalName": "Anchor",
+      "category": "navigation",
+      "intentKeywords": [
+        "anchor",
+        "link",
+        "jump",
+        "section"
+      ],
+      "importName": "Anchor",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0045",
+      "logicalId": "backbutton",
+      "platform": "web",
+      "canonicalName": "BackButton",
+      "category": "navigation",
+      "intentKeywords": [
+        "backbutton",
+        "back",
+        "return",
+        "previous"
+      ],
+      "importName": "BackButton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0046",
+      "logicalId": "card",
+      "platform": "web",
+      "canonicalName": "Card",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "card",
+        "panel",
+        "surface",
+        "container"
+      ],
+      "importName": "Card",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0047",
+      "logicalId": "table",
+      "platform": "web",
+      "canonicalName": "Table",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "table",
+        "rows",
+        "columns",
+        "grid"
+      ],
+      "importName": "Table",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0048",
+      "logicalId": "datagrid",
+      "platform": "web",
+      "canonicalName": "DataGrid",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "datagrid",
+        "spreadsheet",
+        "editable",
+        "table"
+      ],
+      "importName": "DataGrid",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0049",
+      "logicalId": "list",
+      "platform": "web",
+      "canonicalName": "List",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "list",
+        "items",
+        "vertical",
+        "collection"
+      ],
+      "importName": "List",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0050",
+      "logicalId": "listitem",
+      "platform": "web",
+      "canonicalName": "ListItem",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "listitem",
+        "row",
+        "entry",
+        "item"
+      ],
+      "importName": "ListItem",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0051",
+      "logicalId": "badge",
+      "platform": "web",
+      "canonicalName": "Badge",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "badge",
+        "tag",
+        "status",
+        "pill"
+      ],
+      "importName": "Badge",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0052",
+      "logicalId": "tag",
+      "platform": "web",
+      "canonicalName": "Tag",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "tag",
+        "chip",
+        "label",
+        "keyword"
+      ],
+      "importName": "Tag",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0053",
+      "logicalId": "avatar",
+      "platform": "web",
+      "canonicalName": "Avatar",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "avatar",
+        "profile",
+        "user",
+        "photo"
+      ],
+      "importName": "Avatar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0054",
+      "logicalId": "avatargroup",
+      "platform": "web",
+      "canonicalName": "AvatarGroup",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "avatargroup",
+        "avatars",
+        "stack",
+        "team"
+      ],
+      "importName": "AvatarGroup",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0055",
+      "logicalId": "stat",
+      "platform": "web",
+      "canonicalName": "Stat",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "stat",
+        "metric",
+        "kpi",
+        "number"
+      ],
+      "importName": "Stat",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0056",
+      "logicalId": "statsparkline",
+      "platform": "web",
+      "canonicalName": "StatSparkline",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "statsparkline",
+        "sparkline",
+        "trend",
+        "mini"
+      ],
+      "importName": "StatSparkline",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0057",
+      "logicalId": "timeline",
+      "platform": "web",
+      "canonicalName": "Timeline",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "timeline",
+        "history",
+        "events",
+        "chronology"
+      ],
+      "importName": "Timeline",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0058",
+      "logicalId": "tree",
+      "platform": "web",
+      "canonicalName": "Tree",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "tree",
+        "hierarchy",
+        "nested",
+        "expand"
+      ],
+      "importName": "Tree",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0059",
+      "logicalId": "descriptionlist",
+      "platform": "web",
+      "canonicalName": "DescriptionList",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "descriptionlist",
+        "keyvalue",
+        "details",
+        "pairs"
+      ],
+      "importName": "DescriptionList",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0060",
+      "logicalId": "code",
+      "platform": "web",
+      "canonicalName": "Code",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "code",
+        "snippet",
+        "monospace",
+        "inline"
+      ],
+      "importName": "Code",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0061",
+      "logicalId": "codeblock",
+      "platform": "web",
+      "canonicalName": "CodeBlock",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "codeblock",
+        "syntax",
+        "highlight",
+        "code"
+      ],
+      "importName": "CodeBlock",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0062",
+      "logicalId": "kbd",
+      "platform": "web",
+      "canonicalName": "Kbd",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "kbd",
+        "key",
+        "shortcut",
+        "keyboard"
+      ],
+      "importName": "Kbd",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0063",
+      "logicalId": "calendar",
+      "platform": "web",
+      "canonicalName": "Calendar",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "calendar",
+        "month",
+        "days",
+        "events"
+      ],
+      "importName": "Calendar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0064",
+      "logicalId": "chart",
+      "platform": "web",
+      "canonicalName": "Chart",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "chart",
+        "graph",
+        "plot",
+        "visualization"
+      ],
+      "importName": "Chart",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0065",
+      "logicalId": "map",
+      "platform": "web",
+      "canonicalName": "Map",
+      "category": "dataDisplay",
+      "intentKeywords": [
+        "map",
+        "location",
+        "geo",
+        "pins"
+      ],
+      "importName": "Map",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0066",
+      "logicalId": "alert",
+      "platform": "web",
+      "canonicalName": "Alert",
+      "category": "feedback",
+      "intentKeywords": [
+        "alert",
+        "warning",
+        "error",
+        "notice"
+      ],
+      "importName": "Alert",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0067",
+      "logicalId": "toast",
+      "platform": "web",
+      "canonicalName": "Toast",
+      "category": "feedback",
+      "intentKeywords": [
+        "toast",
+        "notification",
+        "snackbar",
+        "transient"
+      ],
+      "importName": "Toast",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0068",
+      "logicalId": "banner",
+      "platform": "web",
+      "canonicalName": "Banner",
+      "category": "feedback",
+      "intentKeywords": [
+        "banner",
+        "announcement",
+        "top",
+        "message"
+      ],
+      "importName": "Banner",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0069",
+      "logicalId": "callout",
+      "platform": "web",
+      "canonicalName": "Callout",
+      "category": "feedback",
+      "intentKeywords": [
+        "callout",
+        "highlight",
+        "note",
+        "info"
+      ],
+      "importName": "Callout",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0070",
+      "logicalId": "spinner",
+      "platform": "web",
+      "canonicalName": "Spinner",
+      "category": "feedback",
+      "intentKeywords": [
+        "spinner",
+        "loading",
+        "busy",
+        "progress"
+      ],
+      "importName": "Spinner",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0071",
+      "logicalId": "progressbar",
+      "platform": "web",
+      "canonicalName": "ProgressBar",
+      "category": "feedback",
+      "intentKeywords": [
+        "progressbar",
+        "progress",
+        "percent",
+        "loading"
+      ],
+      "importName": "ProgressBar",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0072",
+      "logicalId": "circularprogress",
+      "platform": "web",
+      "canonicalName": "CircularProgress",
+      "category": "feedback",
+      "intentKeywords": [
+        "circularprogress",
+        "ring",
+        "progress",
+        "loading"
+      ],
+      "importName": "CircularProgress",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0073",
+      "logicalId": "skeleton",
+      "platform": "web",
+      "canonicalName": "Skeleton",
+      "category": "feedback",
+      "intentKeywords": [
+        "skeleton",
+        "placeholder",
+        "loading",
+        "shimmer"
+      ],
+      "importName": "Skeleton",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0074",
+      "logicalId": "emptystate",
+      "platform": "web",
+      "canonicalName": "EmptyState",
+      "category": "feedback",
+      "intentKeywords": [
+        "emptystate",
+        "empty",
+        "nothing",
+        "placeholder"
+      ],
+      "importName": "EmptyState",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0075",
+      "logicalId": "inlineerror",
+      "platform": "web",
+      "canonicalName": "InlineError",
+      "category": "feedback",
+      "intentKeywords": [
+        "inlineerror",
+        "validation",
+        "field",
+        "error"
+      ],
+      "importName": "InlineError",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0076",
+      "logicalId": "statusdot",
+      "platform": "web",
+      "canonicalName": "StatusDot",
+      "category": "feedback",
+      "intentKeywords": [
+        "statusdot",
+        "indicator",
+        "online",
+        "status"
+      ],
+      "importName": "StatusDot",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0077",
+      "logicalId": "modal",
+      "platform": "web",
+      "canonicalName": "Modal",
+      "category": "overlay",
+      "intentKeywords": [
+        "modal",
+        "dialog",
+        "popup",
+        "overlay"
+      ],
+      "importName": "Modal",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0078",
+      "logicalId": "dialog",
+      "platform": "web",
+      "canonicalName": "Dialog",
+      "category": "overlay",
+      "intentKeywords": [
+        "dialog",
+        "confirm",
+        "modal",
+        "prompt"
+      ],
+      "importName": "Dialog",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0079",
+      "logicalId": "drawer",
+      "platform": "web",
+      "canonicalName": "Drawer",
+      "category": "overlay",
+      "intentKeywords": [
+        "drawer",
+        "panel",
+        "slide",
+        "side"
+      ],
+      "importName": "Drawer",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0080",
+      "logicalId": "sheet",
+      "platform": "web",
+      "canonicalName": "Sheet",
+      "category": "overlay",
+      "intentKeywords": [
+        "sheet",
+        "bottom",
+        "mobile",
+        "tray"
+      ],
+      "importName": "Sheet",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0081",
+      "logicalId": "popover",
+      "platform": "web",
+      "canonicalName": "Popover",
+      "category": "overlay",
+      "intentKeywords": [
+        "popover",
+        "floating",
+        "anchored",
+        "panel"
+      ],
+      "importName": "Popover",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0082",
+      "logicalId": "tooltip",
+      "platform": "web",
+      "canonicalName": "Tooltip",
+      "category": "overlay",
+      "intentKeywords": [
+        "tooltip",
+        "hint",
+        "hover",
+        "label"
+      ],
+      "importName": "Tooltip",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0083",
+      "logicalId": "hovercard",
+      "platform": "web",
+      "canonicalName": "HoverCard",
+      "category": "overlay",
+      "intentKeywords": [
+        "hovercard",
+        "preview",
+        "hover",
+        "card"
+      ],
+      "importName": "HoverCard",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0084",
+      "logicalId": "contextmenu",
+      "platform": "web",
+      "canonicalName": "ContextMenu",
+      "category": "overlay",
+      "intentKeywords": [
+        "contextmenu",
+        "rightclick",
+        "menu",
+        "actions"
+      ],
+      "importName": "ContextMenu",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0085",
+      "logicalId": "dropdown",
+      "platform": "web",
+      "canonicalName": "Dropdown",
+      "category": "overlay",
+      "intentKeywords": [
+        "dropdown",
+        "menu",
+        "select",
+        "options"
+      ],
+      "importName": "Dropdown",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0086",
+      "logicalId": "toast",
+      "platform": "web",
+      "canonicalName": "Toast",
+      "category": "overlay",
+      "intentKeywords": [
+        "toast",
+        "notification",
+        "overlay",
+        "transient"
+      ],
+      "importName": "Toast",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0087",
+      "logicalId": "stack",
+      "platform": "web",
+      "canonicalName": "Stack",
+      "category": "layout",
+      "intentKeywords": [
+        "stack",
+        "flex",
+        "row",
+        "column"
+      ],
+      "importName": "Stack",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0088",
+      "logicalId": "grid",
+      "platform": "web",
+      "canonicalName": "Grid",
+      "category": "layout",
+      "intentKeywords": [
+        "grid",
+        "columns",
+        "layout",
+        "responsive"
+      ],
+      "importName": "Grid",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0089",
+      "logicalId": "container",
+      "platform": "web",
+      "canonicalName": "Container",
+      "category": "layout",
+      "intentKeywords": [
+        "container",
+        "wrapper",
+        "max-width",
+        "center"
+      ],
+      "importName": "Container",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0090",
+      "logicalId": "divider",
+      "platform": "web",
+      "canonicalName": "Divider",
+      "category": "layout",
+      "intentKeywords": [
+        "divider",
+        "separator",
+        "rule",
+        "line"
+      ],
+      "importName": "Divider",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0091",
+      "logicalId": "spacer",
+      "platform": "web",
+      "canonicalName": "Spacer",
+      "category": "layout",
+      "intentKeywords": [
+        "spacer",
+        "gap",
+        "space",
+        "flex"
+      ],
+      "importName": "Spacer",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0092",
+      "logicalId": "aspectratio",
+      "platform": "web",
+      "canonicalName": "AspectRatio",
+      "category": "layout",
+      "intentKeywords": [
+        "aspectratio",
+        "ratio",
+        "media",
+        "box"
+      ],
+      "importName": "AspectRatio",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0093",
+      "logicalId": "scrollarea",
+      "platform": "web",
+      "canonicalName": "ScrollArea",
+      "category": "layout",
+      "intentKeywords": [
+        "scrollarea",
+        "scroll",
+        "overflow",
+        "container"
+      ],
+      "importName": "ScrollArea",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0094",
+      "logicalId": "center",
+      "platform": "web",
+      "canonicalName": "Center",
+      "category": "layout",
+      "intentKeywords": [
+        "center",
+        "middle",
+        "align",
+        "center"
+      ],
+      "importName": "Center",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0095",
+      "logicalId": "box",
+      "platform": "web",
+      "canonicalName": "Box",
+      "category": "layout",
+      "intentKeywords": [
+        "box",
+        "primitive",
+        "div",
+        "container"
+      ],
+      "importName": "Box",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0096",
+      "logicalId": "splitter",
+      "platform": "web",
+      "canonicalName": "Splitter",
+      "category": "layout",
+      "intentKeywords": [
+        "splitter",
+        "resizable",
+        "panes",
+        "split"
+      ],
+      "importName": "Splitter",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0097",
+      "logicalId": "image",
+      "platform": "web",
+      "canonicalName": "Image",
+      "category": "media",
+      "intentKeywords": [
+        "image",
+        "picture",
+        "photo",
+        "img"
+      ],
+      "importName": "Image",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0098",
+      "logicalId": "icon",
+      "platform": "web",
+      "canonicalName": "Icon",
+      "category": "media",
+      "intentKeywords": [
+        "icon",
+        "glyph",
+        "symbol",
+        "svg"
+      ],
+      "importName": "Icon",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0099",
+      "logicalId": "video",
+      "platform": "web",
+      "canonicalName": "Video",
+      "category": "media",
+      "intentKeywords": [
+        "video",
+        "player",
+        "media",
+        "clip"
+      ],
+      "importName": "Video",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0100",
+      "logicalId": "carousel",
+      "platform": "web",
+      "canonicalName": "Carousel",
+      "category": "media",
+      "intentKeywords": [
+        "carousel",
+        "slider",
+        "gallery",
+        "slides"
+      ],
+      "importName": "Carousel",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0101",
+      "logicalId": "gallery",
+      "platform": "web",
+      "canonicalName": "Gallery",
+      "category": "media",
+      "intentKeywords": [
+        "gallery",
+        "images",
+        "grid",
+        "photos"
+      ],
+      "importName": "Gallery",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0102",
+      "logicalId": "lightbox",
+      "platform": "web",
+      "canonicalName": "Lightbox",
+      "category": "media",
+      "intentKeywords": [
+        "lightbox",
+        "zoom",
+        "fullscreen",
+        "image"
+      ],
+      "importName": "Lightbox",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0103",
+      "logicalId": "text",
+      "platform": "web",
+      "canonicalName": "Text",
+      "category": "typography",
+      "intentKeywords": [
+        "text",
+        "body",
+        "paragraph",
+        "copy"
+      ],
+      "importName": "Text",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0104",
+      "logicalId": "heading",
+      "platform": "web",
+      "canonicalName": "Heading",
+      "category": "typography",
+      "intentKeywords": [
+        "heading",
+        "title",
+        "header",
+        "h1"
+      ],
+      "importName": "Heading",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0105",
+      "logicalId": "prose",
+      "platform": "web",
+      "canonicalName": "Prose",
+      "category": "typography",
+      "intentKeywords": [
+        "prose",
+        "article",
+        "richtext",
+        "content"
+      ],
+      "importName": "Prose",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0106",
+      "logicalId": "blockquote",
+      "platform": "web",
+      "canonicalName": "Blockquote",
+      "category": "typography",
+      "intentKeywords": [
+        "blockquote",
+        "quote",
+        "citation",
+        "pullquote"
+      ],
+      "importName": "Blockquote",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0107",
+      "logicalId": "link",
+      "platform": "web",
+      "canonicalName": "Link",
+      "category": "typography",
+      "intentKeywords": [
+        "link",
+        "anchor",
+        "href",
+        "navigate"
+      ],
+      "importName": "Link",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0108",
+      "logicalId": "accordion",
+      "platform": "web",
+      "canonicalName": "Accordion",
+      "category": "disclosure",
+      "intentKeywords": [
+        "accordion",
+        "collapsible",
+        "expand",
+        "faq"
+      ],
+      "importName": "Accordion",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0109",
+      "logicalId": "collapsible",
+      "platform": "web",
+      "canonicalName": "Collapsible",
+      "category": "disclosure",
+      "intentKeywords": [
+        "collapsible",
+        "toggle",
+        "expand",
+        "hide"
+      ],
+      "importName": "Collapsible",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0110",
+      "logicalId": "details",
+      "platform": "web",
+      "canonicalName": "Details",
+      "category": "disclosure",
+      "intentKeywords": [
+        "details",
+        "summary",
+        "expand",
+        "disclosure"
+      ],
+      "importName": "Details",
+      "importPath": "@/ds"
+    },
+    {
+      "id": "lg-0111",
+      "logicalId": "readmore",
+      "platform": "web",
+      "canonicalName": "ReadMore",
+      "category": "disclosure",
+      "intentKeywords": [
+        "readmore",
+        "truncate",
+        "expand",
+        "clamp"
+      ],
+      "importName": "ReadMore",
+      "importPath": "@/ds"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "fullTokens": 1997,
+  "perTask": {
+    "data-table-toolbar": {
+      "topkTokens": 242,
+      "topkCount": 13,
+      "needed": [
+        "Table",
+        "Pagination",
+        "SearchInput"
+      ],
+      "retrievedNeeded": [
+        "Table",
+        "Pagination",
+        "SearchInput"
+      ],
+      "recall": 1
+    },
+    "media-gallery": {
+      "topkTokens": 162,
+      "topkCount": 9,
+      "needed": [
+        "Gallery",
+        "Image",
+        "Carousel"
+      ],
+      "retrievedNeeded": [
+        "Gallery",
+        "Image",
+        "Carousel"
+      ],
+      "recall": 1
+    },
+    "notification-center": {
+      "topkTokens": 171,
+      "topkCount": 9,
+      "needed": [
+        "Alert",
+        "EmptyState",
+        "Badge"
+      ],
+      "retrievedNeeded": [
+        "Alert",
+        "EmptyState",
+        "Badge"
+      ],
+      "recall": 1
+    },
+    "checkout-stepper": {
+      "topkTokens": 148,
+      "topkCount": 7,
+      "needed": [
+        "Stepper",
+        "Breadcrumb"
+      ],
+      "retrievedNeeded": [
+        "Stepper",
+        "Breadcrumb"
+      ],
+      "recall": 1
+    }
+  },
+  "meanTopkTokens": 181,
+  "topkPctOfFull": 9.1,
+  "meanRetrievalRecall": 1
+}

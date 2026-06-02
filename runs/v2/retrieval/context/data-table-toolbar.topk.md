@@ -1,0 +1,14 @@
+# retrieved components (top matches for this task)
+- <Table> (dataDisplay) — size:sm|md|lg · Table — dataDisplay component.
+- <Stack> (layout) — size:sm|md|lg · Stack — layout component.
+- <DataGrid> (dataDisplay) — size:sm|md|lg · DataGrid — dataDisplay component.
+- <ListItem> (dataDisplay) — size:sm|md|lg · ListItem — dataDisplay component.
+- <Grid> (layout) — size:sm|md|lg · Grid — layout component.
+- <Pagination> (navigation) — size:sm|md|lg · Pagination — navigation component.
+- <SearchInput> (form) — size:sm|md|lg · SearchInput — form component.
+- <TextField> (form) — size:sm|md|lg · TextField — form component.
+- <Textarea> (form) — size:sm|md|lg · Textarea — form component.
+- <Combobox> (form) — size:sm|md|lg · Combobox — form component.
+- <CommandPalette> (navigation) — size:sm|md|lg · CommandPalette — navigation component.
+- <Label> (form) — size:sm|md|lg · Label — form component.
+- <Button> (action) — size:sm|md|lg · Button — action component.
