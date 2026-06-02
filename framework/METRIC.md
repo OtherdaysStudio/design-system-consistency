@@ -76,3 +76,36 @@ N runs are costly, sample CC on a cadence (per sprint), not every commit.
 correctness — it proves you reused the system's decisions, not that the result looks good. Pair it
 with screenshot / visual-regression for pixel fidelity, and re-tune the weights if a high score ever
 meets poor design feedback.
+
+## Known limitations (measured) + the fidelity gate
+
+These are real blind spots found while validating the metric — stated plainly so the number isn't
+over-trusted:
+
+- **VC can't see an off-token value when the scale has headroom.** `min(observed, defined)/observed`
+  only penalizes *proliferation* (observed > defined). A single rogue color when few colors are used
+  scores fine on VC — but **TA catches it** (it's a non-token literal). The two are complementary by
+  design; neither alone is sufficient.
+- **TA goes n/a under full component delegation.** If a file expresses everything through components
+  (zero raw style declarations), there is nothing to measure, so TA is excluded and the composite
+  renormalizes over CR+CC. That is correct (nothing un-tokenized exists) but means TA's 40% can be
+  carried entirely by CR for such files.
+- **CC is a Jaccard proxy** for Krippendorff's α over decision sets — it rewards identical
+  token/component choices but not *visual* identity. Two cards using the same tokens can still render
+  differently (feature list with/without a check glyph; a layout that ignores a spatial requirement).
+- **Structural consistency ≠ visual correctness.** The decisive case: a settings row where five
+  independent agents *converged* on the same layout (CC high) that *missed the brief* (toggle not
+  right-aligned). The structural composite rated it ~100; it was wrong.
+
+**Mitigation — the fidelity gate (`harness/fidelity/`):** a deterministic **WCAG contrast** check of
+the manifest's own color claims (it caught 4 real failures the 99.7% consistency score missed), plus
+a **VLM visual judge** that scores rendered output against the brief. Treat the composite as the
+*reuse/drift* gate and fidelity as the *correctness* gate; ship both.
+
+## Cross-model behaviour (measured)
+Same tasks, baseline vs framework, on three models: composite lift was **+85 (Opus), +85 (Sonnet),
++64 (Haiku)**. Component reuse (CR) hit 100% on *all three* — the easy, binary rule — but token
+adherence (TA) scaled with capability (Opus/Sonnet 100, Haiku 50). So the framework's *floor* is
+universal but its *ceiling* is model-dependent, and **enforcement (lint gates) matters most for
+weaker models**, which follow "reuse components" but miss "tokenize every value." (N=2/cell — treat
+as directional, not a precise benchmark.)
