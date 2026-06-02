@@ -76,6 +76,19 @@ with the framework, on both stacks:
 
 See [`docs/RESULTS.md`](docs/RESULTS.md) for the full per-stack, per-task breakdown and methodology.
 
+### v2 — the harder questions ([`docs/RESULTS-v2.md`](docs/RESULTS-v2.md))
+v1 proved an AI can *reuse* a design system. v2 attacks what v1 skipped — all built, tested, committed:
+- **Grow the manifest** (`harness/registry/`): independent agents create *novel* components that
+  converge to one entry (convergence 1.0) and later agents reuse them (**100%**).
+- **Retrieval at scale** (`harness/retrieval/`): a 111-component DS + `query_manifest` ranking + an
+  MCP server — **81% valid reuse at 9% of full-context token cost**.
+- **Enforcement** (`enforcement/`): ESLint/stylelint/SwiftLint + a `--gate` CI/pre-commit gate.
+- **Mode A audit/refactor** (`harness/audit/`): drift report + auto-snap literals→tokens (10.7→35.3).
+- **Fidelity gate** (`harness/fidelity/`): WCAG contrast (caught + fixed 4 real failures) + a VLM
+  judge that found 5 agents *converging on an off-brief layout* — proof that consistent ≠ correct.
+- **Cross-model**: +85/+85/+64 lift on Opus/Sonnet/Haiku (enforcement matters most for weaker models).
+- **Real app** (`apps/acme-console/`): a drifted 3-screen app run through the full pipeline.
+
 And convergence you can *see* — the same task, built by 5 independent agents with the framework
 (left) vs. 2 cold-generation agents (right), rendered from the actual generated files:
 
