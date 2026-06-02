@@ -329,6 +329,28 @@
       "antiPatterns": [{ "pattern": "<img> with inline border-radius:50% and ad-hoc width", "reason": "re-invents avatar sizing", "correctAlternative": "<Avatar size>", "severity": "should-not" }],
       "tokenMap": { "all": ["radius.pill", "size.control.sm", "size.control.md", "size.control.lg"] },
       "web": { "importName": "Avatar", "importPath": "@/ds", "files": [{ "path": "reference/web/ds/Avatar.tsx", "type": "component" }] }
+    },
+    {
+      "id": "swt-swift-0001", "logicalId": "switch", "platform": "swift",
+      "canonicalName": "DSToggle",
+      "intentKeywords": ["switch", "toggle", "on", "off", "boolean", "enable", "setting"],
+      "category": "control",
+      "purposeStatement": "Binary on/off control with token-driven track/thumb colors.",
+      "variants": [{ "name": "style", "type": "enum", "values": ["ds"] }],
+      "antiPatterns": [{ "pattern": "Toggle without .toggleStyle(.ds)", "reason": "loses token-driven styling", "correctAlternative": "DSToggle(_:isOn:) or .toggleStyle(.ds)", "severity": "should-not" }],
+      "tokenMap": { "all": ["color.action.primary", "color.bg.muted", "radius.pill"] },
+      "swift": { "construct": "DSToggle(_:isOn:)", "style": "DSToggleStyle", "source": "reference/swiftui/DS/Components/DSToggleStyle.swift" }
+    },
+    {
+      "id": "avt-swift-0001", "logicalId": "avatar", "platform": "swift",
+      "canonicalName": "DSAvatar",
+      "intentKeywords": ["avatar", "profile", "user", "image", "photo", "initials", "picture"],
+      "category": "media",
+      "purposeStatement": "Circular user image/initials at registered sizes.",
+      "variants": [{ "name": "size", "type": "enum", "values": ["sm", "md", "lg"] }],
+      "antiPatterns": [{ "pattern": "Image().frame(width: 40).clipShape(Circle())", "reason": "re-invents avatar sizing", "correctAlternative": "DSAvatar(name:size:)", "severity": "should-not" }],
+      "tokenMap": { "all": ["radius.pill", "size.control.sm", "size.control.md", "size.control.lg"] },
+      "swift": { "construct": "DSAvatar(name:size:)", "source": "reference/swiftui/DS/Components/DSAvatar.swift" }
     }
   ],
 

@@ -3,3 +3,5 @@ runs/**/raw/
 *.log
 .DS_Store
 reference/_resolved.json
+reference/web/USAGE.md
+reference/swiftui/USAGE.md

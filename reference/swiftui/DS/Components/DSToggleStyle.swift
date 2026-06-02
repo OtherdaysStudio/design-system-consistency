@@ -48,3 +48,19 @@ public extension ToggleStyle where Self == DSToggleStyle {
     /// The Aperture toggle style.
     static var ds: DSToggleStyle { DSToggleStyle() }
 }
+
+/// Registered toggle component. Prefer this over a raw `Toggle` so reuse is
+/// explicit. Usage: `DSToggle("Push notifications", isOn: $on)`.
+public struct DSToggle: View {
+    private let label: String
+    @Binding private var isOn: Bool
+
+    public init(_ label: String = "", isOn: Binding<Bool>) {
+        self.label = label
+        self._isOn = isOn
+    }
+
+    public var body: some View {
+        Toggle(label, isOn: $isOn).toggleStyle(.ds)
+    }
+}

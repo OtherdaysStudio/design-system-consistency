@@ -1,0 +1,47 @@
+{
+  "description": "UI-build tasks. Each composes registered components; deliberately scoped to what Aperture DS covers, so a framework-following agent can reach ~100% consistency while a cold-generation agent will hand-roll and drift.",
+  "tasks": [
+    {
+      "id": "pricing-card",
+      "title": "Pricing tier card",
+      "brief": "A pricing card for the 'Pro' tier: a 'Most popular' status pill at top, the tier name as a heading, a one-line description, a large price ($29) with a '/mo' caption beside it, three feature lines, and a full-width primary call-to-action button 'Choose Pro'. Card should read as an elevated surface.",
+      "intent": ["pricing", "card", "tier", "cta", "plan"],
+      "usesComponents": ["Card", "Text", "Badge", "Button", "Stack"]
+    },
+    {
+      "id": "login-form",
+      "title": "Login form card",
+      "brief": "A sign-in form inside a card: a 'Welcome back' title, a subtitle, an email field (label + input), a password field (label + input), a full-width primary 'Sign in' button, and a secondary/ghost 'Create account' button below it. Vertical layout with consistent spacing.",
+      "intent": ["login", "form", "sign in", "auth", "email", "password"],
+      "usesComponents": ["Card", "Text", "TextField", "Button", "Stack"]
+    },
+    {
+      "id": "settings-row",
+      "title": "Settings toggle row",
+      "brief": "A single settings list row: on the left a label 'Push notifications' with a secondary helper line 'Get notified about activity', and on the right a toggle switch (on). The row is horizontally laid out, label block left, switch right-aligned, with comfortable padding. Wrap it in a surface.",
+      "intent": ["settings", "row", "toggle", "switch", "preference"],
+      "usesComponents": ["Stack", "Text", "Switch", "Card"]
+    },
+    {
+      "id": "stat-card",
+      "title": "Metric stat card",
+      "brief": "A small dashboard stat card: a caption label 'Monthly revenue', a large display number '$48.2k', and a success-toned badge showing '+12.5%' indicating growth. Stacked vertically on a surface.",
+      "intent": ["stat", "metric", "kpi", "dashboard", "number", "delta"],
+      "usesComponents": ["Card", "Text", "Badge", "Stack"]
+    },
+    {
+      "id": "profile-header",
+      "title": "Profile header",
+      "brief": "A user profile header row: a circular avatar on the left, then a vertical block with the person's name (title) and their role 'Product Designer' as secondary text plus a small neutral badge 'Pro', and on the right a primary 'Follow' button. Horizontal layout, vertically centered.",
+      "intent": ["profile", "header", "avatar", "user", "follow"],
+      "usesComponents": ["Avatar", "Text", "Badge", "Button", "Stack"]
+    },
+    {
+      "id": "notification-toast",
+      "title": "Notification toast",
+      "brief": "A toast notification: a success badge/dot, a short bold title 'Saved' with a body line 'Your changes were published.', and a ghost 'Undo' button on the right. Elevated surface, horizontal layout.",
+      "intent": ["toast", "notification", "alert", "snackbar", "message"],
+      "usesComponents": ["Card", "Text", "Badge", "Button", "Stack"]
+    }
+  ]
+}
