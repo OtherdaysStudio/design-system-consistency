@@ -2,8 +2,9 @@
 
 One file. DTCG-superset (`$value`/`$type`/`$description`, curly-brace refs `{group.token}`) extended
 with a component registry, platform transforms, indices, and a decision log. It is the **one source
-of truth** that both stacks and the scorer read. See `reference/design-system.json` for a complete,
-valid instance.
+of truth** that both stacks and the scorer read. See
+[`references/example-design-system.json`](./references/example-design-system.json) for a complete,
+valid instance (the "Aperture DS" used to validate this framework).
 
 ```jsonc
 {
